@@ -17,13 +17,18 @@ $bp-XL:1200px;
 }
 @mixin dekstop {
     @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
-        @content
+        @content;
     }
         
 }
-@mixin superdesktop{
+@mixin superdesktop {
     @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
-        @content
+        @content;
+    }
+}
+@mixin extra{
+    @media(min-width:$bp-XL+1){
+        @content;
     }
 }
 
@@ -99,6 +104,7 @@ $bp-XL:1200px;
   }
 
   .profile-content{
+      margin-top: 1rem;
       .info-link{
           color:red;
       }
@@ -177,4 +183,49 @@ $bp-XL:1200px;
 
         }
       }
+  }
+  @include extra{
+    .globe{
+        width:100%;
+        
+        padding:0;
+        .img-globe{
+
+       
+        position:absolute;
+        margin-top:0;
+        top:-80px;
+        right:-45px;
+        width:100%;
+        z-index:-5;
+        
+        }
+       
+        
+      
+      }
+      .header-text{
+          height: 800px;
+      }
+      .section-profile{
+        position: static;
+        margin-top:100px;
+        .logo-digital2{
+            width:500px;
+            height:500px
+            
+        }
+        .garis-bantu-kiri{
+         top:0;
+         right:0;
+      }
+      .profile-content{
+          margin-top:2rem;
+          p{
+              font-size:20px;
+          }
+
+      }
+    }
+
   }
