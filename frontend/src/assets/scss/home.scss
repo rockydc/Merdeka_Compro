@@ -1,0 +1,180 @@
+$bp-sm:600px;
+$bp-md:768px;
+$bp-L:992px;
+$bp-XL:1200px;
+
+@mixin mobile{
+    @media (min-width:0) and (max-width:#{$bp-sm})
+    {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
+    {
+        @content;
+    }
+}
+@mixin dekstop {
+    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
+        @content
+    }
+        
+}
+@mixin superdesktop{
+    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
+        @content
+    }
+}
+
+*{
+    font-family: poppins,sans-serif;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .globe{
+    
+    width:100%;
+    
+    position:relative;
+    .img-globe{
+    position:absolute;
+    margin-top:0;
+    top:-100px;
+    right:-45px;
+    width:100%;
+    z-index:-5;
+    }
+   
+    
+  
+  }
+  .header-text{
+    display:flex;
+    align-items: center;
+    color:#686868;
+    height:500px;
+    h1{
+        font-weight: bold;
+        color:black;
+        font-size:35px;
+    }
+    p{
+        font-size:14px;
+    }
+    span{
+        color:red;
+    }
+    .btn-daftar{
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+        border-radius:30px;
+        padding:15px 34px  15px 33px;
+        
+    }
+  }
+.section-profile{
+    margin-top:150px;
+    h1{
+        font-weight: bold;
+    }
+}
+  .digital-logo-2-wrapper{
+    position: relative;
+      .garis-bantu-kiri{
+        position:absolute;
+        left:-15px;
+        width:100%;
+        margin-top:-200px;
+        
+        z-index:10;
+      }
+      .logo-digital2{
+        position:absolute;
+        top:0;
+        width:400px;
+        height:400px;
+        z-index:11;
+      }
+      
+  }
+
+  .profile-content{
+      .info-link{
+          color:red;
+      }
+  }
+  //mobile css
+@include mobile{
+
+    .globe{
+        display:none;
+    }
+    .header-text{
+        text-align: center;
+    }
+    .section-profile{
+        position:static;
+        margin-top: 50px;
+        .garis-bantu-kiri{
+            width:100%;
+            right:0;
+        }
+        .logo-digital2{
+            width:250px;
+            height:250px;
+            margin-top:-150px;
+        }
+        .profile-content{
+            margin-top:100px;
+            text-align: center;
+
+        }
+    }
+  }
+  @include tablet{
+
+    .globe{
+        width:100%;
+        
+        padding:0;
+        .img-globe{
+
+       
+        position:absolute;
+        margin-top:0;
+        top:-80px;
+        right:-45px;
+        width:130%;
+        z-index:-5;
+        
+        }
+       
+        
+      
+      }
+      .header-text{
+          height:300px;
+          h1{
+              font-size:27px;
+          }
+      }
+      .section-profile{
+          position: static;
+          margin-top:150px;
+          .logo-digital2{
+              width:300px;
+              height:300px
+              
+          }
+          .garis-bantu-kiri{
+           top:8rem;
+           right:0;
+        }
+        .profile-content{
+            p{
+                font-size:14px;
+            }
+
+        }
+      }
+  }
