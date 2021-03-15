@@ -4,12 +4,12 @@
         <Header/>
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
-                <b-col>
+                <b-col class="mb-5" lg="6" md="12" sm="12">
                     <b-img fluid-grow src="assets/img/bg-register.png">
 
                     </b-img>
                 </b-col>
-                <b-col>
+                <b-col lg="6" md="12" sm="12">
                     <div class="text-center">
                          <p>Yuk isi form dibawah ini untuk Bergabung ke Merdeka Pulsa</p>
                     </div>

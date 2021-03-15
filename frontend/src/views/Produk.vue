@@ -13,9 +13,9 @@
             <div class="mt-3 red-line"></div>
            </div>
            
-            <b-container class="produkWrapper">
+            <b-container class="produkWrapper d-flex justify-content-center align-items-center">
                 <b-row>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
+                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12"> 
                                 <CardProduk
                                 gambar="mobile.png"
                                 caption="Pulsa prepaid seluruh operator"
