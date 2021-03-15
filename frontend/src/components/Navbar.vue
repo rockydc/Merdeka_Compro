@@ -16,7 +16,7 @@
         <b-nav-item href="#">Pendaftaran</b-nav-item>
         <b-nav-item href="#">Deposit</b-nav-item>
         <b-nav-item href="#">Hubungi Kami</b-nav-item>
-         <b-nav-item href="#">ID|ENG</b-nav-item>
+         <b-nav-item href="#">ID | ENG</b-nav-item>
     
  
       </b-navbar-nav>
@@ -33,6 +33,41 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+$bp-sm:600px;
+$bp-md:768px;
+$bp-L:992px;
+$bp-XL:1200px;
+
+@mixin mobile{
+    @media (min-width:0) and (max-width:#{$bp-sm})
+    {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
+    {
+        @content;
+    }
+}
+@mixin dekstop {
+    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
+        @content;
+    }
+        
+}
+@mixin superdesktop {
+    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
+        @content;
+    }
+}
+@mixin extra{
+    @media(min-width:$bp-XL+245){
+        @content;
+    }
+}
+
 .navbar{
     padding-top:15px;
     background:transparent;
@@ -43,13 +78,65 @@ export default {
         color:white;
         font-family: poppins,sans-serif;
         font-size:12px;
-        margin-left:5px;
+        margin-left:8px;
 
+    &:hover{
+      color:white;
+      opacity: 0.7;
+    }
     }
  .navbar-light .navbar-nav .nav-link.active{
   padding:7px 14px;
   background:white;
   border-radius:15.5px;
   color: #C52D2E;
+}
+
+@include mobile{
+  .navbar{
+    background-color:#c5202e;
+  }
+  .nav-item{
+    margin-top:20px;
+  }
+  .nav-item .nav-link{
+    color:color;
+
+  }
+   .navbar-light .navbar-nav .nav-link.active{
+     color:white;
+     padding:0;
+     background:#c5202e;
+   }
+ 
+
+}
+
+@include tablet{
+  .navbar{
+    background-color:#c5202e;
+  }
+  .nav-item{
+    margin-top:20px;
+  }
+  .nav-item .nav-link{
+    color:color;
+
+  }
+   .navbar-light .navbar-nav .nav-link.active{
+     color:white;
+     padding:0;
+     background:#c5202e;
+   }
+ 
+
+}
+
+@include extra{
+  .navbar-nav{
+    .nav-item{
+      margin-left:50px;
+    }
+  }
 }
 </style>
