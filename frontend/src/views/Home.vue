@@ -1,7 +1,7 @@
 <template>
   <div>
    
-    <Navbar/>
+    <Navbar isBrand/>
     
 <!-- Hero Section -->
     <b-row class="container-fluid">
@@ -23,7 +23,7 @@
       </b-col>
       <b-col lg="8"  md="6" sm="12">
            <div class="globe">
-      <b-img class="img-globe" src="@/assets/globe.png">
+      <b-img class="img-globe" src="@/assets/img/globe.png">
       </b-img>
   
     </div>
@@ -36,10 +36,10 @@
       <b-row>
         <b-col lg="6" md="6" sm="12">
           <div class="digital-logo-2-wrapper">
-                <b-img class="garis-bantu-kiri" src="@/assets/garis-bantu-kiri.png">   
+                <b-img class="garis-bantu-kiri" src="@/assets/img/garis-bantu-kiri.png">   
                 </b-img>
                <div class="d-flex justify-content-center align-items-md-start">
-          <b-img class="logo-digital2" src="@/assets/Logo Merdeka Digital Asia 2.png"></b-img>
+          <b-img class="logo-digital2" src="@/assets/img/Logo Merdeka Digital Asia 2.png"></b-img>
           </div>
           </div>
      
