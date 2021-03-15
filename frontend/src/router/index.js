@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Tentang from '../views/Tentang.vue'
+import Produk from '../views/Produk.vue'
+import Pendaftaran from '../views/Pendaftaran.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +17,18 @@ const routes = [
     path: '/tentang',
     name: 'Tentang',
     component:Tentang
+  
+  },
+  {
+    path: '/produk',
+    name: 'Produk',
+    component:Produk
+  
+  },
+  {
+    path: '/pendaftaran',
+    name: 'Pendaftaran',
+    component:Pendaftaran
   
   }
 ]

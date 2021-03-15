@@ -1,0 +1,48 @@
+
+.section-produk-content{
+    padding-top:107px;
+    padding-bottom:109px;
+}
+.produkWrapper{
+    
+    .produk-content{
+        margin-top:100px;
+
+    }
+}
+
+
+//start section operator
+
+.section-operator{
+    padding-top:83px;
+    background: rgba(225, 225, 225, 0.17);
+    position:relative;
+    padding-bottom:110px;
+    .operator-wrapper{
+        padding-top:80px;
+        display:grid;
+        width:100%;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 100px;
+        column-gap: 90px;
+      
+   
+        img{
+           
+        }
+     
+
+       
+    }
+    .elipse{
+        width:250px;
+        position: absolute;
+        right:0;
+        bottom:0;
+
+    }
+
+
+}
