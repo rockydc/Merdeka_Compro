@@ -1,12 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Tentang from '../views/Tentang.vue'
-import Produk from '../views/Produk.vue'
-import Pendaftaran from '../views/Pendaftaran.vue'
-import Deposit from '../views/Deposit.vue'
-import Kontak from '../views/Kontak.vue'
 
+import {Home,Tentang,Produk,Deposit,Kontak,Pendaftaran,TentangMDA} from '../views';
 
 
 Vue.use(VueRouter)
@@ -46,10 +41,22 @@ const routes = [
     name: 'Kontak',
     component:Kontak
   
+  },
+  {
+    path: '/tentangmda',
+    name: 'tentangmda',
+    component:TentangMDA
+  
   }
 ]
 
+// const router = new VueRouter({
+//   mode: 'history',
+//   routes: [...]
+// })
 const router = new VueRouter({
+   mode: 'history',
+
   routes
 })
 

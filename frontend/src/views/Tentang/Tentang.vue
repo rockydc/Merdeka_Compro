@@ -121,9 +121,8 @@
     </div>
 </template>
 <script>
-import CardAbout from '../components/CardAbout.vue'
-import Navbar from '../components/Navbar.vue'
-import Header from '../components/Header.vue'
+
+import {Header,Navbar,CardAbout} from '../../components';
 
 export default {
     name:"Tentang",
@@ -137,5 +136,5 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "@/assets/scss/Tentang.scss";
+@import "@/views/Tentang/Tentang.scss";
 </style>
