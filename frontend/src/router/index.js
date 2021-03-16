@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import Tentang from '../views/Tentang.vue'
 import Produk from '../views/Produk.vue'
 import Pendaftaran from '../views/Pendaftaran.vue'
+import Deposit from '../views/Deposit.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -29,6 +32,12 @@ const routes = [
     path: '/pendaftaran',
     name: 'Pendaftaran',
     component:Pendaftaran
+  
+  },
+  {
+    path: '/deposit',
+    name: 'Deposit',
+    component:Deposit
   
   }
 ]
