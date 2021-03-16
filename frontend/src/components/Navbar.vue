@@ -16,7 +16,11 @@
         <b-nav-item href="#">Pendaftaran</b-nav-item>
         <b-nav-item href="#">Deposit</b-nav-item>
         <b-nav-item href="#">Hubungi Kami</b-nav-item>
-         <b-nav-item href="#">ID | ENG</b-nav-item>
+         <b-nav-item href="#" class="nav-billingual">
+           ID<span class="divider ml-1">|</span>
+         </b-nav-item>
+          <b-nav-item href="#" class="ml-0 p-0 nav-billingual">EN
+         </b-nav-item>
     
  
       </b-navbar-nav>
@@ -85,11 +89,19 @@ $bp-XL:1200px;
       opacity: 0.7;
     }
     }
+
+   .nav-item:last-child .nav-link{
+    margin-left:-11px;
+  }
+
  .navbar-light .navbar-nav .nav-link.active{
   padding:7px 14px;
   background:white;
   border-radius:15.5px;
   color: #C52D2E;
+}
+.nav-billingual>a{
+  font-weight: 500;
 }
 
 @include mobile{
@@ -110,6 +122,12 @@ $bp-XL:1200px;
    }
  
 
+     .nav-item:last-child .nav-link{
+    margin-left:8px;
+  }
+    span.divider{
+    display:none;
+  }
 }
 
 @include tablet{
@@ -128,6 +146,12 @@ $bp-XL:1200px;
      padding:0;
      background:#c5202e;
    }
+     .nav-item:last-child .nav-link{
+    margin-left:8px;
+  }
+  span.divider{
+    display:none;
+  }
  
 
 }

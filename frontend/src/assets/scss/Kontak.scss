@@ -1,0 +1,163 @@
+$bp-sm:600px;
+$bp-md:768px;
+$bp-L:992px;
+$bp-XL:1200px;
+
+
+@mixin mobile{
+    @media (min-width:0) and (max-width:#{$bp-sm})
+    {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
+    {
+        @content;
+    }
+}
+@mixin dekstop {
+    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
+        @content;
+    }
+        
+}
+@mixin superdesktop {
+    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
+        @content;
+    }
+}
+@mixin extra{
+    @media(min-width:$bp-XL+245){
+        @content;
+    }
+}
+
+
+*{
+    font-family: poppins,sans-serif;
+    p{
+        font-size:15px;
+    }
+}
+//start section kontak
+
+.section-kontak{
+    padding-top:80px;
+
+    padding-bottom:125px;
+    
+    .map-wrapper{
+        box-shadow: 0px 1px 2px 2px rgba(220, 220, 220, 0.25);
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 15px 15px 11px 11px;
+    padding-bottom:10px;
+
+  
+
+    }
+}
+.content-wrapper{
+    box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 7px 4px rgba(220, 220, 220, 0.25);
+    border-radius: 12px;
+    padding-top:39px;
+    padding-bottom:19px;
+    .icon{
+        height:50px;
+    }
+    .title{
+        color: #CB2B2B;
+        font-weight: 700;
+    }
+}
+
+// mobile
+
+.form-email{
+    width:98%;
+}
+@include mobile{
+    .content-wrapper:nth-child(1){
+        text-align: center;
+    }
+    .form-email{
+        width:100%;
+    }
+}
+@include tablet(){
+    .content-wrapper:nth-child(1){
+        text-align: center;
+        .icon{
+            width: 50px;
+            height: 50px;
+        }
+        .text-caption{
+            width:180px;
+        }
+    }
+    .form-email{
+        width:100%;
+    }
+ 
+}
+
+// end mobile
+
+
+
+//end section kontak
+
+
+//start section-ask-form
+.section-ask-form{
+    border:1px solid black;
+    padding-top:72px;
+    padding-bottom:87px;
+    background:url('@/../../../public/assets/img/kontak/bg-ask-form.png');
+    background-position: center;
+    background-size: cover;
+    h1{
+        text-align: center;
+        color:white;
+        font-family: poppins,sans-serif;
+    }
+    .form-wrapper{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        form{
+            width:80%;
+            .form-control{
+                border-radius: 5px !important;
+            }
+        }
+    }
+    .btn-send{
+        background-color: #CB2B2B;
+        border:none;
+
+    }
+
+}
+
+// mobile
+@include mobile{
+    .section-ask-form{
+        h1{
+            font-size:30px;
+        }
+        .form-wrapper{
+            form{
+                width:100%;
+            }
+        }
+    }
+}
+
+// end mobile
+
+
+//end section-ask-form

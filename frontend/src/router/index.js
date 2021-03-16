@@ -5,6 +5,7 @@ import Tentang from '../views/Tentang.vue'
 import Produk from '../views/Produk.vue'
 import Pendaftaran from '../views/Pendaftaran.vue'
 import Deposit from '../views/Deposit.vue'
+import Kontak from '../views/Kontak.vue'
 
 
 
@@ -38,6 +39,12 @@ const routes = [
     path: '/deposit',
     name: 'Deposit',
     component:Deposit
+  
+  },
+  {
+    path: '/kontak',
+    name: 'Kontak',
+    component:Kontak
   
   }
 ]
