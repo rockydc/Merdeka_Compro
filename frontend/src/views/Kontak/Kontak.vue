@@ -179,8 +179,9 @@
 </template>
 <script>
 
-import Navbar from '../components/Navbar.vue'
-import Header from '../components/Header.vue'
+
+
+import {Navbar,Header} from '../../components'
 
 export default {
     name:'Kontak',
@@ -192,5 +193,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/Kontak.scss';
+@import '@/views/Kontak/Kontak.scss';
 </style>

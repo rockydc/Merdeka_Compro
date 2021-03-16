@@ -3,23 +3,36 @@
           <b-navbar toggleable="lg">
     <b-navbar-brand v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/Logo-merdeka.png"></b-img></b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse">
+      <template #default ="{ expanded }">
+          <b-icon v-if="expanded" icon="chevron-bar-up" variant="light"></b-icon>
+          <b-icon v-else icon="chevron-bar-down" variant="light"></b-icon>
+          
+      </template>
+
+    </b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
  
-        <b-nav-item href="#" active>Beranda</b-nav-item>
-        <b-nav-item href="#">Tentang Merdeka Pulsa</b-nav-item>
-        <b-nav-item href="#">Produk Merdeka Pulsa</b-nav-item>
-        <b-nav-item href="#">Pendaftaran</b-nav-item>
-        <b-nav-item href="#">Deposit</b-nav-item>
-        <b-nav-item href="#">Hubungi Kami</b-nav-item>
-         <b-nav-item href="#" class="nav-billingual">
-           ID<span class="divider ml-1">|</span>
+        <b-nav-item ><router-link  exact class="router-link"  to="/" >Home</router-link ></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/tentang" >Tentang Merdeka Pulsa</router-link></b-nav-item>
+        <b-nav-item  ><router-link class="router-link" to="/produk">Produk Merdeka Pulsa</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/pendaftaran">Pendaftaran</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/deposit">Deposit</router-link></b-nav-item>
+        <b-nav-item  ><router-link class="router-link" to="/kontak" v-on:click="greet">Hubungi Kami</router-link></b-nav-item>
+        
+        
+         <b-nav-item href="#" class="router-link nav-billingual ">
+           <a class="router-link" to="#">ID</a>
+    
          </b-nav-item>
-          <b-nav-item href="#" class="ml-0 p-0 nav-billingual">EN
+         <span class="divider">|</span>
+      <b-nav-item href="#" class="router-link nav-billingual ">
+           <a class="router-link" to="#">EN</a>
+    
          </b-nav-item>
     
  
@@ -33,8 +46,16 @@ export default {
     name:'Navbar',
     props:{
       isBrand:Boolean
+    },methods:{
+      greet:()=>{
+      console.log(this.$route);
+      }
+    
     }
 }
+
+
+
 </script>
 <style lang="scss" scoped>
 $bp-sm:600px;
@@ -72,17 +93,26 @@ $bp-XL:1200px;
     }
 }
 
+.router-link-active{
+    padding:7px 14px;
+  background:white;
+  border-radius:15.5px;
+  color: #C52D2E!important;
+  text-decoration: none;
+
+}
 .navbar{
     padding-top:15px;
     background:transparent;
     z-index:20;
 
 }
-.nav-item .nav-link{
+.nav-item .nav-link a{
         color:white;
         font-family: poppins,sans-serif;
         font-size:12px;
         margin-left:8px;
+        text-decoration: none;
 
     &:hover{
       color:white;
@@ -94,16 +124,21 @@ $bp-XL:1200px;
     margin-left:-11px;
   }
 
- .navbar-light .navbar-nav .nav-link.active{
+ .navbar-light .navbar-nav .nav-link.active a{
   padding:7px 14px;
   background:white;
   border-radius:15.5px;
-  color: #C52D2E;
+  color: #C52D2E!important;
+  text-decoration: none;
 }
 .nav-billingual>a{
   font-weight: 500;
 }
-
+.divider{
+  color:white;
+  margin-left:-2px;
+  margin-top:9px;
+}
 @include mobile{
   .navbar{
     background-color:#c5202e;
@@ -115,19 +150,25 @@ $bp-XL:1200px;
     color:color;
 
   }
+  .navbar-brand{
+    display:none;
+  }
    .navbar-light .navbar-nav .nav-link.active{
      color:white;
      padding:0;
      background:#c5202e;
    }
- 
-
-     .nav-item:last-child .nav-link{
-    margin-left:8px;
-  }
-    span.divider{
+  .divider{
     display:none;
   }
+
+     .nav-item:last-child .nav-link{
+    margin-left:0px;
+  }
+
+    button.navbar-toggler{
+      border: 1px solid white;
+    }
 }
 
 @include tablet{
@@ -136,6 +177,9 @@ $bp-XL:1200px;
   }
   .nav-item{
     margin-top:20px;
+  }
+   .navbar-brand{
+    display:none;
   }
   .nav-item .nav-link{
     color:color;
@@ -147,11 +191,14 @@ $bp-XL:1200px;
      background:#c5202e;
    }
      .nav-item:last-child .nav-link{
-    margin-left:8px;
+    margin-left:0px;
   }
   span.divider{
     display:none;
   }
+      button.navbar-toggler{
+      border: 1px solid white;
+    }
  
 
 }

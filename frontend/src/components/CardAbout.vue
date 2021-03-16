@@ -17,5 +17,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/CardAbout.scss';
+.CardAbout{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width:200px;
+        height:150px;
+        
+    }
+
+    p{
+        font-family: poppins,sans-serif;
+        font-size:14px;
+        text-align: center;
+    }
+    .caption{
+        font-weight: 400;
+    }
+    .title{
+        margin-top:30px;
+        font-weight: 700;
+    }
+}
 </style>

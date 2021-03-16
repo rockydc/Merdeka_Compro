@@ -17,5 +17,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/CardProduk.scss';
+.CardProduk{
+    img{
+        width:80px;
+        max-height: 110px;
+      
+    }
+    .caption{
+        font-family: poppins,sans-serif;
+        font-weight: 500;
+    }
+}
 </style>

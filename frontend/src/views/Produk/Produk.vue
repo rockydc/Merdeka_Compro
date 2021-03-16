@@ -89,9 +89,8 @@
 
 </template>
 <script>
-import Navbar from '../components/Navbar.vue';
-import Header from '../components/Header.vue';
-import CardProduk from '../components/CardProduk.vue';
+
+import {Navbar,Header,CardProduk} from '../../components';
 
 export default {
     name:'Produk',
@@ -103,5 +102,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '@/assets/scss/Produk.scss';
+@import '@/views/Produk/Produk.scss';
 </style>
