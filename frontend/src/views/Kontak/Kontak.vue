@@ -156,14 +156,9 @@
                            </b-col>
                        </b-row>
                        </b-form-group>
-                      
-                           
-                            
-                       
                         <b-form-input class="form-control mt-4"
                         placeholder="Subjek"
                         >
-
                         </b-form-input>
                         <b-form-textarea class="form-control mt-4" placeholder="Pesan">
 

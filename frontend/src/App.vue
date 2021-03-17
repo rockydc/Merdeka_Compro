@@ -50,10 +50,7 @@ padding:0px;
 margin:0px;
 
 }
-.router-link{
- 
 
-}
 header{
   z-index:10;
     margin-top:-80px;
