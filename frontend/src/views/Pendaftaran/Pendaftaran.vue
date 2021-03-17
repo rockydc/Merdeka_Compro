@@ -1,5 +1,7 @@
 <template>
     <div>
+  
+
         <Navbar/>
         <Header/>
         <b-container class="section-pendaftaran-wrapper">
@@ -65,8 +67,22 @@
                       
                         </b-form>
                     </div>
-                      <b-button class="btn-daftar mt-5" form="form-pendaftaran">Daftar Sekarang</b-button>
+                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-5" form="form-pendaftaran">Daftar Sekarang</b-button>
 
+                                <b-modal id="modal-center" class="" hide-footer hide-header centered title="BootstrapVue" >
+                                        <template #default="{ hide }">
+                                <b-container class="d-flex align-items-center flex-column py-4">
+                                    <b-img width="237" height="166" fluid src="assets/img/bg-modal.png">
+
+                                    </b-img>
+                                    <p class="text-center mt-4">
+                                        Terimakasih telah mendaftar di Merdeka,
+Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 Jam
+                                    </p>
+                                    <b-btn class="btn-daftar mt-2  " variant="danger" @click="hide()">OK</b-btn>
+                                </b-container>
+                                  </template>
+                            </b-modal>
                       <div class="note-wrapper">
                           <b-img fluid src="assets/img/ic-customerservice.png"></b-img>
                             <div class="ml-3 d-flex justify-content-center align-items-center">
@@ -80,6 +96,8 @@
                 </b-col>
             </b-row>
         </b-container>
+  
+           
     </div>
 </template>
 <script>
@@ -130,10 +148,7 @@ export default {
       
 
     }
-      .btn-daftar{
-            background-color:#C52D2E ;
-            width: 100%;
-        }
+
 
         .note-wrapper{
             padding:16px 22px 16px 23px;
@@ -148,7 +163,27 @@ export default {
                 color:#5C5C5C;
             }
 
-        }
-}
 
+        }
+
+ 
+}
+      .btn-daftar{
+            background-color:#C52D2E ;
+            width: 100%;
+            border:none;
+            &:focus{
+                   outline: 0;
+    box-shadow: none!important;
+            }
+        }
+
+
+       .modal-content{
+      
+            p{
+              
+                font-weight:500;
+            }
+        }
 </style>

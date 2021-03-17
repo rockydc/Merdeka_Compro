@@ -12,7 +12,7 @@
           <p>penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
           siap mengawal transaksi Anda. 
                   </p>
-              <b-button class="btn-daftar">
+              <b-button to="/pendaftaran" class="btn-daftar">
                 Daftar sekarang
               </b-button>
         </div>
@@ -65,7 +65,7 @@
                 pelanggan.
             </p>
             
-              <router-link class="info-link" to="/">
+              <router-link class="info-link" to="/tentangmda">
                 Info lebih lanjut...
               </router-link>
             

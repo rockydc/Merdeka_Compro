@@ -1,5 +1,5 @@
 <template>
-     <header >
+     <header class="header-global" >
          
           <b-img class="navbar-background"
           src="@/assets/img/navbar-bg.png"
