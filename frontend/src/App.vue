@@ -51,7 +51,7 @@ margin:0px;
 
 }
 
-header{
+.header-global{
   z-index:10;
     margin-top:-80px;
     .navbar-background{
