@@ -7,7 +7,7 @@
     <b-row class="container-fluid">
       <b-col lg="4"  md="6" sm="12" class="header-text">
         <div>
-          <h1>Mari bergabung ke<br/>  Merdeka Pulsa
+          <h1> {{ $t("JOIN_US") }}     <br/>  Merdeka Pulsa
           </h1>
           <p>penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
           siap mengawal transaksi Anda. 
@@ -42,7 +42,6 @@
           <b-img class="logo-digital2" src="@/assets/img/Logo Merdeka Digital Asia 2.png"></b-img>
           </div>
           </div>
-     
 
         </b-col>
         <b-col lg="6" md="6" sm="12">

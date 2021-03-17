@@ -22,14 +22,14 @@
         <b-nav-item  ><router-link class="router-link" to="/produk">Produk Merdeka Pulsa</router-link></b-nav-item>
         <b-nav-item ><router-link class="router-link" to="/pendaftaran">Pendaftaran</router-link></b-nav-item>
         <b-nav-item ><router-link class="router-link" to="/deposit">Deposit</router-link></b-nav-item>
-        <b-nav-item  ><router-link class="router-link" to="/kontak">Hubungi Kami</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/kontak">Hubungi Kami</router-link></b-nav-item>
         
          <b-nav-item href="#" class="router-link nav-billingual ">
-           <a class="router-link" to="#">ID</a>
+           <a class="router-link" @click="setLocale('id')" to="#">ID</a>
          </b-nav-item>
          <span class="divider">|</span>
         <b-nav-item href="#" class="router-link nav-billingual ">
-           <a class="router-link" to="#">EN</a>
+           <a class="router-link" @click="setLocale('en')" to="#">EN</a>
          </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -41,7 +41,12 @@ export default {
     name:'Navbar',
     props:{
       isBrand:Boolean
-    }    
+    },
+    methods:{
+      setLocale(locale) {
+        this.$i18n.locale = locale;
+      },
+    }
 }
 
 </script>

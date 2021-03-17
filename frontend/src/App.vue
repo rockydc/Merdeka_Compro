@@ -7,7 +7,11 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'app'
+}
+</script>
 <style lang="scss">
 $bp-sm:600px;
 $bp-md:768px;
