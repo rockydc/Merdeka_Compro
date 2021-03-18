@@ -14,3 +14,33 @@ export default {
     name:"Header"
 }
 </script>
+
+<style lang="scss">
+@import '@/assets/scss/global-variable.scss';
+
+.header-global{
+  z-index:10;
+    margin-top:-66px;
+    .navbar-background{
+        width:100%;
+       
+    }
+}
+@include mobile{
+  header{
+    display:none;
+  }
+}
+
+@include tablet{
+  header{
+    display:none;
+  }
+}
+
+@include extra{
+  .header-global{
+    margin-top: -79px;
+  }
+}
+</style>

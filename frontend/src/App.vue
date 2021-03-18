@@ -3,8 +3,11 @@
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
+    </div> -->    
+    <transition name="fade">
+     <router-view/>
+    </transition>
+    
   </div>
 </template>
 <script>
@@ -23,15 +26,12 @@ margin:0px;
 
 }
 
-.header-global{
-  z-index:10;
-    margin-top:-80px;
-    .navbar-background{
-        width:100%;
-       
-    }
+.fade-enter-active, .fade-leave-active {
+  transition: ease-in-out .5s;
 }
-
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 .red-line{
     width:50%;
     height:10px;
@@ -41,16 +41,6 @@ margin:0px;
 
 }
 
-@include mobile{
-  header{
-    display:none;
-  }
-}
 
-@include tablet{
-  header{
-    display:none;
-  }
-}
 
 </style>

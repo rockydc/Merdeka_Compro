@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/scss/global-variable.scss';
 .CardAbout{
    
     margin-top:100px;
@@ -43,4 +44,18 @@ export default {
         font-weight: 700;
     }
 }
+
+@include extra{
+
+    .CardAbout{
+        img{
+            height: 210px;
+        }
+        p{
+            font-size:16px;
+            line-height: 24px;
+        }
+    }
+}
+
 </style>

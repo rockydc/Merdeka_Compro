@@ -6,10 +6,13 @@
         <Header/>
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
-                <b-col class="mb-5  d-flex .justify-content-xl-start justify-content-lg-start justify-content-md-center align-items-center" lg="7" md="12" sm="12" >
-                    <b-img width="570" fluid src="assets/img/bg-register.png">
+                <b-col class="mb-5 right-wrapper d-flex justify-content-xl-start justify-content-lg-start  justify-content-md-center align-items-center" lg="7" md="12" sm="12" >
+                    <div class="right-content-wrapper">
+                                  <b-img class="img-register" fluid src="assets/img/bg-register.png">
 
                     </b-img>
+                    </div>
+              
                 </b-col>
                 <b-col lg="5" md="12" sm="12">
                     <div class="text-center">

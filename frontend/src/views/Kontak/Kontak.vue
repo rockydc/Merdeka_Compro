@@ -12,7 +12,7 @@
 
                         <!-- Maps -->
                         <div class="map-wrapper mt-5">
-                         <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="408" id="gmap_canvas" src="https://maps.google.com/maps?q=Sarana%20Building&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><a href="https://google-map-generator.com"></a></div></div>   
+                         <div class="mapouter"><div class="gmap_canvas"><iframe width="100%"  id="gmap_canvas" src="https://maps.google.com/maps?q=Sarana%20Building&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><a href="https://google-map-generator.com"></a></div></div>   
                          <div class="mt-2 px-4">
                              <p class="m-0"><strong>Sarana Building</strong></p>
                              <div class="map-card">
@@ -53,9 +53,9 @@
                                  <!-- end help desk -->
                             </b-col>
                             <b-col lg="6" md="12" sm="12"> 
-                                <div class=" content-wrapper px-4 mt-5 d-lg-block d-md-flex justify-content-md-center text-left">
+                                <div class=" content-wrapper-sosmed px-4 mt-5">
                                     <!-- Instagram -->
-                                    <div class="d-flex ">
+                                    <div class="icon-wrapper ">
                                         <b-img class="icon" src="assets/img/kontak/ig-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>
@@ -71,7 +71,7 @@
                                     <!-- end Instagram -->
 
                                     <!-- Twitter -->
-                                    <div class="d-flex ml-lg-0 ml-md-5 mt-lg-2 ">
+                                    <div class="icon-wrapper  ml-lg-0 ml-md-0 mt-lg-3 ">
                                         
                                          <b-img class="icon" src="assets/img/kontak/twitter-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
@@ -89,9 +89,9 @@
                                 </div>
                             </b-col>
                             <b-col lg="6" md="12" sm="12">
-                                <div class="content-wrapper px-4 mt-5 d-lg-block d-md-flex justify-content-md-center text-left">
+                                <div class="content-wrapper-sosmed px-4 mt-5 ">
                                     <!-- Telegram -->
-                                    <div class="d-flex ">
+                                    <div class="icon-wrapper  ">
                                         <b-img class="icon" src="assets/img/kontak/telegram-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>
@@ -107,7 +107,7 @@
                                     <!-- end Telegram -->
 
                                     <!-- Whatsapp -->
-                                    <div class="d-flex ml-lg-0 ml-md-5 mt-lg-2 ">
+                                    <div class="icon-wrapper  ml-lg-0 ml-md-0 mt-lg-3 ">
                                             <b-img class="icon" src="assets/img/kontak/wa-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>

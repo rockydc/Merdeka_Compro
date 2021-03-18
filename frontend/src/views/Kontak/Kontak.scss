@@ -17,11 +17,10 @@ p{
     box-sizing: border-box;
     border-radius: 15px 15px 11px 11px;
     padding-bottom:10px;
-
- 
-
-  
-
+   
+    iframe{
+        height: 420px;
+    }
     }
 }
 .content-wrapper{
@@ -31,6 +30,30 @@ p{
     border-radius: 12px;
     padding-top:39px;
     padding-bottom:19px;
+
+    .icon{
+        width:50px;
+        height:50px;
+    }
+    .title{
+        color: #CB2B2B;
+        font-weight: 700;
+    }
+}
+.content-wrapper-sosmed{
+    box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 7px 4px rgba(220, 220, 220, 0.25);
+    border-radius: 12px;
+    padding-top:39px;
+    padding-bottom:19px;
+    .icon-wrapper{
+        display:flex;
+        width: 100%;
+        
+      
+        
+    }
     .icon{
         width:50px;
         height:50px;
@@ -41,20 +64,54 @@ p{
     }
 }
 
+
+
+
+
 // mobile
 
 .form-email{
     width:98%;
 }
 @include mobile{
+    .section-kontak{
+        padding-top: 0;
+    }
     .content-wrapper:nth-child(1){
         text-align: center;
     }
     .form-email{
         width:100%;
     }
+    .content-wrapper-sosmed{
+
+        .icon-wrapper{
+            display:flex;
+            width: 100%;
+            
+            &:nth-child(2){
+              
+                margin-top: 26px!important;
+            }
+            
+            
+        }
+        .icon{
+            width:50px;
+            height:50px;
+        }
+        .title{
+            color: #CB2B2B;
+            font-weight: 700;
+        }
+    }
+    
+    
 }
 @include tablet(){
+    .section-kontak{
+        padding-top: 0;
+    }
     .content-wrapper:nth-child(1){
         text-align: center;
         .icon{
@@ -65,6 +122,10 @@ p{
             width:180px;
         }
     }
+    .content-wrapper-sosmed{
+        display:flex;
+    
+    }
     .form-email{
         width:100%;
     }
@@ -73,7 +134,48 @@ p{
 
 // end mobile
 
-
+@include extra{
+    .section-kontak{
+        .container{
+            max-width: 80%;
+        }
+        .map-wrapper{
+           height: 92%;
+        iframe{
+            height: 470px;
+        }
+        }
+    }
+    .content-wrapper{
+        height: 254px;
+    }
+ 
+    .content-wrapper-sosmed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        flex-direction: column;
+        .icon-wrapper{
+            display:flex;
+            width: 80%;
+            
+            &:nth-child(2){
+                background-color: red;
+                margin-top: 46px!important;
+            }
+            
+        }
+        .icon{
+            width:66px;
+            height:66px;
+        }
+        .title{
+            color: #CB2B2B;
+            font-weight: 700;
+        }
+    }
+}
 
 //end section kontak
 

@@ -41,7 +41,8 @@
         font-size:14px;
     }
     span{
-        color:red;
+        color:#C52D2E;
+        font-weight: 500;
     }
     .btn-daftar{
         background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
@@ -58,6 +59,7 @@
 .section-profile{
     margin-top:150px;
     h1{
+       
         font-weight: bold;
     }
 }
@@ -75,13 +77,13 @@
       }
       .logo-digital2{
         position:absolute;
-        top:30px;
-        width:310px;
-        height:310px;
+        top:50px;
+        width:340px;
+        height:340px;
         z-index:11;
-        -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
-        -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
-        box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
+        -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+        -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+        box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
         border-radius: 20px;
       
       }
@@ -89,9 +91,13 @@
   }
 
   .profile-content{
+      text-align: justify;
       margin-top: 1rem;
+      p{
+          width: 90%;
+      }
       .info-link{
-          color:red;
+          color:#C52D2E;
       }
   }
   //mobile css
@@ -193,18 +199,22 @@
         }
       }
   }
+
+  @include superdesktop{
+      .globe{
+          width: 110%;
+          right:69px;
+      }
+  }
   @include extra{
     .globe{
         width:100%;
-        
         padding:0;
-        .img-globe{
-
-       
+        .img-globe{       
         position:absolute;
         margin-top:0;
-        top:-90px;
-        right:-45px;
+        top:-125px;
+        right:-30.4px;
         width:100%;
         z-index:-5;
         
@@ -216,23 +226,59 @@
       .header-text{
           height: 800px;
           justify-content: end;
+          h1{
+              font-size: 45px;
+              line-height: 67px;
+              font-weight: bold;
+          }
+          p{
+              font-size:20px;
+          }.header-content{
+              margin-top: -5rem;
+              margin-right: -6vw;
+          }
+          .btn-daftar{       
+            font-size: 20px;
+            width: 273px;
+            padding:19px 53px  19px 54px;
+            border-radius: 32.5;
+
+        }
       }
       .section-profile{
         position: static;
-        margin-top:100px;
+        margin-top:80px;
+        h1{
+            font-size: 48px;
+        }
+        
         .logo-digital2{
-            width:400px;
-            height:400px
+            width:416px;
+            height:416px;
             
         }
         .garis-bantu-kiri{
+        width:80%;
          top:0;
-         right:0;
+         right:-15px;
       }
+     
+    
       .profile-content{
+          h1{
+
+            line-height: 72px;
+              font-size: 48px;
+          }
+          p{
+              width:85%;
+              font-size: 20px;
+              font-weight: 500;
+          }
           margin-top:2rem;
           p,.info-link{
               font-size:20px;
+              font-weight: bold;
           }
 
       }

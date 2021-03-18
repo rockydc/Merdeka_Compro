@@ -5,11 +5,29 @@
     padding-bottom:109px;
 }
 .produkWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top:0px;
+    @for $i from 1 through 3{
+        .produk-content{
+            &:nth-child(#{$i}){
+                margin-top:0;
+            }
+        
     
-    .produk-content{
-        margin-top:100px;
-
+        }  
     }
+    @for $i from 4 through 6{
+        .produk-content{
+            &:nth-child(#{$i}){
+                margin-top:100px;
+    
+            }
+         
+        }  
+    }
+ 
 }
 
 
@@ -65,6 +83,35 @@
            
             column-gap: 90px;
 
+        }
+    }
+    
+}
+
+@include extra{
+    .produkWrapper{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding-top:0px;
+    
+        @for $i from 1 through 3{
+            .produk-content{
+                &:nth-child(#{$i}){
+                    margin-top:0;
+                }
+            
+        
+            }  
+        }
+        @for $i from 4 through 6{
+            .produk-content{
+                &:nth-child(#{$i}){
+                    margin-top:120px;
+        
+                }
+             
+            }  
         }
     }
     
