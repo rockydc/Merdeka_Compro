@@ -1,13 +1,11 @@
 @import '@/assets/scss/global-variable.scss';
 
-*{
-    font-family: poppins,sans-serif;
-    p{
-        font-size:15px;
-    }
-}
+
 //start section kontak
 
+p{
+    font-size:15px;
+}
 .section-kontak{
     padding-top:80px;
 
@@ -19,6 +17,8 @@
     box-sizing: border-box;
     border-radius: 15px 15px 11px 11px;
     padding-bottom:10px;
+
+ 
 
   
 
