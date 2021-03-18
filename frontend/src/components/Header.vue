@@ -20,7 +20,7 @@ export default {
 
 .header-global{
   z-index:10;
-    margin-top:-66px;
+    margin-top:-73px;
     .navbar-background{
         width:100%;
        
@@ -40,7 +40,7 @@ export default {
 
 @include extra{
   .header-global{
-    margin-top: -79px;
+    margin-top: -120px;
   }
 }
 </style>
