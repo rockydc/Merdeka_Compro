@@ -45,13 +45,14 @@ $bp-XL:1200px;
     padding-top:15px;
     background:transparent;
     z-index:20;
+    padding-right: 2rem;
 
 }
 .nav-item .nav-link a{
         color:white;
         font-family: poppins,sans-serif;
-        font-size:12px;
-        margin-left:10px;
+        font-size:11px;
+        margin-left:15px;
         text-decoration: none;
 
     &:hover{
@@ -61,14 +62,14 @@ $bp-XL:1200px;
     }
 
    .nav-item:last-child .nav-link{
-    margin-left:-11px;
+    margin-left:-17px;
   }
 
  .navbar-light .navbar-nav .nav-link.active a{
   padding:7px 14px;
   background:white;
   border-radius:15.5px;
-  color: #C52D2E!important;
+  color: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
   text-decoration: none;
 }
 .nav-billingual>a{
@@ -81,13 +82,14 @@ $bp-XL:1200px;
 }
 @include mobile{
   .navbar{
-    background-color:#c5202e;
+    background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
   }
   .nav-item{
     margin-top:20px;
   }
-  .nav-item .nav-link{
-    color:color;
+  .nav-item .nav-link a{
+   
+    margin-left:0;
 
   }
   .navbar-brand{
@@ -96,7 +98,7 @@ $bp-XL:1200px;
    .navbar-light .navbar-nav .nav-link.active{
      color:white;
      padding:0;
-     background:#c5202e;
+     background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
    }
   .divider{
     display:none;
@@ -113,7 +115,8 @@ $bp-XL:1200px;
 
 @include tablet{
   .navbar{
-    background-color:#c5202e;
+    background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+    z-index: -5;
   }
   .nav-item{
     margin-top:20px;
@@ -121,10 +124,12 @@ $bp-XL:1200px;
    .navbar-brand{
     display:none;
   }
-  .nav-item .nav-link{
-    color:color;
+  .nav-item .nav-link a{
+   
+    margin-left:0;
 
   }
+
    .navbar-light .navbar-nav .nav-link.active{
      color:white;
      padding:0;
@@ -147,6 +152,12 @@ $bp-XL:1200px;
   .navbar-nav{
     .nav-item{
       margin-left:50px;
+    }
+    .nav-item .nav-link a{
+      font-size:12.5px;
+    }
+    .nav-item:last-child .nav-link{
+      margin-left:-60px;
     }
   }
 }

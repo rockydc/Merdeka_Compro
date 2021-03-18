@@ -6,12 +6,12 @@
         <Header/>
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
-                <b-col class="mb-5" lg="6" md="12" sm="12">
-                    <b-img fluid-grow src="assets/img/bg-register.png">
+                <b-col class="mb-5  d-flex .justify-content-xl-start justify-content-lg-start justify-content-md-center align-items-center" lg="7" md="12" sm="12" >
+                    <b-img width="570" fluid src="assets/img/bg-register.png">
 
                     </b-img>
                 </b-col>
-                <b-col lg="6" md="12" sm="12">
+                <b-col lg="5" md="12" sm="12">
                     <div class="text-center">
                          <p>Yuk isi form dibawah ini untuk Bergabung ke Merdeka Pulsa</p>
                     </div>
@@ -67,7 +67,7 @@
                       
                         </b-form>
                     </div>
-                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-5" form="form-pendaftaran">Daftar Sekarang</b-button>
+                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">Daftar Sekarang</b-button>
 
                                 <b-modal id="modal-center" class="" hide-footer hide-header centered title="BootstrapVue" >
                                         <template #default="{ hide }">
@@ -85,10 +85,10 @@ Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 
                             </b-modal>
                       <div class="note-wrapper">
                           <b-img fluid src="assets/img/ic-customerservice.png"></b-img>
-                            <div class="ml-3 d-flex justify-content-center align-items-center">
-                                <p style="font-size:12px;">
-                              Untuk informasi lebih lengkap hubungi <strong style="font-size:15px;">021-2951 7763</strong>
-                                <br/>atau Telegram ke <strong style="font-size:15px;color:#C52D2E;">@merdekacs</strong>
+                            <div class="ml-3 d-flex justify-content-center align-items-center mt-2">
+                                <p >
+                              Untuk informasi lebih lengkap hubungi <strong style="font-size:14px;">021-2951 7763</strong>
+                                atau Telegram ke <strong style="font-size:15px;color:#C52D2E;">@merdekacs</strong>
                           </p>
                             </div>
                           
@@ -112,78 +112,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
-.section-pendaftaran-wrapper{
-    padding-top:100px;
-    padding-bottom:134px;
-    p{
-        font-family: poppins,sans-serif;
-        font-weight: 500;
-    }
-
-    .form-wrapper{
-        margin-top:31px;
-        
-        box-sizing: border-box;
-        border-radius: 10px 10px 0px 0px;
-        -webkit-box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
-        -moz-box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
-        box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
-
-        form{
-            background-color: rgba(255,255,255,0.5);
-        }
-        .form-control{
-            border-color: #D8D8D8;
-            border-left:none;
-            border-right: none;
-            padding:20px 25px 20px 25px;
-
-
-        }
-        .form-control::placeholder{
-            color:#B0B0B0;
-        }
-       
-      
-
-    }
-
-
-        .note-wrapper{
-            padding:16px 22px 16px 23px;
-            margin-top:31px;
-            display:flex;
-            background: #FFFFFF;
-            border: 1px solid #ECECEC;
-            box-sizing: border-box;
-            box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.04);
-            border-radius: 10px;
-            p{
-                color:#5C5C5C;
-            }
-
-
-        }
-
- 
-}
-      .btn-daftar{
-            background-color:#C52D2E ;
-            width: 100%;
-            border:none;
-            &:focus{
-                   outline: 0;
-    box-shadow: none!important;
-            }
-        }
-
-
-       .modal-content{
-      
-            p{
-              
-                font-weight:500;
-            }
-        }
+@import 'pendaftaran.scss';
 </style>

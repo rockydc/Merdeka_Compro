@@ -1,7 +1,7 @@
 <template>
     <div >
           <b-navbar toggleable="lg">
-    <b-navbar-brand v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/Logo-merdeka.png"></b-img></b-navbar-brand>
+    <b-navbar-brand style="margin-left:3rem" v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/Logo-merdeka.png"></b-img></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse">
       <template #default ="{ expanded }">
@@ -24,11 +24,11 @@
         <b-nav-item ><router-link class="router-link" to="/deposit">Deposit</router-link></b-nav-item>
         <b-nav-item ><router-link class="router-link" to="/kontak">Hubungi Kami</router-link></b-nav-item>
         
-         <b-nav-item href="#" class="router-link nav-billingual ">
+         <b-nav-item href="#" class="nav-billingual ">
            <a class="router-link" @click="setLocale('id')" to="#">ID</a>
          </b-nav-item>
          <span class="divider">|</span>
-        <b-nav-item href="#" class="router-link nav-billingual ">
+        <b-nav-item href="#" class="nav-billingual ">
            <a class="router-link" @click="setLocale('en')" to="#">EN</a>
          </b-nav-item>
       </b-navbar-nav>

@@ -53,9 +53,9 @@
                                  <!-- end help desk -->
                             </b-col>
                             <b-col lg="6" md="12" sm="12"> 
-                                <div class="content-wrapper px-4 mt-5 d-lg-block d-md-flex justify-content-md-center text-left">
+                                <div class=" content-wrapper px-4 mt-5 d-lg-block d-md-flex justify-content-md-center text-left">
                                     <!-- Instagram -->
-                                    <div class="d-flex">
+                                    <div class="d-flex ">
                                         <b-img class="icon" src="assets/img/kontak/ig-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>
@@ -71,7 +71,7 @@
                                     <!-- end Instagram -->
 
                                     <!-- Twitter -->
-                                    <div class="d-flex ml-lg-0 ml-md-5">
+                                    <div class="d-flex ml-lg-0 ml-md-5 mt-lg-2 ">
                                         
                                          <b-img class="icon" src="assets/img/kontak/twitter-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
@@ -91,7 +91,7 @@
                             <b-col lg="6" md="12" sm="12">
                                 <div class="content-wrapper px-4 mt-5 d-lg-block d-md-flex justify-content-md-center text-left">
                                     <!-- Telegram -->
-                                    <div class="d-flex">
+                                    <div class="d-flex ">
                                         <b-img class="icon" src="assets/img/kontak/telegram-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>
@@ -107,7 +107,7 @@
                                     <!-- end Telegram -->
 
                                     <!-- Whatsapp -->
-                                    <div class="d-flex ml-lg-0 ml-md-5">
+                                    <div class="d-flex ml-lg-0 ml-md-5 mt-lg-2 ">
                                             <b-img class="icon" src="assets/img/kontak/wa-ic.svg"></b-img>
                                         <div class="ml-3 text-caption">
                                             <p>

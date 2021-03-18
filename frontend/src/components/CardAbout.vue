@@ -18,14 +18,15 @@ export default {
 
 <style lang="scss" scoped>
 .CardAbout{
-    margin-top:50px;
+   
+    margin-top:100px;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     img{
-        width:200px;
-        height:150px;
+        max-width:100%;
+        height:170px;
         
     }
 
