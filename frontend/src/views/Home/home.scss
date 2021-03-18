@@ -1,36 +1,4 @@
-$bp-sm:600px;
-$bp-md:768px;
-$bp-L:992px;
-$bp-XL:1200px;
-
-@mixin mobile{
-    @media (min-width:0) and (max-width:#{$bp-sm})
-    {
-        @content;
-    }
-}
-@mixin tablet {
-    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
-    {
-        @content;
-    }
-}
-@mixin dekstop {
-    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
-        @content;
-    }
-        
-}
-@mixin superdesktop {
-    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
-        @content;
-    }
-}
-@mixin extra{
-    @media(min-width:$bp-XL+245){
-        @content;
-    }
-}
+@import '@/assets/scss/global-variable.scss';
 
 *{
     font-family: poppins,sans-serif;
@@ -39,6 +7,7 @@ $bp-XL:1200px;
   }
   .globe{
     
+  
     width:100%;
     
     position:relative;
@@ -46,7 +15,7 @@ $bp-XL:1200px;
     position:absolute;
     margin-top:0;
     top:-100px;
-    right:-45px;
+    right:-30px;
     width:100%;
     z-index:-5;
     }
@@ -56,9 +25,13 @@ $bp-XL:1200px;
   }
   .header-text{
     display:flex;
+   
     align-items: center;
     color:#686868;
     height:500px;
+    .header-content{
+        margin-right: -2rem;
+    }
     h1{
         font-weight: bold;
         color:black;
@@ -90,6 +63,7 @@ $bp-XL:1200px;
 }
   .digital-logo-2-wrapper{
     position: relative;
+
       .garis-bantu-kiri{
         position:absolute;
         left:-15px;
@@ -101,10 +75,15 @@ $bp-XL:1200px;
       }
       .logo-digital2{
         position:absolute;
-        top:0;
-        width:400px;
-        height:400px;
+        top:30px;
+        width:310px;
+        height:310px;
         z-index:11;
+        -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
+        -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
+        box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.7);
+        border-radius: 20px;
+      
       }
       
   }
@@ -123,6 +102,11 @@ $bp-XL:1200px;
     }
     .header-text{
         text-align: center;
+        .header-content{
+        margin-right: -0.5rem;
+  
+        padding-right: 0;
+        }
     }
     .section-profile{
         position:static;
@@ -141,6 +125,9 @@ $bp-XL:1200px;
             text-align: center;
 
         }
+        h1{
+            margin-top:40px;
+        }
     }
   }
   @include tablet{
@@ -151,13 +138,13 @@ $bp-XL:1200px;
         padding:0;
         .img-globe{
 
-       
+        
         position:absolute;
         margin-top:0;
-        top:-80px;
-        right:-45px;
-        width:130%;
-        z-index:-5;
+        top:-60px;
+        right:-30px;
+        width:120%;
+        z-index: 10;
         
         }
        
@@ -166,9 +153,25 @@ $bp-XL:1200px;
       }
       .header-text{
           height:300px;
+          .header-content{
+            margin-right: 0rem;
+        }
           h1{
-              font-size:27px;
+              font-size:25px;
           }
+          p{
+              font-size:12px;
+          }
+          .btn-daftar{
+
+            padding:12px 31px  12px 31px;
+            border:none;
+            &:focus{
+                outline: 0;
+                box-shadow: none!important;
+            }
+            
+        }
       }
       .section-profile{
           position: static;
@@ -212,13 +215,14 @@ $bp-XL:1200px;
       }
       .header-text{
           height: 800px;
+          justify-content: end;
       }
       .section-profile{
         position: static;
         margin-top:100px;
         .logo-digital2{
-            width:500px;
-            height:500px
+            width:400px;
+            height:400px
             
         }
         .garis-bantu-kiri{
@@ -227,7 +231,7 @@ $bp-XL:1200px;
       }
       .profile-content{
           margin-top:2rem;
-          p{
+          p,.info-link{
               font-size:20px;
           }
 

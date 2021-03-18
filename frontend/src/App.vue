@@ -13,40 +13,8 @@ export default {
 }
 </script>
 <style lang="scss">
-$bp-sm:600px;
-$bp-md:768px;
-$bp-L:992px;
-$bp-XL:1200px;
+@import '@/assets/scss/global-variable.scss';
 
-@mixin mobile{
-    @media (min-width:0) and (max-width:#{$bp-sm})
-    {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
-    {
-        @content;
-    }
-}
-@mixin dekstop {
-    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
-        @content;
-    }
-        
-}
-@mixin superdesktop {
-    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
-        @content;
-    }
-}
-@mixin extra{
-    @media(min-width:$bp-XL+245){
-        @content;
-    }
-}
 
 *{
 

@@ -1,6 +1,9 @@
 <template>
     <div class="CardProduk">
-        <b-img :src="'assets/img/produk/' + gambar"></b-img>
+        <div class="img-produk-wrap">
+             <b-img :src="'assets/img/produk/' + gambar"></b-img>
+        </div>
+       
         <p class="title">{{title}}</p>
         <p class="caption">{{caption}}</p>
     </div>
@@ -18,6 +21,14 @@ export default {
 
 <style lang="scss" scoped>
 .CardProduk{
+    .img-produk-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        width:100%;
+        height:110px;
+    }
     img{
         width:80px;
         max-height: 110px;
