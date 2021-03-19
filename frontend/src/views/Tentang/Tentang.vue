@@ -2,15 +2,15 @@
     <div>
         <Navbar/>
        
-        <Header/>
+        <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" title="Tentang Merdeka Pulsa"/>
         <section class="section-merdeka">
-                    <div class="container-fluid " >
-                            <b-row class="">
+                    <div class="container-fluid">
+                            <b-row >
                                 <b-col lg="4" xl="3" class="d-flex justify-content-center align-items-center pt-4">
                                     <b-img class="logo-about"  src="assets/img/about/logo-about.png"></b-img>
                                 </b-col>
                                 <b-col lg="8" xl="9">
-                                    <div class="container-fluid">
+                                    <div class="container-fluid text-content">
                                         <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
                                         <p>Merdeka Pulsa menyediakan produk-produk digital untuk gaya hidup merdeka. Merdeka berselancar di internet, berkomunikasi, mudah isi ulang listrik, melakukan pembayaran layanan air, kartu kredit bahkan nge game tanpa batas.<br/><br/>Kami menyediakan layanan yang mudah dan aman, mulai dari registrasi, transaksi dan layanan purna jual yang setia menemani Anda.
 

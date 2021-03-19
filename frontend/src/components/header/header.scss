@@ -1,0 +1,68 @@
+@import '@/assets/scss/global-variable.scss';
+
+  .header-global{
+    z-index:-5;
+    position: relative;
+    margin-top: -4.167vw;
+    
+        .navbar-background{
+        width:100%;
+       
+    }
+    .bottom-left {
+        font-family: poppins;
+        font-size: calc(28px + 0.20833vw);
+        font-weight: 500;
+        color:white;
+        position: absolute;
+        bottom: 2.8646833vw;
+        left: calc(8% - 0.1rem);
+      }
+  }
+  
+
+
+@include superdesktop{
+.header-global{
+    margin-top:-11.78vh;
+    
+    .navbar-background{
+        width:100%;
+       
+    }
+    .bottom-left{
+        font-size: calc(22px + 0.20833vw);
+    }
+}
+}
+
+@include dekstop{
+.header-global{
+  
+    margin-top:-70px;
+    .navbar-background{
+        width:100%;
+       
+    }
+    .bottom-left{
+        font-size: calc(20px + 0.20833vw);
+    }
+}
+}
+
+@include mobile{
+  header{
+    display:none;
+  }
+}
+
+@include tablet{
+  header{
+    display:none;
+  }
+}
+@include tablet-xl{
+  header{
+    display:none;
+  }
+}

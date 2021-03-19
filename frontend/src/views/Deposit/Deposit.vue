@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <Header/>
+        <Header title="Deposit"/>
 
         <b-container class="section-donation">
             <p>Menerima deposit dari 3 channel Bank yaitu MANDIRI, BCA, dan BRI.</p>

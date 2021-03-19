@@ -1,0 +1,202 @@
+@import '@/assets/scss/global-variable.scss';
+
+.router-link-active{
+    padding:10px 17px;
+    background:white;
+    border-radius:15.5px;
+    color: #C52D2E!important;
+    text-decoration: none;
+    transition: ease-in-out 0.5;
+  
+  }
+.navbar{
+    padding-top: 1.5625vw;
+    .navbar-brand{
+        img{
+
+            width: calc(50px + 1.3020833vw);
+            height:  calc(50px + 2.6681vh);
+            margin-left:calc(1rem + 4.6875vw);
+        }
+    }
+
+
+    .navbar-nav{
+      
+        width: 55.83vw ;
+        margin-right: 2.3vw;
+        display:flex;
+        justify-content: space-between;
+
+        .nav-item{
+            .nav-link{
+                a{
+                    font-family: poppins;
+                    font-size:calc(12px + 0.155vw);
+                    color:white;
+                    &:hover{
+                        text-decoration: none;
+                        opacity: 0.7;
+
+                    }
+                    
+                }
+
+            }
+        }
+
+        .divider{
+            color:white;
+            margin-top: 9px;
+        }
+    }
+}
+@include mobile{
+    .navbar{
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+      }
+      .navbar-brand{
+        display:none;
+      }
+
+      .navbar-nav{
+        margin: 20px;
+        border:none !important;
+        width: 100% ;
+        margin-right:0;
+        margin-left:0!important;
+        display:block;
+      
+        .divider{
+            margin-left:5px;
+            margin-right: 5px;
+        }
+       
+    }
+}
+
+@include tablet{
+    .navbar{
+        
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+      }
+      .navbar-brand{
+        display:none;
+      }
+
+      .navbar-nav{
+        margin: 20px;
+        border:none !important;
+        width: 100% ;
+        margin-right:0;
+        margin-left:0!important;
+        display:block;
+      
+        .divider{
+            margin-left:5px;
+            margin-right: 5px;
+        }
+       
+    }
+}
+
+@include tablet-xl{
+    .navbar{
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+
+        .navbar-brand{
+            display: none;
+      }
+
+      }
+
+      .navbar-nav{
+        
+        border:none !important;
+        width: 100% ;
+        margin-right:0;
+        margin-left:0!important;
+        display:block;
+      
+        .divider{
+            margin-left:5px;
+            margin-right: 5px;
+        }
+       
+    }
+}
+
+@include dekstop{
+    .router-link-active{
+        padding:5px 12px;
+      
+      
+      }
+    .navbar{
+        padding-top: 1.5625vw;
+        .navbar-brand{
+            img{
+    
+                width: calc(40px + 1.3020833vw);
+                height: calc(40px + 1.3020833vw);
+                margin-left:calc(1rem + 4.6875vw);
+            }
+        }
+    
+    
+        .navbar-nav{
+           
+            width: 61.83vw ;
+            margin-right: 0.5vw;
+            display:flex;
+            justify-content: space-between;
+    
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-size:calc(8.5px + 0.155vw);
+                        color:white;
+
+                        
+                    }
+    
+                }
+            }
+    
+            .divider{
+                color:white;
+                margin-top: 9px;
+            }
+        }
+    }
+  
+}
+@include superdesktop{
+    .router-link-active{
+        padding:7px 14px;
+      
+      
+      }
+    .navbar{
+
+        .navbar-nav{
+            width: 55.83vw ;
+            margin-right: 2vw;
+            .nav-item{
+                .nav-link{
+                    a 
+                    {
+                        font-size:calc(10px + 0.155vw);
+                       
+               
+                        
+                    }
+    
+                }
+            }
+    
+         
+        }
+    }
+  
+}

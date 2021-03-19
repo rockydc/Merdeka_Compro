@@ -1,6 +1,6 @@
 <template>
     <div >
-          <b-navbar toggleable="lg">
+          <b-navbar  toggleable="lg">
     <b-navbar-brand  v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/Logo-merdeka.png"></b-img></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse">
@@ -25,14 +25,16 @@
         <b-nav-item ><router-link class="router-link" to="/pendaftaran">Pendaftaran</router-link></b-nav-item>
         <b-nav-item ><router-link class="router-link" to="/deposit">Deposit</router-link></b-nav-item>
         <b-nav-item ><router-link class="router-link" to="/kontak">Hubungi Kami</router-link></b-nav-item>
-         
-         <b-nav-item href="#" class="nav-billingual ">
-           <a class="router-link" @click="setLocale('id')" to="#">ID</a>
-         </b-nav-item>
-         <span class="divider">|</span>
-        <b-nav-item href="#" class="nav-billingual ">
-           <a class="router-link" @click="setLocale('en')" to="#">EN</a>
-         </b-nav-item>
+         <div style=" display:flex;">
+            <b-nav-item href="#" class="nav-billingual ">
+                    <a class="router-link" @click="setLocale('id')" to="#">ID</a>
+                  </b-nav-item>
+                  <span class="divider">|</span>
+                  <b-nav-item href="#" class="nav-billingual ">
+                    <a class="router-link" @click="setLocale('en')" to="#">EN</a>
+                  </b-nav-item>
+         </div>
+      
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -53,5 +55,5 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-@import "Navbar.scss";
+@import "Navbar-remake.scss";
 </style>

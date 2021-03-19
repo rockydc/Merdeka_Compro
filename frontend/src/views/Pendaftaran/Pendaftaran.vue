@@ -3,7 +3,7 @@
   
 
         <Navbar/>
-        <Header/>
+        <Header title="Pendaftaran" />
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
                 <b-col class="mb-5 right-wrapper d-flex justify-content-xl-start justify-content-lg-start  justify-content-md-center align-items-center" lg="7" md="12" sm="12" >

@@ -3,7 +3,7 @@
         
 
         <Navbar/>
-        <Header/>
+        <Header />
 
         <div class="text-center section-produk-content">
            <div class="d-inline-flex flex-column align-items-center">
@@ -64,7 +64,8 @@
                       <div class="mt-3 red-line"></div>
             </div>
          
-            <b-container class="operator-wrapper">
+         <div class=" operator-container">
+           <div class="operator-wrapper">
                 
                 <b-img  width="183" height="57" src="assets/img/produk/telkomsel.svg"></b-img>
                 <b-img src="assets/img/produk/xl.svg"></b-img>
@@ -79,7 +80,10 @@
            
              
                 
-            </b-container>
+            </div>
+
+         </div>
+ 
 
             <b-img class="elipse" src="assets/img/produk/elipse.png">
 

@@ -89,21 +89,25 @@
 
     .section-merdeka{
         margin-top:0;
-        padding-top:129px;
+        padding-top:80px;
         padding-left:100px ;
         padding-right: 100px;
         padding-bottom:129px;
         background-color: rgba(0, 0, 0, 0.03);
- 
+    
         .logo-about{
             width:319px;
             height:319px;
         }
-        p{
-            font-family: poppins,sans-serif;
-            font-size:22px;
-            text-align:justify;
+        .text-content{
+            padding-left:50px;
+            p{
+                font-family: poppins,sans-serif;
+                font-size:22px;
+                text-align:justify;
+            }
         }
+   
     
     }
     .about-kenapa-section{

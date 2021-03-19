@@ -2,7 +2,7 @@
     
     <div>
         <Navbar/>
-        <Header/>
+        <Header title="Hubungi Kami"/>
     <!-- Start Section Kontak -->
         <div class="section-kontak">
 

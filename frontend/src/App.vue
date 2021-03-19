@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->    
-    <transition name="fade">
+    <transition name="scale" mode="out-in">
      <router-view/>
     </transition>
     
@@ -26,12 +26,6 @@ margin:0px;
 
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: ease-in-out .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 .red-line{
     width:50%;
     height:10px;
@@ -41,6 +35,31 @@ margin:0px;
 
 }
 
+// animation transition
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+// .slide-custom-enter-active{
+
+//   transition: all .3s ease-in;
+
+// }
+// .slide-custom-leave-active{
+//   transition:ease-in-out .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+// }
+
+// .slide-custom-enter, .slide-custom-leave-to{
+//  transform: translateX(10px);
+//   opacity:0;
+// }
 
 
 </style>
