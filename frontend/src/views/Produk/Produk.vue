@@ -3,7 +3,7 @@
         
 
         <Navbar/>
-        <Header />
+        <Header title="Produk Merdeka Pulsa"/>
 
         <div class="text-center section-produk-content">
            <div class="d-inline-flex flex-column align-items-center">

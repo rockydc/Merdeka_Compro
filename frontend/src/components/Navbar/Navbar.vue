@@ -1,7 +1,7 @@
 <template>
     <div >
           <b-navbar  toggleable="lg">
-    <b-navbar-brand  v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/Logo-merdeka.png"></b-img></b-navbar-brand>
+    <b-navbar-brand  v-show="isBrand" href="#"><b-img width="50" height="50"  src="@/assets/img/logo-merdeka-baru.png"></b-img></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse">
       <template #default ="{ expanded }">

@@ -66,7 +66,11 @@
             }
             p{
                 color:#5C5C5C;
-                font-size:12px;
+                font-size:15px;
+            }
+            .telegram{
+                color:#C52D2E;
+                font-size:15px;
             }
 
 
@@ -76,6 +80,7 @@
 }
       .btn-daftar{
             background-color:#C52D2E ;
+            box-shadow: 0px 4px 10px rgba(203, 43, 43, 0.24);
             width: 100%;
             border:none;
             &:focus{
@@ -93,12 +98,132 @@
             }
         }
 
+@include mobile{
+    .section-pendaftaran-wrapper{
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+}
+    }
+
+@include tablet{
+    .section-pendaftaran-wrapper{
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+}
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
+    }
+    @include tablet-xl{
+    .section-pendaftaran-wrapper{
+             .form-wrapper{
+          }
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            height:60px;
+        }
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+}
+    
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
+    }
+@include dekstop{
+    .section-pendaftaran-wrapper{
+          .form-wrapper{
+          }
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            height:50px;
+        }
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+}
+    }
 @include extra{
     .container{
         max-width: 80%;
     }
+    
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
     .section-pendaftaran-wrapper{
-        
+         .form-wrapper{
+ 
+
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            border: 1px solid #D8D8D8;
+            border-top:none;
+            height:62px;
+            border-left:none;
+            border-right: none;
+            padding:20px 25px 20px 25px;
+
+
+        }
+        .form-control::placeholder{
+            color:#B0B0B0;
+        }
+       
+      
+
+    }
+        .note-wrapper{
+            p{
+                font-size:18px;
+            }
+            .telegram{
+                font-size:18px;
+                color:#C52D2E;
+            }
+        }
     .right-wrapper{
         
 
@@ -107,4 +232,5 @@
         }
     }
     }
+
 }

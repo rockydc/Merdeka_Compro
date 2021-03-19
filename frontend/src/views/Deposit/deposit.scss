@@ -5,16 +5,19 @@
     padding-top:110px;
     padding-bottom:200px;
     p{
+        font-size:14px;
         font-weight: 700;
     }
 }
 .bank-account{
+    margin-top:48px;
+    width:calc(350px + 3.25vw);
    box-shadow: 0px 7px 10px rgba(181, 181, 181, 0.25);
    border-radius: 9px;
    padding:35px 32px ;
  
    p{
-       font-size:12px;
+       font-size:14px;
        font-family: poppins,sans-serif;
        font-weight: 500;
    }
@@ -28,14 +31,19 @@
     }
 
 .bank-wrapper{
-    margin-top:48px;
+  
     display: flex;
     width: 100%;
     justify-content: space-between;
+    
+    flex-wrap: wrap;
    
     
 
 }
+ .container{
+        max-width: 90%;
+    }
 
 @include mobile{
     .section-donation{
@@ -77,7 +85,33 @@
     .bank-wrapper{
         text-align: center;
         
-        height:700px;
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bank-account{
+        width:80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@include tablet-xl{
+
+    .section-donation{
+        padding-top: 50px;
+        p{
+            text-align: center;
+        }
+    }
+    .bank-wrapper{
+        text-align: center;
+        
+       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -93,6 +127,14 @@
 }
 
 @include extra{
+    .section-donation{
+        p{
+            font-size:18px;
+        }
+    }
+    .bank-account{
+         width:461px;
+    }
     .container{
         max-width: 80%;
     }

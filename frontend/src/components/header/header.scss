@@ -13,19 +13,31 @@
         font-family: poppins;
         font-size: calc(28px + 0.20833vw);
         font-weight: 500;
-        color:white;
+        color:#C52D2E;
         position: absolute;
-        bottom: 2.8646833vw;
-        left: calc(8% - 0.1rem);
+        bottom: 3.125vw;
+        left: calc(8.9% - 0.1rem);
       }
   }
   
-
+@include ultradesktop{
+.header-global{
+    margin-top:-4.8vw;
+     z-index:5;
+    .navbar-background{
+        width:100%;
+       
+    }
+    .bottom-left{
+        font-size: calc(22px + 0.20833vw);
+    }
+}
+}
 
 @include superdesktop{
 .header-global{
-    margin-top:-11.78vh;
-    
+    margin-top:-4.8vw;
+     z-index:5;
     .navbar-background{
         width:100%;
        
@@ -38,8 +50,8 @@
 
 @include dekstop{
 .header-global{
-  
-    margin-top:-70px;
+   z-index:5;
+    margin-top:-52px;
     .navbar-background{
         width:100%;
        

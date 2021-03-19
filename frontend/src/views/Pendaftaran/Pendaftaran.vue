@@ -6,8 +6,8 @@
         <Header title="Pendaftaran" />
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
-                <b-col class="mb-5 right-wrapper d-flex justify-content-xl-start justify-content-lg-start  justify-content-md-center align-items-center" lg="7" md="12" sm="12" >
-                    <div class="right-content-wrapper">
+                <b-col class="mb-5 right-wrapper" lg="7" md="12" sm="12" >
+                    <div class="right-content-wrapper ">
                                   <b-img class="img-register" fluid src="assets/img/bg-register.png">
 
                     </b-img>
@@ -91,7 +91,7 @@ Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 
                             <div class="ml-3 d-flex justify-content-center align-items-center mt-2">
                                 <p >
                               Untuk informasi lebih lengkap hubungi <strong style="font-size:14px;">021-2951 7763</strong>
-                                atau Telegram ke <strong style="font-size:15px;color:#C52D2E;">@merdekacs</strong>
+                                atau Telegram ke <strong class="telegram" >@merdekacs</strong>
                           </p>
                             </div>
                           

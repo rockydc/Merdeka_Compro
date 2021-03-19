@@ -1,7 +1,7 @@
 <template>
   <div>
    
-    <Navbar isBrand/>
+    <Navbar :class="'navbar-home text-white'" isBrand/>
     
 <!-- Hero Section -->
 
