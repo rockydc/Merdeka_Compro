@@ -2,20 +2,24 @@
 
 .router-link-active{
     padding:10px 17px;
-    background:white;
+    // background:white;
+    background:linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
     border-radius:15.5px;
-    color: #C52D2E!important;
+    // color: #C52D2E!important;
+    color:white !important;
     text-decoration: none;
     transition: ease-in-out 0.5;
   
   }
+
 .navbar{
+    z-index:6;
     padding-top: 1.5625vw;
     .navbar-brand{
         img{
 
-            width: calc(50px + 1.3020833vw);
-            height:  calc(50px + 2.6681vh);
+            width: calc(52px + 5.0520833vw);
+            height:  calc(50px + 5.763073639274279vh);
             margin-left:calc(1rem + 4.6875vw);
         }
     }
@@ -33,7 +37,8 @@
                 a{
                     font-family: poppins;
                     font-size:calc(12px + 0.155vw);
-                    color:white;
+                    color:#636363;
+
                     &:hover{
                         text-decoration: none;
                         opacity: 0.7;
@@ -46,10 +51,34 @@
         }
 
         .divider{
-            color:white;
+            color:#636363;
             margin-top: 9px;
         }
     }
+}
+
+
+.navbar-home{
+.router-link-active{
+            background:white;
+            color: #C52D2E!important;
+        
+        }
+.navbar-nav{
+
+
+.nav-item{
+    .nav-link{
+        a{
+            color:white;
+        }
+    }
+    }
+            .divider{
+            color:white;
+            
+        }
+}
 }
 @include mobile{
     .navbar{
@@ -127,26 +156,28 @@
 }
 
 @include dekstop{
+    
     .router-link-active{
         padding:5px 12px;
       
       
       }
     .navbar{
+       z-index:6;
         padding-top: 1.5625vw;
         .navbar-brand{
             img{
     
-                width: calc(40px + 1.3020833vw);
-                height: calc(40px + 1.3020833vw);
+                width: calc(40px + 5.0520833vw);
+                height: calc(30px + 5.76307363929vh);
                 margin-left:calc(1rem + 4.6875vw);
             }
         }
     
     
         .navbar-nav{
-           
-            width: 61.83vw ;
+            
+            width: calc(60.83vw + 1rem) ;
             margin-right: 0.5vw;
             display:flex;
             justify-content: space-between;
@@ -154,10 +185,7 @@
             .nav-item{
                 .nav-link{
                     a{
-                        font-size:calc(8.5px + 0.155vw);
-                        color:white;
-
-                        
+                        font-size:calc(8.5px + 0.155vw);  
                     }
     
                 }
@@ -178,9 +206,10 @@
       
       }
     .navbar{
-
+     z-index:6;
+          padding-top: calc(1.3625vw + 5px);
         .navbar-nav{
-            width: 55.83vw ;
+            width: calc(57.83vw + 14px) ;
             margin-right: 2vw;
             .nav-item{
                 .nav-link{
@@ -190,6 +219,35 @@
                        
                
                         
+                    }
+    
+                }
+            }
+    
+         
+        }
+    }
+  
+}
+
+@include ultradesktop{
+    .router-link-active{
+        padding:7px 14px;
+      
+      
+      }
+    .navbar{
+     z-index:6;
+          padding-top: calc(1.3625vw + 5px);
+        .navbar-nav{
+            width: calc(60.83vw + 14px) ;
+            margin-right: 2.5vw;
+            .nav-item{
+                .nav-link{
+                    a 
+                    {
+                        font-size:calc(12px + 0.155vw);
+                       
                     }
     
                 }

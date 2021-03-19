@@ -40,7 +40,12 @@ $merah: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
         
 }
 @mixin superdesktop {
-    @media(min-width:$bp-XL+1) and(max-width:1919px){
+    @media(min-width:$bp-XL+1) and(max-width:1439px){
+        @content;
+    }
+}
+@mixin ultradesktop{
+        @media(min-width:1440px) and(max-width:1919px){
         @content;
     }
 }

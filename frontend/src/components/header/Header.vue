@@ -2,7 +2,7 @@
      <header class="header-global" >
          
           <b-img class="navbar-background"
-          src="@/assets/img/navbar-bg.png"
+          src="@/assets/img/bg-header-baru.png"
           >
 
           </b-img>

@@ -18,7 +18,6 @@
         display:flex;
         padding-left:6.25vw;
         align-items: center;
-      
         flex:1.5;
         height: 80vh;
         .header-content{
@@ -56,7 +55,7 @@
         .img-globe{
           position:relative;
             width:100%;
-            top:-13.14vh;
+            top:-16.24vh;
             right:0;
             z-index:-5;
             
@@ -136,9 +135,10 @@
   }
 
   
-@include superdesktop{
+@include ultradesktop{
     .hero{
         .header-text{
+             flex:1.1;
             .header-content{
 
                 h1{
@@ -163,8 +163,95 @@
            
              .img-globe{
              
-                 width:100%;
-                 top:-17.9vh;
+                 width:calc(100%);
+                 top:calc(-1* (8.955vw + 1rem));
+                 right:0;
+                 z-index:-5;
+                 
+             }
+         }
+         }
+    }
+  
+
+
+.section-profile-wrapper{
+    height: 400px;
+}
+  .garis-bantu-kiri{
+    width: calc(350px + 7.8125vw);
+    left:0;
+    top:-150px;
+}
+  .section-profile{
+    top:0;
+    width: 100%;
+    display:flex;
+    padding-left:calc(50px + 2.60416vw );
+    padding-right: calc(50px + 2.60416vw);
+    .logo-wrapper{
+        .logo{
+            width:calc(250px + 6.04167vw);
+            height: calc(250px + 6.04167vw);
+            z-index:11;
+            border-radius: 20px;
+        }
+    }
+    .profile-content{
+        flex:2;
+    
+        display: flex;
+        align-items: center;
+  
+        text-align: left;
+        h1{
+            font-size: calc(1rem + 0.9375vw );
+            line-height: calc(20px + 1.145833vw);
+            font-weight: bold;
+        }
+        p{
+            font-size:14px;
+        }
+        .info-link{
+            font-size: 14px;
+        }
+    }
+    
+  }
+}
+
+
+  
+@include superdesktop{
+    .hero{
+        .header-text{
+             flex:1.1;
+            .header-content{
+
+                h1{
+                    font-size:35px;
+                    line-height: 50px;
+                }
+                .p-text{
+                    font-size:16px;
+                }
+
+                .btn-daftar{
+                    width: auto;
+                    padding: 15px 49px 15px 50px;
+                    font-size:16px;
+                }
+            }
+        }
+        .globe-wrapper{
+       
+            .globe{
+             width:100%;
+           
+             .img-globe{
+             
+                 width:calc(100%);
+                 top:calc(-1* (9.955vw + 1.2rem));
                  right:0;
                  z-index:-5;
                  
@@ -223,6 +310,7 @@
 @include dekstop{
     .hero{
         .header-text{
+             flex:1.25;
             .header-content{
 
                 h1{
@@ -248,7 +336,7 @@
              .img-globe{
              
                  width:100%;
-                 top:-16.8vh;
+                 top:-13.8vh;
                  right:0;
                  z-index:-5;
                  
