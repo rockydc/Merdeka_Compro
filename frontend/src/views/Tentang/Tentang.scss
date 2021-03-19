@@ -22,6 +22,12 @@
     
     position:relative;
     padding-bottom:270px;
+    display: flex;
+        justify-content: center;
+    
+        .wrapper{
+            width: 90% !important;
+        }
     .kenapa-wrapper{
         display:flex;
         align-items: center;
@@ -80,11 +86,42 @@
     }
 }
 @include extra{
+
+    .section-merdeka{
+        margin-top:0;
+        padding-top:80px;
+        padding-left:100px ;
+        padding-right: 100px;
+        padding-bottom:129px;
+        background-color: rgba(0, 0, 0, 0.03);
+    
+        .logo-about{
+            width:319px;
+            height:319px;
+        }
+        .text-content{
+            padding-left:50px;
+            p{
+                font-family: poppins,sans-serif;
+                font-size:22px;
+                text-align:justify;
+            }
+        }
+   
+    
+    }
     .about-kenapa-section{
+        display: flex;
+        justify-content: center;
+        padding-top:0px;
+        .wrapper{
+            width: 80% !important;
+        }
+     
         .stgh-lingkaran{
-            width: 500px;
-            top:-200px;
-            left:-400px;
+            width: 659px/2;
+            top:-100px;
+            left:0px;
         }
     }
 }

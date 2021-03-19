@@ -2,9 +2,20 @@
 
 
 .section-pendaftaran-wrapper{
+    
     padding-top:100px;
     padding-bottom:134px;
- 
+    display: flex;
+    justify-content: center;
+      
+    .right-wrapper{
+        
+
+        .right-content-wrapper{
+         padding-right: 70px;
+        }
+    }
+
     p{
         font-family: poppins,sans-serif;
         font-weight: 500;
@@ -23,7 +34,9 @@
             background-color: rgba(255,255,255,0.5);
         }
         .form-control{
-            border-color: #D8D8D8;
+            border: 1px solid #D8D8D8;
+            border-top:none;
+         
             border-left:none;
             border-right: none;
             padding:20px 25px 20px 25px;
@@ -79,3 +92,19 @@
                 font-weight:500;
             }
         }
+
+@include extra{
+    .container{
+        max-width: 80%;
+    }
+    .section-pendaftaran-wrapper{
+        
+    .right-wrapper{
+        
+
+        .right-content-wrapper{
+         padding-right: 152px;
+        }
+    }
+    }
+}

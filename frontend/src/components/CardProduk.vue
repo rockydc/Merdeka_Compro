@@ -20,18 +20,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/scss/global-variable.scss';
 .CardProduk{
+    width:100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .img-produk-wrap{
+        
+        height:200px;
         display: flex;
         align-items: center;
         justify-content: center;
      
-        width:100%;
-        height:110px;
+        
+        
     }
     img{
-        width:80px;
-        max-height: 110px;
+        width:clamp(65px,100%,176px);   
       
     }
     .caption{

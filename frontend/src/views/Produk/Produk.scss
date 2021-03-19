@@ -4,12 +4,31 @@
     padding-top:107px;
     padding-bottom:109px;
 }
-.produkWrapper{
-    
-    .produk-content{
-        margin-top:100px;
 
+.produkWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top:0px;
+    @for $i from 1 through 3{
+        .produk-content{
+            &:nth-child(#{$i}){
+                margin-top:0;
+            }
+        
+    
+        }  
     }
+    @for $i from 4 through 6{
+        .produk-content{
+            &:nth-child(#{$i}){
+                margin-top:100px;
+    
+            }
+         
+        }  
+    }
+ 
 }
 
 
@@ -20,10 +39,19 @@
     background: rgba(225, 225, 225, 0.17);
     position:relative;
     padding-bottom:110px;
+
+    .operator-container{
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .operator-wrapper{
+       
         padding-top:80px;
         display:grid;
-        width:100%;
+        width:90%;
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(2,1fr);
         row-gap: 100px;
@@ -66,6 +94,55 @@
             column-gap: 90px;
 
         }
+    }
+    
+}
+
+@include extra{
+    .produkWrapper{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        padding-top:0px;
+    
+        @for $i from 1 through 3{
+            .produk-content{
+                &:nth-child(#{$i}){
+                    margin-top:0;
+                }
+            
+        
+            }  
+        }
+        @for $i from 4 through 6{
+            .produk-content{
+                &:nth-child(#{$i}){
+                    margin-top:120px;
+        
+                }
+             
+            }  
+        }
+    }
+
+    .section-operator{
+        .operator-container{
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            .operator-wrapper{
+                width: 70%;
+            }
+            .elipse{
+                width:340px;
+                position: absolute;
+                right:0;
+                bottom:0;
+        
+            }
+        }
+
     }
     
 }

@@ -4,7 +4,32 @@
     <Navbar isBrand/>
     
 <!-- Hero Section -->
-    <b-row class="container-fluid">
+
+  <section class="hero">
+    
+    <div class="header-text ">
+        <div class="header-content ">
+                
+                <h1> {{ $t("JOIN_US") }}     <br/>  Merdeka Pulsa
+                </h1>
+                <p class="p-text">penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
+                siap mengawal transaksi Anda. 
+                </p>
+                    <b-button to="/pendaftaran" class="btn-daftar">
+                      Daftar sekarang
+                    </b-button>
+              </div>
+    </div>
+    <div class="globe-wrapper ">
+
+      <div class="globe">
+        <b-img class="img-globe" src="@/assets/img/globe.png"></b-img>
+      </div>
+    </div>
+
+  </section>
+
+    <!-- <b-row class="container-fluid">
       <b-col lg="4"  md="6" sm="12" class="header-text ">
         <div class="container  header-content ">
           
@@ -23,17 +48,62 @@
         
       </b-col>
       <b-col lg="8"  md="6" sm="12" class="px-0">
-           <div class="globe">
+      <div class="globe">
       <b-img class="img-globe" src="@/assets/img/globe.png">
       </b-img>
   
     </div>
       </b-col>
-    </b-row>
+    </b-row> -->
   <!-- end Hero Section -->
 
     <!-- Section profile -->
-    <div class="container-fluid section-profile">
+
+<div class="section-profile-wrapper ">
+
+<b-img class="garis-bantu-kiri" src="@/assets/img/garis-bantu-kiri.png">   
+      </b-img>
+    <section class="section-profile ">
+ 
+      <div class="logo-wrapper ">
+           
+          <b-img class="logo" src="@/assets/img/Logo Merdeka Digital Asia 2.png"></b-img>
+        
+
+      </div>
+
+      <div class="profile-content ">
+        <div>
+          <h1 class="mb-3">Profile Kami</h1>
+                  <p>
+                                      Didirikan pada September 2020, Perusahaan
+                        membawa keahlian, pengalaman, jaringan dan
+                        kemampuan keuangan yang kuat di industri ini.
+                        <br/>          <br/>
+                        Perusahaan memiliki aktivitas bisnis utama dalam
+                        komersialisasi portal web dan platform digital. Hal
+                        ini juga dioptimalkan dengan kemampuan kami
+                        untuk menyampaikan solusi yang terintegrasi untuk
+                        mengakomodir kebutuhan pelanggan.
+                        <br/>          <br/>
+                        Dengan kombinasi kemampuan teknis – komersial
+                        – operasi yang kuat, Perusahaan dapat
+                        menyampaikan hasil yang terbaik bagi kepuasan
+                        pelanggan.
+                  </p>
+                    
+                  <router-link class="info-link" to="/tentangmda">
+                        Info lebih lanjut...
+                    </router-link>
+        </div>
+      
+      </div>
+
+    </section>
+</div>
+
+ 
+    <!-- <div class="container-fluid section-profile">
       <b-row>
         <b-col lg="5" md="6" sm="12">
           <div class="digital-logo-2-wrapper">
@@ -72,7 +142,7 @@
           </div>
         </b-col>
       </b-row>
-    </div>
+    </div> -->
     <!-- end Section profile -->
 
     </div>
@@ -91,6 +161,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "@/views/Home/home.scss";
+@import "@/views/Home/home-remake.scss";
 
 </style>

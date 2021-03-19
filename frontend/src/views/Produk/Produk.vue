@@ -3,9 +3,9 @@
         
 
         <Navbar/>
-        <Header/>
+        <Header />
 
-        <b-container class="text-center section-produk-content">
+        <div class="text-center section-produk-content">
            <div class="d-inline-flex flex-column align-items-center">
 
                
@@ -13,24 +13,24 @@
             <div class="mt-3 red-line"></div>
            </div>
            
-            <b-container class="produkWrapper d-flex justify-content-center align-items-center">
-                <b-row>
+            <div class=" d-flex justify-content-center align-items-center  ">
+                <b-row class="produkWrapper">
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12"> 
                                 <CardProduk
-                                gambar="mobile.png"
+                                gambar="mobile.svg"
                                 caption="Pulsa prepaid seluruh operator"
                                 />
                     </b-col>
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
                                 <CardProduk
                            
-                                gambar="web.png"
+                                gambar="web.svg"
                                 caption="Paket Data Seluruh Operator"
                                 />
                     </b-col>
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
                                 <CardProduk
-                                gambar="petir.png"
+                                gambar="data.svg"
                                 caption="Token PLN"
                                 />
                     </b-col>
@@ -42,7 +42,7 @@
                     </b-col>
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
                                 <CardProduk
-                                gambar="ovo.png"
+                                gambar="OVO.png"
                                 caption="Isi Saldo OVO"
                                 />
                     </b-col>
@@ -55,8 +55,8 @@
 
                     
                 </b-row>
-            </b-container>
-        </b-container>
+            </div>
+        </div>
         <section class="section-operator text-center">
 
             <div class="d-inline-flex flex-column align-items-center">
@@ -64,7 +64,8 @@
                       <div class="mt-3 red-line"></div>
             </div>
          
-            <b-container class="operator-wrapper">
+         <div class=" operator-container">
+           <div class="operator-wrapper">
                 
                 <b-img  width="183" height="57" src="assets/img/produk/telkomsel.svg"></b-img>
                 <b-img src="assets/img/produk/xl.svg"></b-img>
@@ -79,7 +80,10 @@
            
              
                 
-            </b-container>
+            </div>
+
+         </div>
+ 
 
             <b-img class="elipse" src="assets/img/produk/elipse.png">
 

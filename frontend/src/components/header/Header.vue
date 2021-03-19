@@ -6,11 +6,23 @@
           >
 
           </b-img>
+          <h1 class="bottom-left">
+            {{title}}
+          </h1>
+            
 
         </header>
 </template>
 <script>
 export default {
-    name:"Header"
+    name:"Header",
+    props:{
+      title:String
+    }
 }
 </script>
+
+<style lang="scss">
+@import 'header.scss';
+
+</style>
