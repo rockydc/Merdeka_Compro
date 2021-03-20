@@ -92,7 +92,7 @@
                         pelanggan.
                   </p>
                     
-                  <router-link class="info-link" to="/tentangmda">
+                  <router-link class="info-link" target="_top" to="/tentangmda">
                         Info lebih lanjut...
                     </router-link>
         </div>
