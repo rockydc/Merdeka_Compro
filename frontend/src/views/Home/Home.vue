@@ -10,7 +10,7 @@
     <div class="header-text ">
         <div class="header-content ">
                 
-                <h1> {{ $t("JOIN_US") }}     <br/>  Merdeka Pulsa
+                <h1> {{ $t("JOIN_US") }}   Merdeka Pulsa
                 </h1>
                 <p class="p-text">penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
                 siap mengawal transaksi Anda. 

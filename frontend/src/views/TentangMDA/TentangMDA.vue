@@ -23,7 +23,7 @@
                     </p>
                  </b-col>
                  <b-col lg="5" md="6" sm="12">
-                     <b-img fluid src="assets/img/photo-tentangmp.png">
+                     <b-img class="img-goals" fluid src="assets/img/photo-tentangmp.png">
 
                      </b-img>
 
@@ -33,12 +33,10 @@
         </section>
                  <section class="section-value">
              <h1 class="text-center">Nilai - Nilai Kami</h1>
-
-             <b-row class="mt-1 container">
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+            <div class="card-content-wrapper mt-5">
+                <div class="card-content">
                        <b-img src="assets/img/protect-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div class="text-content">
                            <p class="title">
                                Integritas
                            </p>
@@ -49,11 +47,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+                      <div class="card-content">
                        <b-img src="assets/img/heart-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div class="text-content">
                            <p class="title">
                                Komitmen
                            </p>
@@ -63,11 +59,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+                  <div class=" card-content">
                        <b-img src="assets/img/math-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div class="text-content">
                            <p class="title">
                                Sikap Positif
                            </p>
@@ -77,11 +71,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+                 <div class=" card-content">
                        <b-img src="assets/img/user-group-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div class="text-content">
                            <p class="title">
                                Fokus Pada Pelanggan
                            </p>
@@ -94,11 +86,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+                 <div class=" card-content">
                        <b-img src="assets/img/brain-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div  class="text-content">
                            <p class="title">
                              Kreatif dan Berpikiran Terbuka
                            </p>
@@ -111,11 +101,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
-                 <b-col class="mt-5" lg="6" md="12" sm="12">
-                   <div class="d-flex justify-content-center align-items-center card-content">
+                  <div class=" card-content">
                        <b-img src="assets/img/promise-ic.svg"></b-img>
-                       <div class="ml-5 pt-4">
+                       <div class="text-content">
                            <p class="title">
                               Terpercaya
                            </p>
@@ -127,10 +115,9 @@
                            </p>
                        </div>
                    </div>
-                 </b-col>
 
-
-             </b-row>
+            </div>
+         
 
          </section>
     </div>
