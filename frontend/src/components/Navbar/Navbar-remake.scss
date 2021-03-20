@@ -11,6 +11,9 @@
     transition: ease-in-out 0.5;
   
   }
+  .navbar-toggler{
+    border-color:rgb(197, 197, 197);;
+}
 
 .navbar{
     z-index:6;
@@ -81,57 +84,126 @@
 }
 }
 @include mobile{
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
     .navbar{
         background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+        .navbar-nav{
+            margin: 20px;
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+            
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+          
+    
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
       }
       .navbar-brand{
         display:none;
       }
 
-      .navbar-nav{
-        margin: 20px;
-        border:none !important;
-        width: 100% ;
-        margin-right:0;
-        margin-left:0!important;
-        display:block;
-      
-        .divider{
-            margin-left:5px;
-            margin-right: 5px;
-        }
-       
-    }
+
+ 
 }
 
 @include tablet{
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
     .navbar{
         
+
         background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+
+        .navbar-nav{
+            margin: 20px;
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+          
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
       }
       .navbar-brand{
         display:none;
       }
 
-      .navbar-nav{
-        margin: 20px;
-        border:none !important;
-        width: 100% ;
-        margin-right:0;
-        margin-left:0!important;
-        display:block;
-      
-        .divider{
-            margin-left:5px;
-            margin-right: 5px;
-        }
-       
-    }
+
 }
 
 @include tablet-xl{
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
     .navbar{
         background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+        .navbar-nav{
+        
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+          
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
 
         .navbar-brand{
             display: none;
@@ -139,20 +211,7 @@
 
       }
 
-      .navbar-nav{
-        
-        border:none !important;
-        width: 100% ;
-        margin-right:0;
-        margin-left:0!important;
-        display:block;
-      
-        .divider{
-            margin-left:5px;
-            margin-right: 5px;
-        }
-       
-    }
+
 }
 
 @include dekstop{
