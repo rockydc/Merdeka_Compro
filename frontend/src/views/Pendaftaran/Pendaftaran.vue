@@ -87,8 +87,8 @@ Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 
                                   </template>
                             </b-modal>
                       <div class="note-wrapper">
-                          <b-img fluid src="assets/img/ic-customerservice.png"></b-img>
-                            <div class="ml-3 d-flex justify-content-center align-items-center mt-2">
+                          <b-img class="img-cs " src="assets/img/ic-customerservice.png"></b-img>
+                            <div class="ml-5  d-flex justify-content-center align-items-center mt-2">
                                 <p >
                               Untuk informasi lebih lengkap hubungi <strong class="telegram">021-2951 7763</strong>
                                 atau Telegram ke <strong class="telegram" >@merdekacs</strong>

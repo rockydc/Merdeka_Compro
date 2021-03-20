@@ -53,24 +53,33 @@
 
 
         .note-wrapper{
-            padding:16px 22px 10px 23px;
+            padding:17px 20px 22px 30px;
             margin-top:31px;
             display:flex;
+            align-items: center;
             background: #FFFFFF;
             border: 1px solid #ECECEC;
             box-sizing: border-box;
             box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.04);
             border-radius: 10px;
-            .img-fluid{
-                height:fit-content;
+            .img-cs{
+                width: 52px;
+                height: 56px;
+                
             }
             p{
+                padding-top:5px;
                 color:#5C5C5C;
                 font-size:14px;
             }
+            
             .telegram{
                 color:#C52D2E;
                 font-size:calc(12px + 0.3125vw);
+                &:nth-child(1){
+                    color:#5C5C5C;
+
+                }
             }
 
 
@@ -110,6 +119,8 @@
         }
     }
     .note-wrapper{
+        flex-direction: column;
+        padding:10px 10px 10px 10px;
         .telegram{
             color:#C52D2E;
             font-size:16px;
@@ -226,7 +237,12 @@
 
     }
         .note-wrapper{
+            .img-cs{
+                width: 52px;
+                height:56px;
+            }
             p{
+                padding-top:5px;
                 font-size:18px;
             }
             .telegram{
