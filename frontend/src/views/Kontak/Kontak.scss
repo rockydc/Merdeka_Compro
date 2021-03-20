@@ -19,7 +19,7 @@ p{
     padding-bottom:10px;
    
     iframe{
-        height: 420px;
+        height: 430px;
     }
     }
 }
@@ -133,16 +133,79 @@ p{
 }
 
 // end mobile
-
+@include dekstop{
+    p{
+        font-size:15px;
+    }
+    .section-kontak{
+        padding-top:80px;
+    
+        padding-bottom:125px;
+        
+        .map-wrapper{
+        box-shadow: 0px 1px 2px 2px rgba(220, 220, 220, 0.25);
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        border-radius: 15px 15px 11px 11px;
+        padding-bottom:10px;
+       
+        iframe{
+            height: 487px;
+        }
+        }
+    }
+    .content-wrapper{
+        box-sizing: border-box;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 7px 4px rgba(220, 220, 220, 0.25);
+        border-radius: 12px;
+        padding-top:39px;
+        padding-bottom:19px;
+        height: 280px;
+    
+        .icon{
+            width:50px;
+            height:50px;
+        }
+        .title{
+            color: #CB2B2B;
+            font-weight: 700;
+        }
+    }
+    .content-wrapper-sosmed{
+        box-sizing: border-box;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 7px 4px rgba(220, 220, 220, 0.25);
+        border-radius: 12px;
+        padding-top:39px;
+        padding-bottom:19px;
+        height: 250px;
+        .icon-wrapper{
+            display:flex;
+            width: 100%;
+        }
+        .icon{
+            width:50px;
+            height:50px;
+        }
+        .title{
+            color: #CB2B2B;
+            font-weight: 700;
+        }
+    }
+    .form-email{
+        width:98%;
+    }
+}
 @include extra{
     .section-kontak{
         .container{
             max-width: 80%;
         }
         .map-wrapper{
-           height: 92%;
+           height: 92.5%;
         iframe{
-            height: 470px;
+            height: 520px;
         }
         }
     }
@@ -201,12 +264,23 @@ p{
             width:80%;
             .form-control{
                 border-radius: 5px !important;
+                height: 51px;
             }
         }
     }
     .btn-send{
-        background-color: #CB2B2B;
+        background-color:#C52D2E ;
+        box-shadow: 0px 4px 10px rgba(203, 43, 43, 0.24);
+        width: 100%;
         border:none;
+        padding:14px auto;
+        font-size:16px;
+        height:52px;
+        border-radius: 6px;
+        &:focus{
+               outline: 0;
+box-shadow: none!important;
+        }
 
     }
 

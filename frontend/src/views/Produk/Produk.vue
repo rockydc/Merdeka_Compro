@@ -36,7 +36,7 @@
                     </b-col>
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
                                 <CardProduk
-                                gambar="controller.png"
+                                gambar="controller.svg"
                                 caption="Voucher Game"
                                 />
                     </b-col>
@@ -66,20 +66,17 @@
          
          <div class=" operator-container">
            <div class="operator-wrapper">
-                
-                <b-img  width="183" height="57" src="assets/img/produk/telkomsel.svg"></b-img>
-                <b-img src="assets/img/produk/xl.svg"></b-img>
-                <b-img src="assets/img/produk/indosat-logo.svg"></b-img>
-                <b-img src="assets/img/produk/3-logo.svg"></b-img>
-                <b-img src="assets/img/produk/smartfrend.svg"></b-img>
-                <b-img src="assets/img/produk/axis.svg"></b-img>
-                <b-img src="assets/img/produk/ovo.svg"></b-img>
-                <b-img src="assets/img/produk/gopay.svg"></b-img>
-                <b-img src="assets/img/produk/pubg.svg"></b-img>
-
-           
-             
-                
+                <div class="operator-content">
+                <b-img  src="assets/img/produk/telkomsel.svg"></b-img>
+                </div>
+                <div class="operator-content"> <b-img src="assets/img/produk/xl.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/indosat-logo.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/3-logo.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/smartfrend.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/axis-logo.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/ovo.svg"></b-img></div>
+                <div class="operator-content"> <b-img src="assets/img/produk/gopay.svg"></b-img></div>
+                <div class="operator-content"><b-img src="assets/img/produk/pubg.svg"></b-img></div>
             </div>
 
          </div>

@@ -14,10 +14,10 @@
                         <div class="map-wrapper mt-5">
                          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%"  id="gmap_canvas" src="https://maps.google.com/maps?q=Sarana%20Building&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><a href="https://google-map-generator.com"></a></div></div>   
                          <div class="mt-2 px-4">
-                             <p class="m-0"><strong>Sarana Building</strong></p>
+                             <p class="m-0" style="font-size:12px;"><strong>Sarana Building</strong></p>
                              <div class="map-card">
                                 <b-img src="assets/img/kontak/star-ic.svg"></b-img>
-                                <span class="ml-2" style="font-family:poppins; font-size:10px;">Corporate office - Jl. Mampang Prpt. Raya No.26, RT.2/RW.1</span>
+                                <span class="ml-2" style="font-family:poppins; font-size:11px;">Corporate office - Jl. Mampang Prpt. Raya No.26, RT.2/RW.1</span>
                              </div>
                          </div>
                         </div>

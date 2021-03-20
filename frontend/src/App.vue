@@ -23,6 +23,7 @@ export default {
 
 padding:0px;
 margin:0px;
+font-family: poppins;
 
 }
 

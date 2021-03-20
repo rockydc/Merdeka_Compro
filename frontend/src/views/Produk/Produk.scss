@@ -55,7 +55,16 @@
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(2,1fr);
         row-gap: 100px;
-        column-gap: 90px;
+        column-gap: 0px;
+
+        .operator-content{
+            width: 185px;
+            height: 185px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
       
    
        

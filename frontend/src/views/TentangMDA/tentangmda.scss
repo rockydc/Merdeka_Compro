@@ -38,25 +38,40 @@
     .container{
         max-width: 88%;
     }
-    .card-content{
-        padding:20px 40px;
-       
-        background: #FFFFFF;
-        border: 1px solid #F3F3F3;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
-        border-radius: 10px;
-        min-height: 220px;
-        .title{
-            font-weight: 700;
-
-        }
-
-        caption{
-            font-weight: 400;
-            font-size:14px;
+    .card-content-wrapper{
+        width: 88%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+        row-gap: 39px;
+        column-gap: 61px;
+        .card-content{
+            display: flex;
+            align-items: center;
+            padding-left:calc(50px +  0.46875vw); 
+            padding-right: calc(45px +  0.46875vw);
+            border: 1px solid #F3F3F3;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+            border-radius: 10px;
+            min-height: 220px;  
+            .text-content{
+                padding-left:calc(45px + 0.3645833vw);
+            }
+            .title{
+                font-weight: 700;
+                font-size: 22px;
+    
+            }
+    
+            .caption{
+                font-weight: 400;
+                font-size:18px;
+            }   
         }
     }
+
 }
 
 @include mobile{
@@ -70,11 +85,41 @@
     }
     .section-value{
       
-        .card-content{
-            min-height: 218px;
-            padding:20px 20px;
-            .caption{
-                font-size:12px;
+        .card-content-wrapper{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        
+            
+            row-gap: 39px;
+            column-gap: 0;
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-top:20px;
+                padding-left:10px;
+                padding-right: 10px;
+                justify-content: center;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+                border-radius: 10px;
+                min-height: auto;  
+                .text-content{
+                    padding:0;
+                }
+                .title{
+                    margin-top:30px;
+                    font-weight: 700;
+        
+                }
+        
+                caption{
+                    font-weight: 400;
+                    font-size:14px;
+                }   
             }
         }
     }
@@ -83,11 +128,152 @@
 @include tablet{
     .section-tujuan{
         padding-top:150px;
+        text-align: center;
+        img{
+            margin-top: 75px;
+          
+        }
+
     }
     .section-value{
-        padding-top:90px;
+      
+        .card-content-wrapper{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        
+            
+            row-gap: 39px;
+            column-gap: 0;
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-top:20px;
+                padding-left:10px;
+                padding-right: 10px;
+                justify-content: center;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+                border-radius: 10px;
+                min-height: auto;  
+                .text-content{
+                    padding:0;
+                }
+                .title{
+                    margin-top:30px;
+                    font-weight: 700;
+        
+                }
+        
+                caption{
+                    font-weight: 400;
+                    font-size:14px;
+                }   
+            }
+        }
     }
 }
+
+@include tablet-xl{
+    .section-tujuan{
+        padding-top:150px;
+        .container{
+            max-width: 90%;
+        }
+        img{
+            margin-top: 75px;
+            width: 100%;
+            padding-left: 3.0833333333333335vw;
+        }
+    }
+    .section-value{
+      
+        .card-content-wrapper{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        
+            
+            row-gap: 39px;
+            column-gap:39px;
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-top:80px;
+                padding-left:10px;
+                padding-right: 10px;
+                justify-content: start;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+                border-radius: 10px;
+                min-height: 350px;  
+                .title{
+                    margin-top:30px;
+                    font-weight: 700;
+        
+                }
+        
+                caption{
+                    font-weight: 400;
+                    font-size:14px;
+                }   
+            }
+        }
+    }
+}
+
+@include dekstop{
+    .section-tujuan{
+        padding-top:150px;
+    }
+    .section-value{
+      
+        .card-content-wrapper{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        
+            
+            row-gap: 39px;
+            column-gap:39px;
+            .card-content{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding-top:80px;
+                padding-left:10px;
+                padding-right: 10px;
+                justify-content: start;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+                border-radius: 10px;
+                min-height: 350px;  
+                .text-content{
+                    padding:0;
+                }
+                .title{
+                    margin-top:30px;
+                    font-weight: 700;
+        
+                }
+        
+                caption{
+                    font-weight: 400;
+                    font-size:14px;
+                }   
+            }
+        }
+    }
+}
+
 @include extra{
     .section-tujuan{
         margin-top:calc((100px + 4.268943436499466vh)*-1);
@@ -108,9 +294,55 @@
         }
 
         img{
-            width: 516px;
+            width: 578px;
             height: 378px;
             padding-left:150px;
         }
     }
+    .section-value{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        padding-top:129px;
+        padding-bottom:150px;
+        .container{
+            max-width: 88%;
+        }
+        .card-content-wrapper{
+            width: 88%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            
+            row-gap: 39px;
+            column-gap: 61px;
+            .card-content{
+                display: flex;
+                align-items: center;
+                padding-left:calc(50px +  0.46875vw); 
+                padding-right: calc(45px +  0.46875vw);
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+                border-radius: 10px;
+                min-height: 220px;  
+                .text-content{
+                    padding-left:calc(45px + 0.3645833vw);
+                }
+                .title{
+                    font-size:24px;
+                    font-weight: 700;
+        
+                }
+        
+                .caption{
+                    font-weight: 400;
+                    font-size:20px;
+                }   
+            }
+        }
+    
+    }
+
 }
