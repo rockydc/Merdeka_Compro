@@ -1,286 +1,802 @@
 @import '@/assets/scss/global-variable.scss';
-
-*{
-    font-family: poppins,sans-serif;
-    box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-  }
-  .globe{
-    
-  
-    width:100%;
-    
-    position:relative;
-    .img-globe{
-    position:absolute;
-    margin-top:0;
-    top:-100px;
-    right:-30px;
-    width:100%;
-    z-index:-5;
-    }
-   
-    
-  
-  }
-  .header-text{
-    display:flex;
-   
-    align-items: center;
-    color:#686868;
-    height:500px;
-    .header-content{
-        margin-right: -2rem;
-    }
-    h1{
-        font-weight: bold;
-        color:black;
-        font-size:35px;
-    }
-    p{
-        font-size:14px;
-    }
-    span{
-        color:#C52D2E;
-        font-weight: 500;
-    }
-    .btn-daftar{
-        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
-        border-radius:30px;
-        padding:15px 34px  15px 33px;
-        border:none;
-        &:focus{
-            outline: 0;
-            box-shadow: none!important;
-        }
-        
-    }
-  }
-.section-profile{
-    margin-top:100px;
-    h1{
-       
-        font-weight: bold;
-    }
-}
-  .digital-logo-2-wrapper{
+.wrapper-home{
     position: relative;
-
-      .garis-bantu-kiri{
-        position:absolute;
-        left:-15px;
-        width:90%;
-        margin-top:-100px;
-        z-index:-10;
-      }
-      .logo-digital2{
-        position:absolute;
-        top:30px;
-        width:310px;
-        height:310px;
-        z-index:11;
-        -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
-        -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
-        box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
-        border-radius: 20px;
+    height: 1100px;
+}
+.hero{
+    width: 100%;
       
-      }
-      
-  }
+    position: absolute;
+    top:0px;
+    z-index:1px;
+    display:grid;
+    grid-template-columns: 1.2fr 2fr;
 
-  .profile-content{
-      text-align: justify;
-      margin-top: 1rem;
-      p{
-          width: 90%;
-          font-size: 14px;
-      }
-      .info-link{
-          color:#C52D2E;
-      }
-  }
-  //mobile css
-@include mobile{
-
-    .globe{
-        display:none;
-    }
     .header-text{
-        text-align: center;
+        height: 900px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         .header-content{
-        margin-right: -0.5rem;
-  
-        padding-right: 0;
-        }
-    }
-    .section-profile{
-        position:static;
-        margin-top: 50px;
-        .garis-bantu-kiri{
-            width:100%;
-            right:0;
-        }
-        .logo-digital2{
-            width:250px;
-            height:250px;
-            margin-top:-150px;
-        }
-        .profile-content{
-            margin-top:100px;
-            text-align: center;
-
-        }
-        h1{
-            margin-top:40px;
-        }
-    }
-  }
-  @include tablet{
-
-    .globe{
-        width:100%;
-        
-        padding:0;
-        .img-globe{
-
-        
-        position:absolute;
-        margin-top:0;
-        top:-60px;
-        right:-30px;
-        width:120%;
-        z-index: 10;
-        
-        }
-       
-        
-      
-      }
-      .header-text{
-          height:300px;
-          .header-content{
-            margin-right: 0rem;
-        }
-          h1{
-              font-size:25px;
-          }
-          p{
-              font-size:12px;
-          }
-          .btn-daftar{
-
-            padding:12px 31px  12px 31px;
-            border:none;
-            &:focus{
-                outline: 0;
-                box-shadow: none!important;
+            width:80%;
+         
+            display: flex;
+           
+            flex-direction: column;
+            justify-content: center;
+          
+            h1{
+                font-size:45px;
+                line-height: 67.5px;
+                font-weight: bold;
             }
-            
+           .p-text{
+               font-size:20px;
+           }
+           span{
+            color:#C52D2E;
+            font-weight: 500;
         }
-      }
-      .section-profile{
-          position: static;
-          margin-top:150px;
-          .logo-digital2{
-              width:300px;
-              height:300px
-              
-          }
-          .garis-bantu-kiri{
-           top:8rem;
-           right:0;
-        }
-        .profile-content{
-            p{
-                font-size:14px;
-            }
-
-        }
-      }
-  }
-
-  @include superdesktop{
-      .globe{
-          width: 110%;
-          right:69px;
-      }
-  }
-  @include extra{
-    .globe{
-        width:100%;
-        padding:0;
-        .img-globe{       
-        position:absolute;
-        margin-top:0;
-        top:-125px;
-        right:-30.4px;
-        width:100%;
-        z-index:-5;
-        
-        }
-       
-        
-      
-      }
-      .header-text{
-          height: 800px;
-          justify-content: end;
-          h1{
-              font-size: 45px;
-              line-height: 67px;
-              font-weight: bold;
-          }
-          p{
-              font-size:20px;
-          }.header-content{
-              margin-top: -5rem;
-              margin-right: -6vw;
-          }
-          .btn-daftar{       
+           .btn-daftar{       
             font-size: 20px;
             width: 273px;
             padding:19px 53px  19px 54px;
             border-radius: 32.5;
+            background:$merah;
+            border-radius: 32.5px;
+            border:none;
 
         }
-      }
-      .section-profile{
-        position: static;
-        margin-top:100px;
-        h1{
-            font-size: 48px;
         }
-        
-        .logo-digital2{
-            width:416px;
-            height:416px;
-            
-        }
-        .garis-bantu-kiri{
-        width:83%;
-         
-         right:-15px;
-      }
      
-    
-      .profile-content{
-          h1{
 
-            line-height: 72px;
-              font-size: 48px;
-          }
-          p{
-              width:85%;
-              font-size: 20px;
-              font-weight: 400;
-          }
-          margin-top:2rem;
-          p,.info-link{
-              font-size:20px;
-              font-weight: bold;
-          }
-
-      }
     }
 
+    .globe-wrapper{
+
+        height: 800px;
+        .img-globe{
+        
+            width: 100%;
+        }
+    }
+}
+.section-profile-wrapper{
+
+    position: relative;
+    padding:0;
+    height: 650px;
+    
+}
+  .garis-bantu-kiri{
+    position: relative;
+    width:620px;
+    left:0;
+    top:-150px;
+}
+  .section-profile{
+  
+    position:absolute;
+    top:0;
+    width: 100%;
+    display:flex;
+    padding-left:calc(50px + 0.60416vw );
+    padding-right: calc(97px + 2.60416vw);
+  
+    .logo-wrapper{
+        flex:1.2;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width:calc(300px + 6.04167vw);
+            height: calc(300px + 6.04167vw);
+            z-index:11;
+            -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+            -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+            box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+            border-radius: 20px;
+        }
+    }
+
+    .profile-content{
+        flex:2;
+       
+        display: flex;
+        align-items: center;
+  
+        text-align: left;
+        h1{
+            font-size: calc(2rem + 0.9375vw );
+            line-height: calc(50px + 1.145833vw);
+            font-weight: bold;
+
+        }
+        p{
+            text-align: justify;
+            font-size:20px;
+            
+        }
+        .info-link{
+            color:#C52D2E;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    
+  }
+
+  @include ultradesktop{
+    .wrapper-home{
+        position: relative;
+        height: 100vh;
+    }
+    .hero{
+        width: 100%;
+          
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr 2.2fr;
+    
+        .header-text{
+            height: 900px;
+          
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .header-content{
+                width:80%;
+             
+                display: flex;
+               
+                flex-direction: column;
+                justify-content: center;
+              
+
+                h1{
+                    font-size:35px;
+                    line-height: 50px;
+                }
+                .p-text{
+                    font-size:16px;
+                }
+
+                .btn-daftar{
+                    width: auto;
+                    padding: 15px 49px 15px 50px;
+                    font-size:16px;
+                }
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+      
+         
+            height: 800px;
+            .img-globe{
+            
+                width: 100%;
+            }
+        }
+    }
+   
+.section-profile-wrapper{
+    height: 400px;
+}
+  .garis-bantu-kiri{
+    width: calc(350px + 7.8125vw);
+    left:0;
+    top:-150px;
+}
+  .section-profile{
+    top:0;
+    width: 100%;
+    display:flex;
+    padding-left:calc(50px + 2.60416vw );
+    padding-right: calc(50px + 2.60416vw);
+    .logo-wrapper{
+        .logo{
+            width:calc(250px + 6.04167vw);
+            height: calc(250px + 6.04167vw);
+            z-index:11;
+            border-radius: 20px;
+        }
+    }
+    .profile-content{
+        flex:2;
+    
+        display: flex;
+        align-items: center;
+  
+        text-align: left;
+        h1{
+            font-size: calc(1rem + 0.9375vw );
+            line-height: calc(20px + 1.145833vw);
+            font-weight: bold;
+        }
+        p{
+            font-size:14px;
+        }
+        .info-link{
+            font-size: 14px;
+        }
+    }
+    
+  }
+}
+
+  @include superdesktop{
+    .wrapper-home{
+        position: relative;
+        height: 700px;
+    }
+    .hero{
+        width: 100%;
+          
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    
+        .header-text{
+            height: 700px;
+          
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .header-content{
+                width:80%;
+             
+                display: flex;
+               
+                flex-direction: column;
+                justify-content: center;
+              
+                h1{
+                    font-size:35px;
+                    line-height: 50px;
+                }
+                .p-text{
+                    font-size:16px;
+                }
+
+                .btn-daftar{
+                    width: auto;
+                    padding: 15px 49px 15px 50px;
+                    font-size:16px;
+                }
+ 
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+      
+         
+            height: 800px;
+            .img-globe{
+            
+                width: 100%;
+            }
+        }
+    }
+    .section-profile-wrapper{
+        position: relative;
+        padding:0;
+        height: auto;    
+    }
+      .garis-bantu-kiri{
+            
+    
+        position: relative;
+        width: 490px;
+        left:0;
+        top:-0;
+    }
+      .section-profile{
+        
+        position:absolute;
+        top:0;
+        width: 100%;
+        display:flex;
+        padding:10px 40px;
+    
+        .logo-wrapper{
+            flex:1;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo{
+                width:calc(300px + 6.04167vw);
+                height: calc(300px + 6.04167vw);
+                z-index:11;
+                -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                border-radius: 20px;
+            }
+        }
+    
+        .profile-content{
+            flex:1;
+            display: flex;
+            align-items: center;
+      
+            text-align: left;
+            h1{
+                font-size: calc(2rem + 0.9375vw );
+                line-height: calc(50px + 1.145833vw);
+                font-weight: bold;
+    
+            }
+            p{
+                text-align: justify;
+                font-size:20px;
+                
+            }
+            .info-link{
+                color:#C52D2E;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        
+      }
+}
+
+@include dekstop{
+    .wrapper-home{
+        position: relative;
+        height: 700px;
+    }
+    .hero{
+        width: 100%;
+          
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr 2.05fr;
+    
+        .header-text{
+            height: 650px;
+          
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .header-content{
+                width:80%;
+             
+                display: flex;
+               
+                flex-direction: column;
+                justify-content: center;
+              
+                h1{
+                    font-size:25px;
+                    line-height: normal;
+                }
+                .p-text{
+                    font-size:12px;
+                }
+
+                .btn-daftar{
+                    width: auto;
+                    padding: 10px 44px 10px 45px;
+                    font-size:14px;
+                }
+ 
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+      
+         
+            height: 800px;
+            .img-globe{
+            
+                width: 100%;
+            }
+        }
+    }
+    .section-profile-wrapper{
+     
+        position: relative;
+        margin-top: -100px;
+        padding:0;
+        height: 500px;
+        
+    }
+      .garis-bantu-kiri{
+        
+        position: relative;
+        width: 480px;
+        left:0;
+        top:-70px;
+    }
+      .section-profile{
+        
+        position:absolute;
+        top:0;
+        width: 100%;
+        display:flex;
+        padding:10px 40px;
+    
+        .logo-wrapper{
+            flex:1;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo{
+                width:calc(300px + 6.04167vw);
+                height: calc(300px + 6.04167vw);
+                z-index:11;
+                -webkit-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                -moz-box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                box-shadow: -1px -1px 9px 2.7px rgba(194,194,194,0.3);
+                border-radius: 20px;
+            }
+        }
+    
+        .profile-content{
+            flex:1;
+            display: flex;
+            align-items: center;
+      
+            text-align: left;
+            h1{
+                font-size: calc(1rem + 0.9375vw );
+                line-height: calc(25px + 1.145833vw);
+                font-weight: bold;
+    
+            }
+            p{
+                text-align: justify;
+                font-size:14px;
+                
+            }
+            .info-link{
+                color:#C52D2E;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        
+      }
+}
+
+
+  @include tablet-xl{
+
+    .wrapper-home{
+        position: relative;
+        height: 500px;
+    }
+    .hero{
+   
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr;
+    
+        .header-text{
+       
+            height: 500px;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .header-content{
+                
+                width:90%;
+                display: flex;
+               align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    font-size:30px;
+                    line-height: 46px;
+                    font-weight: bold;
+                }
+               .p-text{
+                   font-size:14px;
+               }
+               span{
+                color:#C52D2E;
+                font-weight: 500;
+                }
+                .btn-daftar{       
+                    font-size: 14px;
+                    width: 273px;
+                    padding:19px 53px  19px 54px;
+                    border-radius: 32.5;
+                    background:$merah;
+                    border:none;
+        
+                }
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+            display: none;
+
+        }
+    }
+
+ .section-profile-wrapper{
+  
+    height: 400px;
+    }
+      .garis-bantu-kiri{
+        width: 60vw;
+        left:0;
+        top:-50px;
+    }
+      .section-profile{
+        top:0;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        padding:10px 20px;
+        .logo-wrapper{
+            .logo{
+                width:calc(250px + 6.04167vw);
+                height: calc(250px + 6.04167vw);
+                z-index:11;
+                border-radius: 20px;
+                margin-bottom:50px;
+            }
+        }
+        .profile-content{
+            flex:2;
+            
+        
+            display: flex;
+            align-items: center;
+      
+            text-align: center;
+            h1{
+                font-size: calc(1rem + 0.9375vw );
+                line-height: calc(20px + 1.145833vw);
+                font-weight: bold;
+            }
+            p{
+                font-size:14px;
+            }
+            .info-link{
+                font-size: 14px;
+            }
+        }
+        
+      }
+  }
+  @include tablet{
+
+    .wrapper-home{
+        position: relative;
+        height: 500px;
+    }
+    .hero{
+        width: 100%;
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr;
+        .header-text{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .header-content{
+                
+                width:90%;
+             
+                display: flex;
+               align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    font-size:30px;
+                    line-height: 46px;
+                    font-weight: bold;
+                }
+               .p-text{
+                   font-size:14px;
+               }
+               span{
+                color:#C52D2E;
+                font-weight: 500;
+                }
+                .btn-daftar{       
+                    font-size: 14px;
+                    width: 273px;
+                    padding:19px 53px  19px 54px;
+                    border-radius: 32.5;
+                    background:$merah;
+                    border:none;
+        
+                }
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+            display: none;
+
+        }
+    }
+
+ .section-profile-wrapper{
+  
+    height: 400px;
+    }
+      .garis-bantu-kiri{
+        width: 60vw;
+        left:0;
+        top:-50px;
+    }
+      .section-profile{
+        top:0;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        padding:10px 20px;
+        .logo-wrapper{
+            .logo{
+                width:calc(250px + 6.04167vw);
+                height: calc(250px + 6.04167vw);
+                z-index:11;
+                border-radius: 20px;
+                margin-bottom:50px;
+            }
+        }
+        .profile-content{
+            flex:2;
+            
+        
+            display: flex;
+            align-items: center;
+      
+            text-align: center;
+            h1{
+                font-size: calc(1rem + 0.9375vw );
+                line-height: calc(20px + 1.145833vw);
+                font-weight: bold;
+            }
+            p{
+                font-size:14px;
+            }
+            .info-link{
+                font-size: 14px;
+            }
+        }
+        
+      }
+  }
+  @include mobile{
+
+    .wrapper-home{
+        position: relative;
+        height: 500px;
+    }
+    .hero{
+      
+        position: absolute;
+        top:0px;
+        z-index:1px;
+        display:grid;
+        grid-template-columns: 1fr;
+    
+        .header-text{
+         
+            height: 500px;
+         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .header-content{
+                
+                width:90%;
+             
+                display: flex;
+               align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    font-size:30px;
+                    line-height: 46px;
+                    font-weight: bold;
+                }
+               .p-text{
+                   font-size:14px;
+               }
+               span{
+                color:#C52D2E;
+                font-weight: 500;
+                }
+                .btn-daftar{       
+                    font-size: 14px;
+                    width: 273px;
+                    padding:19px 53px  19px 54px;
+                    border-radius: 32.5;
+                    background:$merah;
+                    border:none;
+        
+                }
+            }
+         
+    
+        }
+    
+        .globe-wrapper{
+            display: none;
+
+        }
+    }
+
+ .section-profile-wrapper{
+  
+    height: 400px;
+    }
+      .garis-bantu-kiri{
+        width: 60vw;
+        left:0;
+        top:-50px;
+    }
+      .section-profile{
+        top:0;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        padding:10px 20px;
+        .logo-wrapper{
+            .logo{
+                width:calc(250px + 6.04167vw);
+                height: calc(250px + 6.04167vw);
+                z-index:11;
+                border-radius: 20px;
+                margin-bottom:50px;
+            }
+        }
+        .profile-content{
+            flex:2;
+            
+        
+            display: flex;
+            align-items: center;
+      
+            text-align: center;
+            h1{
+                font-size: calc(1rem + 0.9375vw );
+                line-height: calc(20px + 1.145833vw);
+                font-weight: bold;
+            }
+            p{
+                font-size:14px;
+            }
+            .info-link{
+                font-size: 14px;
+            }
+        }
+        
+      }
   }

@@ -23,7 +23,7 @@
 
             width: calc(52px + 5.0520833vw);
             height:  calc(50px + 5.763073639274279vh);
-            margin-left:calc(1rem + 4.6875vw);
+            margin-left:calc(1rem + 4.0875vw);
         }
     }
 
@@ -67,22 +67,26 @@
             color: #C52D2E!important;
         
         }
-.navbar-nav{
+.navbar{
+    padding-top: 0.0225vw;
+    .navbar-nav{
 
 
-.nav-item{
-    .nav-link{
-        a{
-            color:white;
+        .nav-item{
+            .nav-link{
+                a{
+                    color:white;
+                }
+            }
+            }
+                    .divider{
+                    color:white;
+                    
+                }
         }
-    }
-    }
-            .divider{
-            color:white;
-            
         }
 }
-}
+
 @include mobile{
     .router-link-active{
         background:white;
@@ -229,7 +233,7 @@
     
                 width: calc(40px + 5.0520833vw);
                 height: calc(30px + 5.76307363929vh);
-                margin-left:calc(1rem + 4.6875vw);
+                margin-left:calc(1rem + 3.3875vw);
             }
         }
     
