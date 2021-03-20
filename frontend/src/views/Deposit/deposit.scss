@@ -23,6 +23,7 @@
    box-shadow: 0px 7px 10px rgba(181, 181, 181, 0.25);
    border-radius: 9px;
    padding:35px 32px ;
+
  
    p{
        font-size:14px;
@@ -44,6 +45,9 @@
     }
 
 @include mobile{
+    .container{
+        max-width: 95%;
+    }
     .section-donation{
         padding-top: 50px;
         p{
@@ -52,19 +56,14 @@
     }
 
     .bank-wrapper{
-        
-       
         text-align: center;
-        height: 700px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-  
-     
     }
     .bank-account{
-        width:90%;
+        width:95%;
         display:flex;
         justify-content: center;
         align-items: center;
