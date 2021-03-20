@@ -9,6 +9,14 @@
         font-weight: 700;
     }
 }
+.bank-wrapper{
+  
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill,minmax(461px,1fr));
+    column-gap:50px;
+    
+}
 .bank-account{
     margin-top:48px;
     width:calc(350px + 3.25vw);
@@ -30,17 +38,7 @@
 
     }
 
-.bank-wrapper{
-  
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    
-    flex-wrap: wrap;
-   
-    
 
-}
  .container{
         max-width: 90%;
     }
@@ -110,8 +108,29 @@
     }
     .bank-wrapper{
         text-align: center;
-        
-       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bank-account{
+        width:80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@include dekstop{
+
+    .section-donation{
+        padding-top: 50px;
+        p{
+            text-align: center;
+        }
+    }
+    .bank-wrapper{
+        text-align: center;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -133,10 +152,10 @@
         }
     }
     .bank-account{
-         width:461px;
+         width:485px;
     }
     .container{
-        max-width: 80%;
+        max-width: 88%;
     }
   
 }
