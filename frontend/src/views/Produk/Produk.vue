@@ -42,7 +42,7 @@
                     </b-col>
                     <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
                                 <CardProduk
-                                gambar="OVO.png"
+                                gambar="ovo.png"
                                 caption="Isi Saldo OVO"
                                 />
                     </b-col>
