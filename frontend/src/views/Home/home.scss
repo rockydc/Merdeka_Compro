@@ -144,7 +144,6 @@
     
         .header-text{
             height: 900px;
-          
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -190,9 +189,9 @@
     height: 400px;
 }
   .garis-bantu-kiri{
-    width: calc(350px + 7.8125vw);
+    width: calc(440px + 7.8125vw);
     left:0;
-    top:-150px;
+    top:-200px;
 }
   .section-profile{
     top:0;
@@ -291,18 +290,16 @@
     .section-profile-wrapper{
         position: relative;
         padding:0;
-        height: auto;    
+        height: 500px;    
     }
       .garis-bantu-kiri{
-            
-    
         position: relative;
-        width: 490px;
+        width: 590px;
         left:0;
-        top:-0;
+        top:-100px;
     }
       .section-profile{
-        
+        margin-top: 100px;
         position:absolute;
         top:0;
         width: 100%;
@@ -360,7 +357,6 @@
     }
     .hero{
         width: 100%;
-          
         position: absolute;
         top:0px;
         z-index:1px;
@@ -423,7 +419,7 @@
         position: relative;
         width: 480px;
         left:0;
-        top:-70px;
+        top:-100px;
     }
       .section-profile{
         
@@ -539,19 +535,19 @@
     }
 
  .section-profile-wrapper{
-  
+    
     height: 400px;
     }
       .garis-bantu-kiri{
-        width: 60vw;
-        left:0;
-        top:-50px;
+        width: 380px;
+        left:-40px;
+        top:-100px;
     }
       .section-profile{
         top:0;
         width: 100%;
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         padding:10px 20px;
         .logo-wrapper{
             .logo{
@@ -563,9 +559,9 @@
             }
         }
         .profile-content{
+          
+            padding: 0 30px;
             flex:2;
-            
-        
             display: flex;
             align-items: center;
       
@@ -649,9 +645,7 @@
     height: 400px;
     }
       .garis-bantu-kiri{
-        width: 60vw;
-        left:0;
-        top:-50px;
+        display: none;
     }
       .section-profile{
         top:0;
