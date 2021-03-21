@@ -1,8 +1,8 @@
 <template>
     <div class="CardAbout">
         <b-img :src="'assets/img/about/' + gambar"></b-img>
-        <p class="title">{{title}}</p>
-        <p class="caption">{{caption}}</p>
+        <p class="title">{{$t(title)}}</p>
+        <p class="caption">{{$t(caption)}}</p>
     </div>
 </template>
 <script>

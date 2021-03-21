@@ -9,13 +9,13 @@
   <section class="hero">
     <div class="header-text ">
         <div class="header-content ">
-          <h1> {{ $t("homeJoinUsTitle") }}   Merdeka Pulsa
+          <h1> {{ $t("home.homeJoinUsTitle") }}   Merdeka Pulsa
           </h1>
           <p class="p-text">penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
           siap mengawal transaksi Anda. 
           </p>
               <b-button to="/pendaftaran" class="btn-daftar">
-              {{ $t("homeJoinUsButton") }}
+              {{ $t("registerNow") }}
               </b-button>
         </div>
     </div>
@@ -36,17 +36,17 @@
       <div class="profile-content ">
         <div>
           <h1 class="mb-3">
-            {{ $t("homeOurProfileTitle") }}
+            {{ $t("home.homeOurProfileTitle") }}
           </h1>
           <p>
-            {{ $t("homeOurProfileFirstContent") }}
+            {{ $t("home.homeOurProfileFirstContent") }}
             <br/><br/>
-            {{ $t("homeOurProfileSecondContent") }}
+            {{ $t("home.homeOurProfileSecondContent") }}
             <br/><br/>
-            {{ $t("homeOurProfileThirdContent") }}
+            {{ $t("home.homeOurProfileThirdContent") }}
           </p>
             <router-link class="info-link" target="_top" to="/tentangmda">
-            {{ $t("homeOurProfileInformation") }}          
+            {{ $t("home.homeOurProfileInformation") }}          
             </router-link>
         </div>
       

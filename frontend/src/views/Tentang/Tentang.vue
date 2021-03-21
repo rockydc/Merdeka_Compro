@@ -13,14 +13,14 @@
                   <div class="container-fluid text-content">
                     <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
                     <p>
-                      {{ $t("aboutMerdekaFirstContent") }}
+                      {{ $t("about.aboutMerdekaFirstContent") }}
                      <br/><br/>
-                      {{ $t("aboutMerdekaSecondContent") }}
+                      {{ $t("about.aboutMerdekaSecondContent") }}
                       <br/><br/>
-                      {{ $t("aboutMerdekaThirdContent") }}
+                      {{ $t("about.aboutMerdekaThirdContent") }}
                       <router-link  class=" text-decoration-none" to="/pendaftaran">
                         <strong class="underline" style="color:#CB2B2B;">                      
-                          {{ $t("aboutMerdekaJoinNow") }}
+                          {{ $t("about.aboutMerdekaJoinNow") }}
                         </strong>
                       </router-link>
                     </p>
@@ -75,62 +75,62 @@ export default {
           {
             id:1,
             gambar:'monas.png',
-            title:'Berkantor di Jakarta Selatan',
-            caption:'Kami dapat dijangkau dengan mudah, kunjungi kami di Mampang Jakarta Selatan. Klik Hubungi Kami untuk alamat lengkapnya. '
-
-          },{
+            title: "about.whyMerdekaPulsa.place.title",
+            caption:"about.whyMerdekaPulsa.place.content"
+          },
+          {
             id:2,
             gambar:'Gedung.png',
-            title:"Perusahaan yang Legal & Terpercaya",
-            caption:"PT Merdeka Digital Asia legal dengan SK Kementerian No. AHU-0043299.AH.01.01.TAHUN 2020."
+            title: "about.whyMerdekaPulsa.trustWorthyCompany.title",
+            caption:"about.whyMerdekaPulsa.trustWorthyCompany.content"
           },
           {
             id:3,
             gambar:'bank.png',
-            title:"Deposit Langsung ke Rekening Bank Perusahaan",
-            caption:"Aman bertransaksi dengan kami, hanya melalui rekening atas nama Perusahaan dengan pengelolaan kontrol yang ketat."
+            title: "about.whyMerdekaPulsa.depositCompany.title",
+            caption:"about.whyMerdekaPulsa.depositCompany.content"
           },
           {
             id:4,
            gambar:'shakehand.png',
-            title:"Pendaftaran gratis dan mudah",
-            caption:"Dijamin gratis, setelah mendaftar Anda dapat melakukan deposit kemudian transaksi seluruh produk yang tersedia di Merdeka Pulsa."
+            title: "about.whyMerdekaPulsa.freeRegistration.title",
+            caption:"about.whyMerdekaPulsa.freeRegistration.content"
           },{
             id:5,
             gambar:'hand-coin-1x.png',
-            title:"3 channel Bank deposit via MANDIRI, BRI, dan BCA",
-            caption:"Deposit di Merdeka Pulsa didukung oleh 3 Bank terbesar di Indonesia, jangan lupa simpan bukti transfer Anda ya!"
+            title: "about.whyMerdekaPulsa.optionalBanks.title",
+            caption:"about.whyMerdekaPulsa.optionalBanks.content"
           },{
             id:6,
             gambar:'coin.png',
-            title:"Modal yang rendah, hanya 50.000 sudah bisa berjualan",
-            caption:"Hanya dengan deposit 50.000 rupiah, Anda dapat langsung menikmati transaksi di platform Merdeka Pulsa tanpa biaya tambahan apapun."
+            title: "about.whyMerdekaPulsa.smallDeposit.title",
+            caption:"about.whyMerdekaPulsa.smallDeposit.content"
           },{
             id:7,
             gambar:'customerservice.png',
-             title:"Open Deposit setiap hari pukul 08:00 - 20:00 WIB",
-            caption:"Kami melayani deposit tanpa hari libur di jam 08:00 – 20:00 WIB yang akan dibantu oleh Helpdesk terpercaya Kami."
+            title: "about.whyMerdekaPulsa.depositTime.title",
+            caption:"about.whyMerdekaPulsa.depositTime.content"
           },{
             id:8,
             gambar:'Money.png',
-            title:"Harga produk yang kompetitif",
-            caption:"Kami memberikan harga kompetitif di pasaran untuk Anda jual kembali."
+            title: "about.whyMerdekaPulsa.competitivePrice.title",
+            caption:"about.whyMerdekaPulsa.competitivePrice.content"
           },{
             id:9,
             gambar:'Jam.png',
-            title:"Transaksi dapat dilakukan selama 24 Jam",
-            caption:"Merdeka Pulsa open transaksi selama 24 Jam dengan produk yang lengkap tanpa biaya tambahan, raih keuntungan maksimal untuk bisnis Anda sekarang juga!"
+            title: "about.whyMerdekaPulsa.everytimeTransaction.title",
+            caption:"about.whyMerdekaPulsa.everytimeTransaction.content"
           },
           {
             id:10,
             gambar:'Document.png',
-            title:"Dokumentasi yang Lengkap",
-            caption:"Kami menyediakan dokumentasi yang lengkap beserta sandbox untuk melakukan pengetesan & development."
+            title: "about.whyMerdekaPulsa.completeDocumentation.title",
+            caption:"about.whyMerdekaPulsa.completeDocumentation.content"
           },{
             id:11,
             gambar:'Dashboard.png',
-            title:"Tersedia Web Monitoring transaksi untuk Sales Partner",
-            caption:"Web monitoring yang handal untuk memantau transaksi Anda, pengecekan deposit, pencatatan debit/kredit deposit, analisa transaksi harian, mencari data history transaksi yang pernah terjadi, fitur download report transaksi harian, Anda dapat memantau bisnis kapanpun dan dimanapun secara real-time."
+            title: "about.whyMerdekaPulsa.easyMonitoring.title",
+            caption:"about.whyMerdekaPulsa.easyMonitoring.content"
           }
         ]
       }

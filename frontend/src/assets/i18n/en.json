@@ -2,7 +2,6 @@
   "home": {
     "homeJoinUsTitle": "Let's join at",
     "homeJoinUsContent": "Competitive price &  Competent team.",
-    "homeJoinUsButton": "Register now",
     "homeOurProfileTitle": "Our Profile",
     "homeOurProfileFirstContent": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
     "homeOurProfileSecondContent": "The Company has its core business activities in commercializing web-portal and digital platform. It is also optimized with our ability to deliver an integrated solution to accommodate the customers needs.",
@@ -10,16 +9,84 @@
     "homeOurProfileInformation": "For more information..."
   },
   "about": {
-    "aboutMerdekaFirstContent": "Merdeka Pulsa is a trustworthy provider of digital products who is also supported with latest technology to guarantee the security of your transaction. ",
-    "aboutMerdekaSecondContent": "Merdeka Pulsa commits to encourage convenience in  accelerating clients' business by offering simple registration, smooth transactions, web-access for transactions monitoring, competitive product prices, and responsive helpdesk.",
-    "aboutMerdekaThirdContent": "",
-    "aboutMerdekaJoinNow": "Join Merdeka Pulsa now!"
+    "aboutMerdekaFirstContent": "Merdeka Pulsa provides digital products for independent lifestyle. We help you to surf on the internet, communicate, purchase PLN token, pay for PDAM and credit card bills, even purchase game vouchers in the most convenient way.",
+    "aboutMerdekaSecondContent": "We provide convenient and secured service, start from registration, transaction and after-sales service; we are with you all the time.",
+    "aboutMerdekaThirdContent": "Be independent with us, ",
+    "aboutMerdekaJoinNow": "join now!",
+    "whyMerdekaPulsa": {
+      "place": {
+        "title": "Located in South Jakarta",
+        "content": "Our office is in strategic business center in South Jakarta."
+      },
+      "trustWorthyCompany": {
+        "title": "Registered Company",
+        "content": "Merdeka Pulsa is established under Indonesia Law and therefore has complete legal documentations."
+      },
+      "depositCompany": {
+        "title": "Deposit to Company's Bank Account",
+        "content": "Your deposit is safe; it is not kept under Personal / Individual bank account."
+      },
+      "freeRegistration": {
+        "title": "Free & Convenient Registration",
+        "content": "We guarantee no registration fee required. Once registration is completed, activate your account by transfering the deposit, and you can start transacting all our products."
+      },
+      "competitivePrice": {
+        "title": "Competitive Price",
+        "content": "We offer you a competitive price in the market."
+      },
+      "smallDeposit": {
+        "title": "Small Deposit, only Rp50,000",
+        "content": "Only with deposit amount of Rp50,000, you can directly transact in our platform with no additional charge."
+      },
+      "depositTime": {
+        "title": "Deposit Anytime, from 8AM - 8PM",
+        "content": "We open the deposit service with no day-off, available from 8AM until 8PM WIB. Our Helpdesk will gladly assist you."
+      },
+      "everytimeTransaction": {
+        "title": "24 Hours Transactions",
+        "content": "Our system supports 24-hours transaction for all products. Get maximum benefits for your business!"
+      },
+      "optionalBanks": {
+        "title": "Available in 3 bank options",
+        "content": "Deposit in Merdeka Pulsa is supported by 3 reputable banks in  Indonesia, e.g. Bank Central Asia (BCA), Bank Rakyat Indonesia (BRI) and Bank Mandiri. Keep your transfer slip of deposit payment!"
+      },
+      "completeDocumentation": {
+        "title": "Complete Documentation",
+        "content": "We provide complete documentations, including a sandbox for your testing & development environment."
+      },
+      "easyMonitoring": {
+        "title": "Web-Access Monitoring",
+        "content": "Reliable Web-Acess to monitor your transactions, deposit movements, daily analysis, history of past transactions, report download feature. You can monitor your business anytime anywhere, real-time."
+      }
+    }
   },
   "registration": {
-    "registrationForm": {},
+    "placeholders": {
+      "title": "Fill-in the form below to join Merdeka Pulsa",
+      "companyName": "Company Name",
+      "contactName": "Contact Name",
+      "mobilePhone": "Mobile phone (for data verification)",
+      "companyEmail": "Company E-mail",
+      "companyPhone": "Company Phone",
+      "companyFullAddress": "Company Full Address",
+      "province": "Province",
+      "city": "City"
+    },
     "modalAfterRegistration": "Thanks for your registration at Merdeka Pulsa. Our team will contact you for verification in 1 x 24 hours.",
     "registrationInformation": "For more information, please reach us at"
   },
+  "product": {
+    "title": "Our Products",
+    "prepaidPulsa": "Prepaid Pulsa",
+    "dataPackage": "Data Package",
+    "token": "Electricity / PLN Token",
+    "gamesVoucher": "Games Voucher",
+    "ovo": "Top-up OVO Balance",
+    "goPay": "Top-up GOPAY Balance",
+    "service": "Operator & Services Provider"
+  },
+  "registerNow": "Register now",
   "why": "Why",
-  "or": "or"
+  "or": "or",
+  "at": "at"
 }

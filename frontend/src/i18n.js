@@ -7,38 +7,22 @@ Vue.use(VueI18n)
 
 const messages = {
   en: {
-    homeJoinUsTitle: EN.homeJoinUsTitle,
-    homeJoinUsContent: EN.homeJoinUsContent,
-    homeJoinUsButton: EN.homeJoinUsButton,
-    homeOurProfileTitle: EN.homeOurProfileTitle,
-    homeOurProfileFirstContent: EN.homeOurProfileFirstContent,
-    homeOurProfileSecondContent: EN.homeOurProfileSecondContent,
-    homeOurProfileThirdContent: EN.homeOurProfileThirdContent,
-    homeOurProfileInformation: EN.homeOurProfileInformation,
-    aboutMerdekaFirstContent: EN.aboutMerdekaFirstContent,
-    aboutMerdekaSecondContent: EN.aboutMerdekaSecondContent,
-    aboutMerdekaThirdContent: EN.aboutMerdekaTHIRD_CONTENT,
-    aboutMerdekaJoinNow: EN.aboutMerdekaJoinNow,
+    home: EN.home,
+    about: EN.about,
+    registration: EN.registration,
+    registerNow: EN.registerNow,
     why: EN.why,
-    modalAfterRegistration: EN.modalAfterRegistration,
-    registrationInformation: EN.registrationInformation,
+    or: EN.or,
+    at: EN.at
   },
   id: {
-    homeJoinUsTitle: ID.homeJoinUsTitle,
-    homeJoinUsContent: ID.homeJoinUsContent,
-    homeJoinUsButton: ID.homeJoinUsButton,
-    homeOurProfileTitle: ID.homeOurProfileTitle,
-    homeOurProfileFirstContent: ID.homeOurProfileFirstContent,
-    homeOurProfileSecondContent: ID.homeOurProfileSecondContent,
-    homeOurProfileThirdContent: ID.homeOurProfileThirdContent,
-    homeOurProfileInformation: ID.homeOurProfileInformation,
-    aboutMerdekaFirstContent: ID.aboutMerdekaFirstContent,
-    aboutMerdekaSecondContent: ID.aboutMerdekaSecondContent,
-    aboutMerdekaThirdContent: ID.aboutMerdekaThirdContent,
-    aboutMerdekaJoinNow: ID.aboutMerdekaJoinNow,
+    home: ID.home,
+    about: ID.about,
+    registration: ID.registration,
+    registerNow: ID.registerNow,
     why: ID.why,
-    modalAfterRegistration: ID.modalAfterRegistration,
-    registrationInformation: ID.registrationInformation,
+    or: ID.or,
+    at: ID.at
   }
 }
 

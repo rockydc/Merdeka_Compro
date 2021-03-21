@@ -16,7 +16,7 @@
                 </b-col>
                 <b-col lg="5" md="12" sm="12">
                     <div class="text-center">
-                         <p>Yuk isi form dibawah ini untuk Bergabung ke Merdeka Pulsa</p>
+                         <p>{{$t("registration.placeholders.title")}}</p>
                     </div>
                    
                     <div class="form-wrapper">
@@ -24,50 +24,49 @@
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
-                            placeholder="Nama Perusahaan">
+                            :placeholder="$t('registration.placeholders.companyName')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
-                            placeholder="Nama PIC">
+                            :placeholder="$t('registration.placeholders.contactName')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
-                            placeholder="Nomor Handphone PIC(Untuk verifikasi Data)">
+                            :placeholder="$t('registration.placeholders.mobilePhone')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
                             type="email"
-                            placeholder="Email Perusahaan">
+                            :placeholder="$t('registration.placeholders.companyEmail')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
-                            placeholder="No Telpon Perusahaan">
+                            :placeholder="$t('registration.placeholders.companyPhone')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
-                            placeholder="Alamat Lengkap Perusahaan">
+                            :placeholder="$t('registration.placeholders.companyFullAddress')">
                             </b-form-input>
-
                             <b-input-group>
                                 <b-form-input
                                 class="form-control"
                                 name="nama-perusahaan"
-                                placeholder="Provinsi">
+                                :placeholder="$t('registration.placeholders.province')">
                                 </b-form-input>
                                 <b-form-input
                                 class="form-control border-left"
                                 name="nama-perusahaan"
-                                placeholder="Kota">
+                                :placeholder="$t('registration.placeholders.city')">
                                 </b-form-input>
                             </b-input-group>
                         </b-form>
                     </div>
-                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">Daftar Sekarang</b-button>
+                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">{{ $t("registerNow") }}</b-button>
 
                                 <b-modal id="modal-center" class="" hide-footer hide-header centered title="BootstrapVue" >
                                         <template #default="{ hide }">
@@ -76,7 +75,7 @@
 
                                     </b-img>
                                     <p class="text-center mt-4">
-                                        {{$t("modalAfterRegistration")}}
+                                        {{$t("registration.modalAfterRegistration")}}
                                     </p>
                                     <b-btn class="btn-daftar mt-2  " variant="danger" @click="hide()">OK</b-btn>
                                 </b-container>
@@ -86,8 +85,9 @@
                           <b-img class="img-cs " src="assets/img/ic-customerservice.png"></b-img>
                             <div class="ml-5  d-flex justify-content-center align-items-center mt-2">
                                 <p >
-                              Untuk informasi lebih lengkap hubungi <strong class="telegram">021-2951 7763</strong>
-                                atau Telegram ke <strong class="telegram" >@merdekacs</strong>
+                              {{$t("registration.registrationInformation")}}
+                              <strong class="telegram">021-2951 7763</strong>
+                                {{$t('or')}} Telegram {{$t('at')}} <strong class="telegram" >@merdekacs</strong>
                           </p>
                             </div>
                           
