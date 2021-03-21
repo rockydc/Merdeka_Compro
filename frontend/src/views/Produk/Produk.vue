@@ -15,44 +15,12 @@
            
             <div class=" d-flex justify-content-center align-items-center  ">
                 <b-row class="produkWrapper">
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12"> 
+                    <b-col v-for="produk in ProdukList" v-bind:key="produk.id" class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12"> 
                                 <CardProduk
-                                gambar="mobile.svg"
-                                caption="Pulsa prepaid seluruh operator"
+                                :gambar="produk.gambar"
+                                :caption="produk.caption"
                                 />
                     </b-col>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
-                                <CardProduk
-                           
-                                gambar="web.svg"
-                                caption="Paket Data Seluruh Operator"
-                                />
-                    </b-col>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
-                                <CardProduk
-                                gambar="data.svg"
-                                caption="Token PLN"
-                                />
-                    </b-col>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
-                                <CardProduk
-                                gambar="controller.svg"
-                                caption="Voucher Game"
-                                />
-                    </b-col>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
-                                <CardProduk
-                                gambar="ovo.png"
-                                caption="Isi Saldo OVO"
-                                />
-                    </b-col>
-                    <b-col class="produk-content d-flex align-items-center justify-content-center" lg="4" md="6" sm="12">
-                                <CardProduk
-                                gambar="gopay.png"
-                                caption="Isi Saldo Go-Pay"
-                                />
-                    </b-col>
-
                     
                 </b-row>
             </div>
@@ -67,7 +35,7 @@
          <div class=" operator-container">
            <div class="operator-wrapper">
                 <div class="operator-content">
-                <b-img  src="assets/img/produk/telkomsel.svg"></b-img>
+                    <b-img  src="assets/img/produk/telkomsel.svg"></b-img>
                 </div>
                 <div class="operator-content"> <b-img src="assets/img/produk/xl.svg"></b-img></div>
                 <div class="operator-content"> <b-img src="assets/img/produk/indosat-logo.svg"></b-img></div>
@@ -99,6 +67,40 @@ export default {
         Navbar,
         Header,
         CardProduk
+    },
+    data:()=>{
+        return{
+            ProdukList:[
+                {
+                    id:1,
+                    gambar:'mobile.svg',
+                    caption:'Pulsa prepaid seluruh ooperator'
+                },
+                {
+                    id:2,
+                    gambar:'web.svg',
+                    caption:'Paket Data Seluruh Operator'
+                },
+                {
+                    id:3,
+                    gambar:'data.svg',
+                    caption:'Token PLN'
+                },{
+                    id:4,
+                    gambar:'controller.svg',
+                    caption:'Voucher Game'
+                },{
+                    id:5,
+                    gambar:'ovo.png',
+                    caption:"Isi Saldo Ovo"
+                },
+                {
+                    id:6,
+                    gambar:"gopay.png",
+                    caption:"Isi Saldo Go-Pay"
+                }
+            ]
+        }
     }
 }
 </script>
