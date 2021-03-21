@@ -13,14 +13,14 @@
                   <div class="container-fluid text-content">
                     <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
                     <p>
-                      {{ $t("ABOUT_MERDEKA_FIRST_CONTENT") }}
+                      {{ $t("aboutMerdekaFirstContent") }}
                      <br/><br/>
-                      {{ $t("ABOUT_MERDEKA_SECOND_CONTENT") }}
+                      {{ $t("aboutMerdekaSecondContent") }}
                       <br/><br/>
-                      {{ $t("ABOUT_MERDEKA_THIRD_CONTENT") }}
+                      {{ $t("aboutMerdekaThirdContent") }}
                       <router-link  class=" text-decoration-none" to="/pendaftaran">
                         <strong class="underline" style="color:#CB2B2B;">                      
-                          {{ $t("ABOUT_MERDEKA_JOIN_NOW") }}
+                          {{ $t("aboutMerdekaJoinNow") }}
                         </strong>
                       </router-link>
                     </p>
@@ -35,7 +35,7 @@
                     <b-col lg="3"  class="kenapa-wrapper pt-4">
                         <div >
                             <p class="title mt-3">
-                            {{ $t("WHY") }}
+                            {{ $t("why") }}
                               <br/>
                               Merdeka Pulsa
                             </p>

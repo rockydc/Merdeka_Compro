@@ -9,12 +9,13 @@
   <section class="hero">
     <div class="header-text ">
         <div class="header-content ">
-          <h1> {{ $t("HOME_JOIN_US_TITLE") }}   Merdeka Pulsa
+          <h1> {{ $t("homeJoinUsTitle") }}   Merdeka Pulsa
           </h1>
           <p class="p-text">penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
           siap mengawal transaksi Anda. 
           </p>
               <b-button to="/pendaftaran" class="btn-daftar">
+              {{ $t("homeJoinUsButton") }}
               </b-button>
         </div>
     </div>
@@ -35,17 +36,17 @@
       <div class="profile-content ">
         <div>
           <h1 class="mb-3">
-            {{ $t("HOME_OUR_PROFILE_TITLE") }}
+            {{ $t("homeOurProfileTitle") }}
           </h1>
           <p>
-            {{ $t("HOME_OUR_PROFILE_FIRST_CONTENT") }}
+            {{ $t("homeOurProfileFirstContent") }}
             <br/><br/>
-            {{ $t("HOME_OUR_PROFILE_SECOND_CONTENT") }}
+            {{ $t("homeOurProfileSecondContent") }}
             <br/><br/>
-            {{ $t("HOME_OUR_PROFILE_THIRD_CONTENT") }}
+            {{ $t("homeOurProfileThirdContent") }}
           </p>
             <router-link class="info-link" target="_top" to="/tentangmda">
-            {{ $t("HOME_OUR_PROFILE_INFORMATION") }}          
+            {{ $t("homeOurProfileInformation") }}          
             </router-link>
         </div>
       
@@ -56,7 +57,6 @@
 
 </div>
 </template>
-
 <script>
 // @ is an alias to /src
 import {Navbar} from '../../components';

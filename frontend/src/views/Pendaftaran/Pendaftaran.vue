@@ -21,53 +21,50 @@
                    
                     <div class="form-wrapper">
                         <b-form id="form-pendaftaran" method="post" action="#">
-                         <b-form-input
-                         class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="Nama Perusahaan">
-                         </b-form-input>
-                        <b-form-input
-                        class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="Nama PIC">
-                         </b-form-input>
-                        <b-form-input
-                        class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="Nomor Handphone PIC(Untuk verifikasi Data)">
-                         </b-form-input>
-                        <b-form-input
-                        class="form-control"
-                         name="nama-perusahaan"
-                         type="email"
-                         placeholder="Email Perusahaan">
-                         </b-form-input>
-                        <b-form-input
-                        class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="No Telpon Perusahaan">
-                         </b-form-input>
-                        <b-form-input
-                        class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="Alamat Lengkap Perusahaan">
-                         </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            placeholder="Nama Perusahaan">
+                            </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            placeholder="Nama PIC">
+                            </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            placeholder="Nomor Handphone PIC(Untuk verifikasi Data)">
+                            </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            type="email"
+                            placeholder="Email Perusahaan">
+                            </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            placeholder="No Telpon Perusahaan">
+                            </b-form-input>
+                            <b-form-input
+                            class="form-control"
+                            name="nama-perusahaan"
+                            placeholder="Alamat Lengkap Perusahaan">
+                            </b-form-input>
 
-                         <b-input-group>
-                                                     <b-form-input
-                                                     class="form-control"
-                         name="nama-perusahaan"
-                         placeholder="Provinsi">
-                         </b-form-input>
-                        <b-form-input
-                        
-                        class="form-control border-left"
-                         name="nama-perusahaan"
-                         placeholder="Kota">
-                         </b-form-input>
-                         </b-input-group>
-
-                      
+                            <b-input-group>
+                                <b-form-input
+                                class="form-control"
+                                name="nama-perusahaan"
+                                placeholder="Provinsi">
+                                </b-form-input>
+                                <b-form-input
+                                class="form-control border-left"
+                                name="nama-perusahaan"
+                                placeholder="Kota">
+                                </b-form-input>
+                            </b-input-group>
                         </b-form>
                     </div>
                       <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">Daftar Sekarang</b-button>
@@ -79,8 +76,7 @@
 
                                     </b-img>
                                     <p class="text-center mt-4">
-                                        Terimakasih telah mendaftar di Merdeka,
-Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 Jam
+                                        {{$t("modalAfterRegistration")}}
                                     </p>
                                     <b-btn class="btn-daftar mt-2  " variant="danger" @click="hide()">OK</b-btn>
                                 </b-container>

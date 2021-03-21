@@ -1,15 +1,25 @@
 {
-  "HOME_JOIN_US_TITLE": "Let's join at",
-  "HOME_JOIN_US_CONTENT": "Competitive price &  Competent team.",
-  "HOME_JOIN_US_BUTTON": "Register now",
-  "HOME_OUR_PROFILE_TITLE": "Our Profile",
-  "HOME_OUR_PROFILE_FIRST_CONTENT": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
-  "HOME_OUR_PROFILE_SECOND_CONTENT": "The Company has its core business activities in commercializing web-portal and digital platform. It is also optimized with our ability to deliver an integrated solution to accommodate the customers needs.",
-  "HOME_OUR_PROFILE_THIRD_CONTENT": "With a combined strong technical – commercial – operations abilities, the Company is able to deliver the best output for customers’ satisfaction.",
-  "HOME_OUR_PROFILE_INFORMATION": "For more information...",
-  "ABOUT_MERDEKA_FIRST_CONTENT": "Merdeka Pulsa is a trustworthy provider of digital products who is also supported with latest technology to guarantee the security of your transaction. ",
-  "ABOUT_MERDEKA_SECOND_CONTENT": "Merdeka Pulsa commits to encourage convenience in  accelerating clients' business by offering simple registration, smooth transactions, web-access for transactions monitoring, competitive product prices, and responsive helpdesk.",
-  "ABOUT_MERDEKA_THIRD_CONTENT": "",
-  "ABOUT_MERDEKA_JOIN_NOW": "Join Merdeka Pulsa now!",
-  "WHY": "Why"
+  "home": {
+    "homeJoinUsTitle": "Let's join at",
+    "homeJoinUsContent": "Competitive price &  Competent team.",
+    "homeJoinUsButton": "Register now",
+    "homeOurProfileTitle": "Our Profile",
+    "homeOurProfileFirstContent": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
+    "homeOurProfileSecondContent": "The Company has its core business activities in commercializing web-portal and digital platform. It is also optimized with our ability to deliver an integrated solution to accommodate the customers needs.",
+    "homeOurProfileThirdContent": "With a combined strong technical – commercial – operations abilities, the Company is able to deliver the best output for customers’ satisfaction.",
+    "homeOurProfileInformation": "For more information..."
+  },
+  "about": {
+    "aboutMerdekaFirstContent": "Merdeka Pulsa is a trustworthy provider of digital products who is also supported with latest technology to guarantee the security of your transaction. ",
+    "aboutMerdekaSecondContent": "Merdeka Pulsa commits to encourage convenience in  accelerating clients' business by offering simple registration, smooth transactions, web-access for transactions monitoring, competitive product prices, and responsive helpdesk.",
+    "aboutMerdekaThirdContent": "",
+    "aboutMerdekaJoinNow": "Join Merdeka Pulsa now!"
+  },
+  "registration": {
+    "registrationForm": {},
+    "modalAfterRegistration": "Thanks for your registration at Merdeka Pulsa. Our team will contact you for verification in 1 x 24 hours.",
+    "registrationInformation": "For more information, please reach us at"
+  },
+  "why": "Why",
+  "or": "or"
 }
