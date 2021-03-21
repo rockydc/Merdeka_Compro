@@ -24,98 +24,25 @@
                  </b-col>
                  <b-col lg="5" md="6" sm="12">
                      <b-img class="img-goals" fluid src="assets/img/photo-tentangmp.png">
-
                      </b-img>
-
                  </b-col>
              </b-row>
          </b-container>
         </section>
-                 <section class="section-value">
-             <h1 class="text-center">Nilai - Nilai Kami</h1>
+        <section class="section-value">
+            <h1 class="text-center">Nilai - Nilai Kami</h1>
             <div class="card-content-wrapper mt-5">
-                <div class="card-content">
-                       <b-img src="assets/img/protect-ic.svg"></b-img>
+                <div v-for="value in ValueList" v-bind:key="value.id" class="card-content">
+                       <b-img :src="'assets/img/'+value.gambar" :alt="value.gambar"></b-img>
                        <div class="text-content">
                            <p class="title">
-                               Integritas
+                               {{value.title}}
                            </p>
                            <p class="caption">
-                                Integritas kami menjadi utama dalam menjalankan
-                                bisnis
-
+                               {{value.caption}}
                            </p>
                        </div>
                    </div>
-                      <div class="card-content">
-                       <b-img src="assets/img/heart-ic.svg"></b-img>
-                       <div class="text-content">
-                           <p class="title">
-                               Komitmen
-                           </p>
-                           <p class="caption">
-                                Kami berkomitmen untuk menyampaikan hasil yang terbaik
-
-                           </p>
-                       </div>
-                   </div>
-                  <div class=" card-content">
-                       <b-img src="assets/img/math-ic.svg"></b-img>
-                       <div class="text-content">
-                           <p class="title">
-                               Sikap Positif
-                           </p>
-                           <p class="caption">
-                               Kami menebarkan suasana positif pada lingkungan kami
-
-                           </p>
-                       </div>
-                   </div>
-                 <div class=" card-content">
-                       <b-img src="assets/img/user-group-ic.svg"></b-img>
-                       <div class="text-content">
-                           <p class="title">
-                               Fokus Pada Pelanggan
-                           </p>
-                           <p class="caption">
-                        
-                            Kami mengharapkan kepuasan pelanggan dan
-                            masukan dari pelanggan
-
-
-                           </p>
-                       </div>
-                   </div>
-                 <div class=" card-content">
-                       <b-img src="assets/img/brain-ic.svg"></b-img>
-                       <div  class="text-content">
-                           <p class="title">
-                             Kreatif dan Berpikiran Terbuka
-                           </p>
-                           <p class="caption">
-                           Menemukan cara – cara kreatif dalam menjalankan
-                            pekerjaan dan berpikiran terbuka untuk segala
-                            kemungkinan
-
-
-                           </p>
-                       </div>
-                   </div>
-                  <div class=" card-content">
-                       <b-img src="assets/img/promise-ic.svg"></b-img>
-                       <div class="text-content">
-                           <p class="title">
-                              Terpercaya
-                           </p>
-                           <p class="caption">
-                                                        
-                                Menjadi individu yang terpercaya bagi lingkungan
-                                sekitar
-
-                           </p>
-                       </div>
-                   </div>
-
             </div>
          
 
@@ -132,6 +59,46 @@ export default {
     components:{
         Navbar,
         Header
+    },
+    data:()=>{
+        return{
+            ValueList:[
+                {
+                id:1,
+                gambar:"protect-ic.svg",
+                title:'Integritas',
+                caption:'Integritas kami menjadi utama dalam menjalankan bisnis'
+                },{
+                id:2,
+                gambar:'heart-ic.svg',
+                title:'Komitmen',
+                caption:'Kami berkomitmen untuk menyampaikan hasil yang terbaik'
+                },
+                {
+                    id:3,
+                    gambar:'math-ic.svg',
+                    title:'Sikap Positif',
+                    caption:'Kami menebarkan suasana positif pada lingkungan kami'
+
+                },
+                {
+                    id:4,
+                    gambar:'user-group-ic.svg',
+                    title:'Fokus Pada Pelanggan',
+                    caption:'Kami mengharapkan kepuasan pelanggan dan masukan dari pelanggan'
+                },{
+                    id:5,
+                    gambar:'brain-ic.svg',
+                    title:'Kreatif dan Berpikiran Terbuka',
+                    caption:'Menemukan cara – cara kreatif dalam menjalankan pekerjaan dan berpikiran terbuka untuk segala kemungkinan'
+                },{
+                    id:6,
+                    gambar:'promise-ic.svg',
+                    title:'Terpercaya',
+                    caption:'Menjadi individu yang terpercaya bagi lingkungan sekitar'
+                }
+            ]
+        }
     },
     mounted (){
         window.scrollTo(0,0);
