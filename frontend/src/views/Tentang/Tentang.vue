@@ -4,34 +4,40 @@
        
         <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" title="Tentang Merdeka Pulsa"/>
         <section class="section-merdeka">
-                    <div class="container-fluid">
-                            <b-row >
-                                <b-col lg="4" xl="3" class="d-flex justify-content-center align-items-center pt-4">
-                                    <b-img class="logo-about"  src="assets/img/about/logo-about.png"></b-img>
-                                </b-col>
-                                <b-col lg="8" xl="9">
-                                    <div class="container-fluid text-content">
-                                        <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
-                                        <p>Merdeka Pulsa menyediakan produk-produk digital untuk gaya hidup merdeka. Merdeka berselancar di internet, berkomunikasi, mudah isi ulang listrik, melakukan pembayaran layanan air, kartu kredit bahkan nge game tanpa batas.<br/><br/>Kami menyediakan layanan yang mudah dan aman, mulai dari registrasi, transaksi dan layanan purna jual yang setia menemani Anda.
-
-                <br/> <br/>Mari Merdeka bersama kami, <router-link  class=" text-decoration-none" to="/pendaftaran">
-                  
-                  <strong class="underline" style="color:#CB2B2B;">Gabung Sekarang</strong></router-link>
-                                        </p>
-                                    </div>
-                                </b-col>
-                            </b-row>
-                        </div>
+          <div class="container-fluid">
+            <b-row >
+                <b-col lg="4" xl="3" class="d-flex justify-content-center align-items-center pt-4">
+                    <b-img class="logo-about"  src="assets/img/about/logo-about.png"></b-img>
+                </b-col>
+                <b-col lg="8" xl="9">
+                  <div class="container-fluid text-content">
+                    <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
+                    <p>
+                      {{ $t("ABOUT_MERDEKA_FIRST_CONTENT") }}
+                     <br/><br/>
+                      {{ $t("ABOUT_MERDEKA_SECOND_CONTENT") }}
+                      <br/><br/>
+                      {{ $t("ABOUT_MERDEKA_THIRD_CONTENT") }}
+                      <router-link  class=" text-decoration-none" to="/pendaftaran">
+                        <strong class="underline" style="color:#CB2B2B;">                      
+                          {{ $t("ABOUT_MERDEKA_JOIN_NOW") }}
+                        </strong>
+                      </router-link>
+                    </p>
+                </div>
+              </b-col>
+            </b-row>
+          </div>
         </section>
-    
         <div class="about-kenapa-section  container-fluid ">
-        
               <div class="wrapper">
                 <b-row>
                     <b-col lg="3"  class="kenapa-wrapper pt-4">
                         <div >
-                            <p class="title mt-3">Kenapa<br/>
-                            Merdeka Pulsa
+                            <p class="title mt-3">
+                            {{ $t("WHY") }}
+                              <br/>
+                              Merdeka Pulsa
                             </p>
                             <div class="line-red"></div>
                         </div>
@@ -111,8 +117,7 @@
                         <CardAbout
                         gambar='Dashboard.png'
                         title="Tersedia Web Monitoring transaksi untuk Sales Partner"
-                        caption="Web monitoring yang handal untuk memantau transaksi Anda, pengecekan deposit, pencatatan debit/kredit deposit, analisa transaksi harian, mencari data history transaksi yang pernah terjadi, fitur download report transaksi harian, Anda dapat memantau bisnis kapanpun dan dimanapun secara real-time.
-    "
+                        caption="Web monitoring yang handal untuk memantau transaksi Anda, pengecekan deposit, pencatatan debit/kredit deposit, analisa transaksi harian, mencari data history transaksi yang pernah terjadi, fitur download report transaksi harian, Anda dapat memantau bisnis kapanpun dan dimanapun secara real-time."
                         />
                     </b-col>
                 </b-row>
