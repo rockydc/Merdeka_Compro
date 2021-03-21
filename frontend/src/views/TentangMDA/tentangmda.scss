@@ -7,7 +7,7 @@
 .section-tujuan{
     position: relative;
     margin-top:-100px;
-    background: rgba(0, 0, 0, 0.03);
+    // background: rgba(0, 0, 0, 0.03);
     padding-top:260px;
     border-radius: 0px 0px 208px 0px;
     padding-bottom:94px;
@@ -29,6 +29,7 @@
 
 }
 .section-value{
+    background: rgba(0, 0, 0, 0.03);
     display: flex;
     justify-content:center;
     flex-direction: column;
@@ -39,6 +40,7 @@
         max-width: 88%;
     }
     .card-content-wrapper{
+       
         width: 88%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -47,6 +49,7 @@
         row-gap: 39px;
         column-gap: 61px;
         .card-content{
+            background-color: white;
             display: flex;
             align-items: center;
             padding-left:calc(50px +  0.46875vw); 
@@ -294,7 +297,7 @@
         }
 
         img{
-            width: 578px;
+            width: calc(578px +1vw);
             height: 378px;
             padding-left:150px;
         }

@@ -34,17 +34,10 @@
          
          <div class=" operator-container">
            <div class="operator-wrapper">
-                <div class="operator-content">
-                    <b-img  src="assets/img/produk/telkomsel.svg"></b-img>
+                <div v-for="operator in OperatorList" v-bind:key="operator.id" class="operator-content">
+                    <b-img  :src="'assets/img/produk/'+operator.gambar" :alt="operator.gambar"></b-img>
                 </div>
-                <div class="operator-content"> <b-img src="assets/img/produk/xl.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/indosat-logo.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/3-logo.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/smartfrend.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/axis-logo.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/ovo.svg"></b-img></div>
-                <div class="operator-content"> <b-img src="assets/img/produk/gopay.svg"></b-img></div>
-                <div class="operator-content"><b-img src="assets/img/produk/pubg.svg"></b-img></div>
+           
             </div>
 
          </div>
@@ -98,6 +91,37 @@ export default {
                     id:6,
                     gambar:"gopay.png",
                     caption:"Isi Saldo Go-Pay"
+                }
+            ],
+            OperatorList:[
+                {
+                    id:1,
+                    gambar:'telkomsel.svg'
+                },
+                {
+                    id:2,
+                    gambar:'xl.svg'
+                },{
+                    id:3,
+                    gambar:'indosat-logo.svg'
+                },{
+                    id:4,
+                    gambar:'3-logo.svg'
+                },{
+                    id:5,
+                    gambar:'smartfrend.svg'
+                },{
+                    id:6,
+                    gambar:'axis-logo.svg'
+                },{
+                    id:7,
+                    gambar:'ovo.svg'
+                },{
+                    id:8,
+                    gambar:'gopay.svg'
+                },{
+                    id:9,
+                    gambar:'pubg.svg'
                 }
             ]
         }
