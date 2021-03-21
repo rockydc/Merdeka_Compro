@@ -2,7 +2,7 @@
     
     <div>
         <Navbar/>
-        <Header title="Hubungi Kami"/>
+        <Header :title="$t('contactUs.title')"/>
     <!-- Start Section Kontak -->
         <div class="section-kontak">
 
@@ -33,7 +33,7 @@
                                 <p class="title mt-4">
                                     PT.Merdeka Digital Asia
                                 </p>
-                                <p class="caption">Sarana Building Lantai 5, Jl. Mampang Prapatan No. 26 Duren Tiga, Pancoran, Jakarta Selatan 12760</p>
+                                <p class="caption">{{$t('contactUs.address')}}</p>
                             </div>
                             <!-- end Location -->
                             </b-col>
@@ -137,7 +137,7 @@
             <section class="section-ask-form">
                 <b-container>
                     <h1>
-                        Tanya Merdeka Pulsa
+                        {{$t('contactUs.formTitle')}}
                     </h1>
                     <div class="form-wrapper">
                     
@@ -148,22 +148,22 @@
 
                          <b-row class="m-0 p-0 d-flex justify-content-space-between">
                            <b-col class="m-0 p-0 border-red" lg="7" md="12" sm="12">
-                                <b-form-input class="form-control mt-4" placeholder="Nama anda"></b-form-input>
+                                <b-form-input class="form-control mt-4" :placeholder="$t('contactUs.placeholders.name')"></b-form-input>
                            </b-col>
                            <b-col class="m-0 p-0 border-red" lg="5" md="12" sm="12">
-                            <b-form-input class="form-control form-email mt-4 ml-lg-2 ml-sm-0" placeholder="Email Anda">
+                            <b-form-input class="form-control form-email mt-4 ml-lg-2 ml-sm-0" :placeholder="$t('contactUs.placeholders.email')">
                                 </b-form-input>
                            </b-col>
                        </b-row>
                        </b-form-group>
                         <b-form-input class="form-control mt-4"
-                        placeholder="Subjek"
+                        :placeholder="$t('contactUs.placeholders.subject')"
                         >
                         </b-form-input>
-                        <b-form-textarea class="form-control mt-4" placeholder="Pesan">
+                        <b-form-textarea class="form-control mt-4" :placeholder="$t('contactUs.placeholders.message')">
 
                         </b-form-textarea>
-                        <b-button class="btn-send w-100 mt-4">Kirim Pesan</b-button>
+                        <b-button class="btn-send w-100 mt-4">{{$t('contactUs.sent')}} </b-button>
                     </b-form>
                     <!-- end form -->
                     </div>

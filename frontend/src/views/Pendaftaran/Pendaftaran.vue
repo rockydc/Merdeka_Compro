@@ -3,7 +3,7 @@
   
 
         <Navbar/>
-        <Header title="Pendaftaran" />
+        <Header :title="$t('registration.title')" />
         <b-container class="section-pendaftaran-wrapper">
             <b-row>
                 <b-col class="mb-5 right-wrapper" lg="7" md="12" sm="12" >

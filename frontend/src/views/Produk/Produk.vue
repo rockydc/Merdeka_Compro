@@ -3,13 +3,13 @@
         
 
         <Navbar/>
-        <Header title="Produk Merdeka Pulsa"/>
+        <Header :title="$t('product.title')"/>
 
         <div class="text-center section-produk-content">
            <div class="d-inline-flex flex-column align-items-center">
 
                
-            <h1>Produk Merdeka Pulsa</h1>
+            <h1>{{$t('product.ourProduct')}}</h1>
             <div class="mt-3 red-line"></div>
            </div>
            
@@ -28,7 +28,7 @@
         <section class="section-operator text-center">
 
             <div class="d-inline-flex flex-column align-items-center">
-                     <h1>Operator & Penyedia Layanan</h1>
+                     <h1>{{$t('product.service')}}</h1>
                       <div class="mt-3 red-line"></div>
             </div>
          
@@ -67,30 +67,37 @@ export default {
                 {
                     id:1,
                     gambar:'mobile.svg',
-                    caption:'Pulsa prepaid seluruh ooperator'
+                    caption:'product.prepaidPulsa'
                 },
                 {
                     id:2,
                     gambar:'web.svg',
-                    caption:'Paket Data Seluruh Operator'
+                    caption:'product.dataPackage'
+
                 },
                 {
                     id:3,
                     gambar:'data.svg',
-                    caption:'Token PLN'
-                },{
+                    caption:'product.token'
+
+                },
+                {
                     id:4,
                     gambar:'controller.svg',
-                    caption:'Voucher Game'
-                },{
+                    caption:'product.gamesVoucher'
+
+                },
+                {
                     id:5,
                     gambar:'ovo.png',
-                    caption:"Isi Saldo Ovo"
+                    caption:'product.ovo'
+
                 },
                 {
                     id:6,
                     gambar:"gopay.png",
-                    caption:"Isi Saldo Go-Pay"
+                    caption:'product.goPay'
+
                 }
             ],
             OperatorList:[

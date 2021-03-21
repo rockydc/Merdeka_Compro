@@ -1,17 +1,19 @@
 {
   "home": {
+    "title": "Beranda",
     "homeJoinUsTitle": "Mari bergabung ke",
     "homeJoinUsContent": "penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, siap mengawal transaksi Anda.",
     "homeOurProfileTitle": "Profile Kami",
-    "homeOurProfileFirstContent": "Didirikan pada September 2020, Perusahaan membawa keahlian, pengalaman, jaringan dan kemampuan keuangan yang kuat di industri ini.",
-    "homeOurProfileSecondContent": "Perusahaan memiliki aktivitas bisnis utama dalam komersialisasi portal web dan platform digital. Hal ini juga dioptimalkan dengan kemampuan kami untuk menyampaikan solusi yang terintegrasi untuk mengakomodir kebutuhan pelanggan.",
-    "homeOurProfileThirdContent": "Dengan kombinasi kemampuan teknis – komersial – operasi yang kuat, Perusahaan dapat menyampaikan hasil yang terbaik bagi kepuasan pelanggan.",
+    "homeOurProfileFirstParagraph": "Didirikan pada September 2020, Perusahaan membawa keahlian, pengalaman, jaringan dan kemampuan keuangan yang kuat di industri ini.",
+    "homeOurProfileSecondParagraph": "Perusahaan memiliki aktivitas bisnis utama dalam komersialisasi portal web dan platform digital. Hal ini juga dioptimalkan dengan kemampuan kami untuk menyampaikan solusi yang terintegrasi untuk mengakomodir kebutuhan pelanggan.",
+    "homeOurProfileThirdParagraph": "Dengan kombinasi kemampuan teknis – komersial – operasi yang kuat, Perusahaan dapat menyampaikan hasil yang terbaik bagi kepuasan pelanggan.",
     "homeOurProfileInformation": "Info lebih lanjut..."
   },
   "about": {
-    "aboutMerdekaFirstContent": "Merdeka Pulsa menyediakan produk-produk digital untuk gaya hidup merdeka. Merdeka berselancar di internet, berkomunikasi, mudah isi ulang listrik, melakukan pembayaran layanan air, kartu kredit bahkan nge game tanpa batas.",
-    "aboutMerdekaSecondContent": "Kami menyediakan layanan yang mudah dan aman, mulai dari registrasi, transaksi dan layanan purna jual yang setia menemani Anda.",
-    "aboutMerdekaThirdContent": "Mari Merdeka bersama kami, ",
+    "title": "Tentang Merdeka Pulsa",
+    "aboutMerdekaFirstParagraph": "Merdeka Pulsa menyediakan produk-produk digital untuk gaya hidup merdeka. Merdeka berselancar di internet, berkomunikasi, mudah isi ulang listrik, melakukan pembayaran layanan air, kartu kredit bahkan nge game tanpa batas.",
+    "aboutMerdekaSecondParagraph": "Kami menyediakan layanan yang mudah dan aman, mulai dari registrasi, transaksi dan layanan purna jual yang setia menemani Anda.",
+    "aboutMerdekaThirdParagraph": "Mari Merdeka bersama kami, ",
     "aboutMerdekaJoinNow": "Gabung Sekarang",
     "whyMerdekaPulsa": {
       "place": {
@@ -61,6 +63,7 @@
     }
   },
   "registration": {
+    "title": "Pendaftaran",
     "placeholders": {
       "title": "Yuk isi form dibawah ini untuk Bergabung ke Merdeka Pulsa",
       "companyName": "Nama Perusahaan",
@@ -77,6 +80,7 @@
   },
   "product": {
     "title": "Produk Merdeka Pulsa",
+    "ourProduct": "Produk Merdeka Pulsa",
     "prepaidPulsa": "Pulsa prepaid seluruh operator",
     "dataPackage": "Paket Data Seluruh Operator",
     "token": "Token PLN",
@@ -84,6 +88,59 @@
     "ovo": "Isi Saldo OVO",
     "goPay": "Isi Saldo Go-Pay",
     "service": "Operator & Penyedia Layanan"
+  },
+  "deposit": {
+    "title": "Deposit",
+    "banks": "Menerima deposit dari 3 channel Bank yaitu MANDIRI, BCA, dan BRI.",
+    "notes": "Jangan lupa untuk simpan bukti transfer Anda, hubungi Telegram ",
+    "forAssistance": "untuk bantuan."
+  },
+  "contactUs": {
+    "title": "Hubungi Kami",
+    "address": "Sarana Building Lantai 5, Jl. Mampang Prapatan No. 26 Duren Tiga, Pancoran, Jakarta Selatan 12760",
+    "formTitle": "Tanya Merdeka Pulsa",
+    "placeholders": {
+      "name": "Nama Anda",
+      "email": "Email Anda",
+      "subject": "Subjek",
+      "message": "Pesan"
+    },
+    "sent": "Kirim Pesan"
+  },
+  "aboutMDA": {
+    "title": "Tentang MDA",
+    "purpose": {
+      "title": "Tujuan Kami",
+      "firstParagraph": "Perusahaan bertujuan untuk menjadi rekan yang terpercaya dalam setiap kesepakatan bisnis; dan menempatkan pengalaman pelanggan kami sebagai prioritas yang paling tinggi.",
+      "secondParagraph": "Kami berkolaborasi, bantu membantu, dengan komunitas besar untu menciptakan lingkungan yang berkelanjutan, mempercepat penerapan inisiatif digital."
+    },
+    "content": {
+      "title": "Nilai - Nilai Kami",
+      "integrity": {
+        "title": "Integritas",
+        "value": "Integritas kami menjadi utama dalam menjalankan bisnis"
+      },
+      "positive": {
+        "title": "Sikap Positif",
+        "value": "Kami menebarkan suasana positif pada lingkungan kami"
+      },
+      "creative": {
+        "title": "Kreatif dan Berpikiran Terbuka",
+        "value": "Menemukan cara – cara kreatif dalam menjalankan pekerjaan dan berpikiran terbuka untuk segala kemungkinan"
+      },
+      "commit": {
+        "title": "Komitmen",
+        "value": "Kami berkomitmen untuk menyampaikan hasil yang terbaik"
+      },
+      "care": {
+        "title": "Fokus Pada Pelanggan",
+        "value": "Kami mengharapkan kepuasan pelanggan dan masukan dari pelanggan"
+      },
+      "trustWorthy": {
+        "title": "Terpercaya",
+        "value": "Menjadi individu yang terpercaya bagi lingkungan sekitar"
+      }
+    }
   },
   "registerNow": "Daftar sekarang",
   "why": "kenapa",

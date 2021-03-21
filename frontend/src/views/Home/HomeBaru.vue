@@ -39,11 +39,11 @@
             {{ $t("home.homeOurProfileTitle") }}
           </h1>
           <p>
-            {{ $t("home.homeOurProfileFirstContent") }}
+            {{ $t("home.homeOurProfileFirstParagraph") }}
             <br/><br/>
-            {{ $t("home.homeOurProfileSecondContent") }}
+            {{ $t("home.homeOurProfileSecondParagraph") }}
             <br/><br/>
-            {{ $t("home.homeOurProfileThirdContent") }}
+            {{ $t("home.homeOurProfileThirdParagraph") }}
           </p>
             <router-link class="info-link" target="_top" to="/tentangmda">
             {{ $t("home.homeOurProfileInformation") }}          

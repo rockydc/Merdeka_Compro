@@ -3,9 +3,8 @@
         <div class="img-produk-wrap">
              <b-img :src="'assets/img/produk/' + gambar"></b-img>
         </div>
-       
-        <p class="title">{{title}}</p>
-        <p class="caption">{{caption}}</p>
+        <p class="title">{{$t(title)}}</p>
+        <p class="caption">{{$t(caption)}}</p>
     </div>
 </template>
 <script>

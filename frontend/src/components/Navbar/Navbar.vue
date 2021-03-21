@@ -19,12 +19,12 @@
 
          
  
-        <b-nav-item ><router-link  exact class="router-link"  to="/" >Beranda</router-link ></b-nav-item>
-        <b-nav-item ><router-link class="router-link" to="/tentang" >Tentang Merdeka Pulsa</router-link></b-nav-item>
-        <b-nav-item  ><router-link class="router-link" to="/produk">Produk Merdeka Pulsa</router-link></b-nav-item>
-        <b-nav-item ><router-link class="router-link" to="/pendaftaran">Pendaftaran</router-link></b-nav-item>
-        <b-nav-item ><router-link class="router-link" to="/deposit">Deposit</router-link></b-nav-item>
-        <b-nav-item ><router-link class="router-link" to="/kontak">Hubungi Kami</router-link></b-nav-item>
+        <b-nav-item ><router-link  exact class="router-link"  to="/" >{{$t('home.title')}}</router-link ></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/tentang" >{{$t('about.title')}}</router-link></b-nav-item>
+        <b-nav-item  ><router-link class="router-link" to="/produk">{{$t('product.title')}}</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/pendaftaran">{{$t('registration.title')}}</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/deposit">{{$t('deposit.title')}}</router-link></b-nav-item>
+        <b-nav-item ><router-link class="router-link" to="/kontak">{{$t('contactUs.title')}}</router-link></b-nav-item>
          <div style=" display:flex;">
             <b-nav-item href="#" class="nav-billingual ">
                     <a class="router-link" @click="setLocale('id')" to="#">ID</a>

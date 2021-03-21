@@ -11,6 +11,10 @@ const messages = {
     about: EN.about,
     registration: EN.registration,
     registerNow: EN.registerNow,
+    product: EN.product,
+    deposit: EN.deposit,
+    contactUs: EN.contactUs,
+    aboutMDA: EN.aboutMDA,
     why: EN.why,
     or: EN.or,
     at: EN.at
@@ -20,6 +24,10 @@ const messages = {
     about: ID.about,
     registration: ID.registration,
     registerNow: ID.registerNow,
+    product: ID.product,
+    deposit: ID.deposit,
+    contactUs: ID.contactUs,
+    aboutMDA: ID.aboutMDA,
     why: ID.why,
     or: ID.or,
     at: ID.at

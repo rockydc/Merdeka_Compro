@@ -1,17 +1,19 @@
 {
   "home": {
+    "title": "Home",
     "homeJoinUsTitle": "Let's join at",
     "homeJoinUsContent": "Competitive price &  Competent team.",
     "homeOurProfileTitle": "Our Profile",
-    "homeOurProfileFirstContent": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
-    "homeOurProfileSecondContent": "The Company has its core business activities in commercializing web-portal and digital platform. It is also optimized with our ability to deliver an integrated solution to accommodate the customers needs.",
-    "homeOurProfileThirdContent": "With a combined strong technical – commercial – operations abilities, the Company is able to deliver the best output for customers’ satisfaction.",
+    "homeOurProfileFirstParagraph": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
+    "homeOurProfileSecondParagraph": "The Company has its core business activities in commercializing web-portal and digital platform. It is also optimized with our ability to deliver an integrated solution to accommodate the customers needs.",
+    "homeOurProfileThirdParagraph": "With a combined strong technical – commercial – operations abilities, the Company is able to deliver the best output for customers’ satisfaction.",
     "homeOurProfileInformation": "For more information..."
   },
   "about": {
-    "aboutMerdekaFirstContent": "Merdeka Pulsa provides digital products for independent lifestyle. We help you to surf on the internet, communicate, purchase PLN token, pay for PDAM and credit card bills, even purchase game vouchers in the most convenient way.",
-    "aboutMerdekaSecondContent": "We provide convenient and secured service, start from registration, transaction and after-sales service; we are with you all the time.",
-    "aboutMerdekaThirdContent": "Be independent with us, ",
+    "title": "About Merdeka Pulsa",
+    "aboutMerdekaFirstParagraph": "Merdeka Pulsa provides digital products for independent lifestyle. We help you to surf on the internet, communicate, purchase PLN token, pay for PDAM and credit card bills, even purchase game vouchers in the most convenient way.",
+    "aboutMerdekaSecondParagraph": "We provide convenient and secured service, start from registration, transaction and after-sales service; we are with you all the time.",
+    "aboutMerdekaThirdParagraph": "Be independent with us, ",
     "aboutMerdekaJoinNow": "join now!",
     "whyMerdekaPulsa": {
       "place": {
@@ -61,6 +63,7 @@
     }
   },
   "registration": {
+    "title": "Registration",
     "placeholders": {
       "title": "Fill-in the form below to join Merdeka Pulsa",
       "companyName": "Company Name",
@@ -76,7 +79,8 @@
     "registrationInformation": "For more information, please reach us at"
   },
   "product": {
-    "title": "Our Products",
+    "title": "Merdeka Pulsa's Product",
+    "ourProduct": "Our Products",
     "prepaidPulsa": "Prepaid Pulsa",
     "dataPackage": "Data Package",
     "token": "Electricity / PLN Token",
@@ -84,6 +88,61 @@
     "ovo": "Top-up OVO Balance",
     "goPay": "Top-up GOPAY Balance",
     "service": "Operator & Services Provider"
+  },
+  "deposit": {
+    "title": "Deposit",
+    "banks": "Merdeka Pulsa receives your deposit through 3 bank options : BCA, BRI and Mandiri.",
+    "notes": "Keep your transfer slip, contact our Telegram",
+    "forAssistance": "for assistance. "
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "address": "Sarana Building 5th Floor Jl. Mampang Prapatan No. 26 Duren Tiga, Pancoran, Jakarta Selatan 12760",
+    "formTitle": "Ask Merdeka Pulsa",
+    "placeholders": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "sent": "Send Message"
+  },
+  "aboutMDA": {
+    "title": "About MDA",
+    "purpose": {
+      "title": "Our Objectives",
+      "firstParagraph": "The Company aims to become trustworthy partner in every business deal; and puts our customer experience as highest priority.",
+      "secondParagraph": "We collaborate, hand – in – hand, with large community to create sustainable environment, accelerating the implementation of digital initiatives."
+    },
+    "values": {
+      "title": "Our Values",
+      "content": {
+        "integrity": {
+          "title": "Integrity",
+          "value": "Our integrity comes first in doing business"
+        },
+        "positive":{
+          "title": "Positive Attitude",
+          "value": "We spread positive vibes in our environment"
+        },
+        "creative": {
+          "title": "Creative and Open Mind",
+          "value": "Find creative ways in doing the work; and open our mind for any possibilities"
+        },
+        "commit": {
+          "title": "Commitment",
+          "value": "We are committed to deliver the best result"
+        },
+        "care": {
+          "title": "Customer Focus",
+          "value": "We seek customer’s satisfaction and feedbacks"
+        },
+        "trustWorthy": {
+          "title": "Trustworthy",
+          "value": "Be trustworthy individual for the surroundings"
+        }
+      }
+    }
   },
   "registerNow": "Register now",
   "why": "Why",

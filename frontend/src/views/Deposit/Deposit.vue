@@ -1,13 +1,12 @@
 <template>
     <div>
         <Navbar/>
-        <Header title="Deposit"/>
+        <Header :title="$t('deposit.title')"/>
 
         <b-container class="section-donation">
-            <p>Menerima deposit dari 3 channel Bank yaitu MANDIRI, BCA, dan BRI.</p>
-            <p>Jangan lupa untuk simpan bukti transfer Anda, hubungi Telegram 
-                
-            <strong style="color: #C52D2E;">@merdekacs</strong> untuk bantuan.</p>
+            <p>{{$t('deposit.banks')}}</p>
+            <p>{{$t('deposit.notes')}}
+            <strong style="color: #C52D2E;">@merdekacs</strong> {{$t('deposit.forAssistance')}}</p>
             <div class="bank-wrapper">
 
             <div class="bank-account">

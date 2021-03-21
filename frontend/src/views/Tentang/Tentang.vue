@@ -2,7 +2,7 @@
     <div>
         <Navbar/>
        
-        <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" title="Tentang Merdeka Pulsa"/>
+        <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" :title="$t('about.title')"/>
         <section class="section-merdeka">
           <div class="container-fluid">
             <b-row >
@@ -13,11 +13,11 @@
                   <div class="container-fluid text-content">
                     <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
                     <p>
-                      {{ $t("about.aboutMerdekaFirstContent") }}
+                      {{ $t("about.aboutMerdekaFirstParagraph") }}
                      <br/><br/>
-                      {{ $t("about.aboutMerdekaSecondContent") }}
+                      {{ $t("about.aboutMerdekaSecondParagraph") }}
                       <br/><br/>
-                      {{ $t("about.aboutMerdekaThirdContent") }}
+                      {{ $t("about.aboutMerdekaThirdParagraph") }}
                       <router-link  class=" text-decoration-none" to="/pendaftaran">
                         <strong class="underline" style="color:#CB2B2B;">                      
                           {{ $t("about.aboutMerdekaJoinNow") }}

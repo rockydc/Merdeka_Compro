@@ -2,24 +2,18 @@
     <div>
         <Navbar/>
        
-        <Header title="Tentang MDA"/>
+        <Header :title="$t('aboutMDA.title')"/>
 
         <section class="section-tujuan">
          <b-container>
              <b-row>
                  <b-col lg="7" md="6" sm="12">
-                     <h1>Tujuan Kami</h1>
-                     <p>Perusahaan bertujuan untuk menjadi rekan yang
-                    terpercaya dalam setiap kesepakatan bisnis; dan
-                    menempatkan pengalaman pelanggan kami sebagai
-                    prioritas yang paling tinggi.
-
+                     <h1>{{$t('aboutMDA.purpose.title')}} </h1>
+                     <p>
+                        {{$t('aboutMDA.purpose.firstParagraph')}}
                     </p>
                     <p>
-                        Kami berkolaborasi, bantu membantu, dengan
-                    komunitas besar untu menciptakan lingkungan
-                    yang berkelanjutan, mempercepat penerapan
-                    inisiatif digital.
+                        {{$t('aboutMDA.purpose.secondParagraph')}}                        
                     </p>
                  </b-col>
                  <b-col lg="5" md="6" sm="12">
@@ -30,16 +24,16 @@
          </b-container>
         </section>
         <section class="section-value">
-            <h1 class="text-center">Nilai - Nilai Kami</h1>
+            <h1 class="text-center">{{$t('aboutMDA.values.title')}} </h1>
             <div class="card-content-wrapper mt-5">
                 <div v-for="value in ValueList" v-bind:key="value.id" class="card-content">
                        <b-img :src="'assets/img/'+value.gambar" :alt="value.gambar"></b-img>
                        <div class="text-content">
                            <p class="title">
-                               {{value.title}}
+                               {{$t(value.title)}}
                            </p>
                            <p class="caption">
-                               {{value.caption}}
+                               {{$t(value.caption)}}
                            </p>
                        </div>
                    </div>
@@ -64,38 +58,39 @@ export default {
         return{
             ValueList:[
                 {
-                id:1,
-                gambar:"protect-ic.svg",
-                title:'Integritas',
-                caption:'Integritas kami menjadi utama dalam menjalankan bisnis'
-                },{
-                id:2,
-                gambar:'heart-ic.svg',
-                title:'Komitmen',
-                caption:'Kami berkomitmen untuk menyampaikan hasil yang terbaik'
+                    id:1,
+                    gambar:"protect-ic.svg",
+                    title:'aboutMDA.values.content.integrity.title',
+                    caption: "aboutMDA.values.content.integrity.value"
+                },
+                {
+                    id:2,
+                    gambar:'heart-ic.svg',
+                    title:'aboutMDA.values.content.commit.title',
+                    caption: "aboutMDA.values.content.commit.value"
                 },
                 {
                     id:3,
                     gambar:'math-ic.svg',
-                    title:'Sikap Positif',
-                    caption:'Kami menebarkan suasana positif pada lingkungan kami'
+                    title:'aboutMDA.values.content.positive.title',
+                    caption: "aboutMDA.values.content.positive.value"
 
                 },
                 {
                     id:4,
                     gambar:'user-group-ic.svg',
-                    title:'Fokus Pada Pelanggan',
-                    caption:'Kami mengharapkan kepuasan pelanggan dan masukan dari pelanggan'
+                    title:'aboutMDA.values.content.care.title',
+                    caption: "aboutMDA.values.content.care.value"
                 },{
                     id:5,
                     gambar:'brain-ic.svg',
-                    title:'Kreatif dan Berpikiran Terbuka',
-                    caption:'Menemukan cara – cara kreatif dalam menjalankan pekerjaan dan berpikiran terbuka untuk segala kemungkinan'
+                    title:'aboutMDA.values.content.creative.title',
+                    caption: "aboutMDA.values.content.creative.value"
                 },{
                     id:6,
                     gambar:'promise-ic.svg',
-                    title:'Terpercaya',
-                    caption:'Menjadi individu yang terpercaya bagi lingkungan sekitar'
+                    title:'aboutMDA.values.content.trustWorthy.title',
+                    caption: "aboutMDA.values.content.trustWorthy.value"
                 }
             ]
         }
