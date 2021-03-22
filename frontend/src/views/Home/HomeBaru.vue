@@ -11,8 +11,9 @@
         <div class="header-content ">
           <h1> {{ $t("home.homeJoinUsTitle") }}   Merdeka Pulsa
           </h1>
-          <p class="p-text">penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, 
-          siap mengawal transaksi Anda. 
+  
+          <p class="p-text">dengan harga <span>kompetitif</span> & tim yang <span>kompeten </span>kami menjalankan bisnis dengan :
+Integritas - Komitmen - Fokus pada Pelanggan
           </p>
               <b-button to="/pendaftaran" class="btn-daftar">
               {{ $t("registerNow") }}

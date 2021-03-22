@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <Navbar/>
        
         <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" :title="$t('about.title')"/>
@@ -37,7 +37,7 @@
                             <p class="title mt-3">
                             {{ $t("why") }}
                               <br/>
-                              Merdeka Pulsa
+                              Merdeka Pulsa?
                             </p>
                             <div class="line-red"></div>
                         </div>
@@ -53,7 +53,7 @@
 
                 </b-row>
               </div>
-              <b-img class="stgh-lingkaran" src="assets/img/about/stgh-lingkaran.png"></b-img>
+              <b-img class="stgh-lingkaran" src="assets/img/abouts/lingkaran.png"></b-img>
         </div>
       
     </div>
