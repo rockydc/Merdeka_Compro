@@ -1,0 +1,47 @@
+@import '@/assets/scss/global-variable.scss';
+.CardAbout{
+
+
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .img-wrapper{
+       
+        display: flex;
+        align-items: flex-end;
+        height: 240px;
+    
+        img{
+         
+            max-width:100%;
+        }
+    }
+
+
+    p{
+        font-family: poppins,sans-serif;
+        font-size:14px;
+        text-align: center;
+    }
+    .caption{
+        font-weight: 400;
+    }
+    .title{
+        margin-top:40px;
+        font-weight: 700;
+    }
+}
+
+@include extra{
+
+    .CardAbout{
+  
+        p{
+            font-size:16px;
+            line-height: 24px;
+        }
+    }
+}
