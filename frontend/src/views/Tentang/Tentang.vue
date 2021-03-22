@@ -7,7 +7,7 @@
           <div class="container-fluid">
             <b-row >
                 <b-col lg="4" xl="3" class="d-flex justify-content-center align-items-center pt-4">
-                    <b-img class="logo-about"  src="assets/img/about/logo-about.png"></b-img>
+                    <b-img class="logo-about"  src="assets/img/LOGO-BARU.png"></b-img>
                 </b-col>
                 <b-col lg="8" xl="9">
                   <div class="container-fluid text-content">
@@ -80,7 +80,7 @@ export default {
           },
           {
             id:2,
-            gambar:'Gedung.png',
+            gambar:'gedung.png',
             title: "about.whyMerdekaPulsa.trustWorthyCompany.title",
             caption:"about.whyMerdekaPulsa.trustWorthyCompany.content"
           },
@@ -92,43 +92,43 @@ export default {
           },
           {
             id:4,
-           gambar:'shakehand.png',
+           gambar:'shake-hand.png',
             title: "about.whyMerdekaPulsa.freeRegistration.title",
             caption:"about.whyMerdekaPulsa.freeRegistration.content"
           },{
             id:5,
-            gambar:'hand-coin-1x.png',
+            gambar:'terima-uang.png',
             title: "about.whyMerdekaPulsa.optionalBanks.title",
             caption:"about.whyMerdekaPulsa.optionalBanks.content"
           },{
             id:6,
-            gambar:'coin.png',
+            gambar:'koin.png',
             title: "about.whyMerdekaPulsa.smallDeposit.title",
             caption:"about.whyMerdekaPulsa.smallDeposit.content"
           },{
             id:7,
-            gambar:'customerservice.png',
+            gambar:'customer-service.png',
             title: "about.whyMerdekaPulsa.depositTime.title",
             caption:"about.whyMerdekaPulsa.depositTime.content"
           },{
             id:8,
-            gambar:'Money.png',
+            gambar:'uang.png',
             title: "about.whyMerdekaPulsa.competitivePrice.title",
             caption:"about.whyMerdekaPulsa.competitivePrice.content"
           },{
             id:9,
-            gambar:'Jam.png',
+            gambar:'jam.png',
             title: "about.whyMerdekaPulsa.everytimeTransaction.title",
             caption:"about.whyMerdekaPulsa.everytimeTransaction.content"
           },
           {
             id:10,
-            gambar:'Document.png',
+            gambar:'dokument.png',
             title: "about.whyMerdekaPulsa.completeDocumentation.title",
             caption:"about.whyMerdekaPulsa.completeDocumentation.content"
           },{
             id:11,
-            gambar:'Dashboard.png',
+            gambar:'dashboard.png',
             title: "about.whyMerdekaPulsa.easyMonitoring.title",
             caption:"about.whyMerdekaPulsa.easyMonitoring.content"
           }
