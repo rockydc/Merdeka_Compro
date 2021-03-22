@@ -6,7 +6,7 @@
     margin-top:-200px;
     padding-top:250px;
     padding-bottom:115px;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: #FAFAFA;
     .logo-about{
         width:230px;
         height:230px;
@@ -24,24 +24,24 @@
     position:relative;
     padding-bottom:270px;
     display: flex;
-    justify-content: center;
-  
+        justify-content: center;
     
         .wrapper{
             width: 90% !important;
         }
     .kenapa-wrapper{
-     
         display:flex;
         align-items: center;
         justify-content: start;
     }
     .stgh-lingkaran{
-        width:310px;
+        width:290px;
         position:absolute;
-        top:-100px;
-        left:-150px;
+        top:-50px;
+        z-index:-5;
+        left:0px;
     }
+
 
 
 }
@@ -68,6 +68,11 @@
 @include mobile(){
     .about-kenapa-section{
         text-align: left;
+        .stgh-lingkaran{
+            width:210px;
+            top:-200px;
+            left:0px;
+        }
         .kenapa-wrapper{
             p{
                 font-size: 25px;
@@ -81,10 +86,53 @@
 @include tablet{
     .about-kenapa-section{
         text-align: left;
+      
+        .stgh-lingkaran{
+            width:210px;
+            top:-100px;
+            left:0px;
+        }
         .kenapa-wrapper{
             br{
                 display: none;
             }
+        }
+    }
+}
+@include tablet-xl{
+    .about-kenapa-section{
+   
+        text-align: left;
+ 
+        .stgh-lingkaran{
+            width:210px;
+            top:-100px;
+            left:0px;
+        }
+        .kenapa-wrapper{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+@include dekstop{
+    .about-kenapa-section{
+   
+        .stgh-lingkaran{
+            width: 300px;
+            top:-100px;
+            left:-40px;
+        }
+    }
+}
+@include superdesktop{
+    .about-kenapa-section{
+   
+        .stgh-lingkaran{
+            width: 250px;
+            top:0px;
+            left:0;
         }
     }
 }
@@ -96,7 +144,7 @@
         padding-left:100px ;
         padding-right: 100px;
         padding-bottom:129px;
-        background-color: rgba(0, 0, 0, 0.03);
+   
     
         .logo-about{
             width:319px;
@@ -122,8 +170,8 @@
         }
      
         .stgh-lingkaran{
-            width: 659px/2;
-            top:-100px;
+            width:420px;
+            top:-200px;
             left:0px;
         }
     }
