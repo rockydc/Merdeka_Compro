@@ -1,16 +1,19 @@
 @import '@/assets/scss/global-variable.scss';
 .CardAbout{
 
+
     margin-top:100px;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    
     .img-wrapper{
-        
+
         display: flex;
         align-items: end;
-      
+        height: 210px;
     
         img{
          
@@ -36,9 +39,7 @@
 @include extra{
 
     .CardAbout{
-        img{
-            height: 210px;
-        }
+  
         p{
             font-size:16px;
             line-height: 24px;
