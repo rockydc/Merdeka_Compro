@@ -24,49 +24,57 @@
                             <b-form-input
                             class="form-control"
                             name="nama-perusahaan"
+                            v-model="registration_data.company_name"
                             :placeholder="$t('registration.placeholders.companyName')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
-                            name="nama-perusahaan"
+                            name="pic-name"
+                            v-model="registration_data.pic_name"
                             :placeholder="$t('registration.placeholders.contactName')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
-                            name="nama-perusahaan"
+                            name="pic-phone"
+                            v-model="registration_data.pic_phone"
                             :placeholder="$t('registration.placeholders.mobilePhone')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
-                            name="nama-perusahaan"
+                            name="company-email"
+                            v-model="registration_data.company_email"
                             type="email"
                             :placeholder="$t('registration.placeholders.companyEmail')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
-                            name="nama-perusahaan"
+                            name="company-phone"
+                            v-model="registration_data.company_phone"
                             :placeholder="$t('registration.placeholders.companyPhone')">
                             </b-form-input>
                             <b-form-input
                             class="form-control"
-                            name="nama-perusahaan"
+                            name="company-address"
+                            v-model="registration_data.company_address"
                             :placeholder="$t('registration.placeholders.companyFullAddress')">
                             </b-form-input>
                             <b-input-group>
                                 <b-form-input
                                 class="form-control"
-                                name="nama-perusahaan"
+                                name="company_province"
+                                v-model="registration_data.company_province"
                                 :placeholder="$t('registration.placeholders.province')">
                                 </b-form-input>
                                 <b-form-input
                                 class="form-control border-left"
-                                name="nama-perusahaan"
+                                name="company_city"
+                                v-model="registration_data.company_city"
                                 :placeholder="$t('registration.placeholders.city')">
                                 </b-form-input>
                             </b-input-group>
                         </b-form>
                     </div>
-                      <b-button v-b-modal.modal-center  variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">{{ $t("registerNow") }}</b-button>
+                      <b-button v-b-modal.modal-center v-on:click="onSubmit(registration_data)" variant="danger" class="btn-daftar mt-4" form="form-pendaftaran">{{ $t("registerNow") }}</b-button>
 
                                 <b-modal id="modal-center" class="" hide-footer hide-header centered title="BootstrapVue" >
                                         <template #default="{ hide }">
@@ -100,15 +108,67 @@
     </div>
 </template>
 <script>
-
+import axios from 'axios'
 import{Navbar,Header} from '../../components';
+import {APIKEY, API_REGISTRATION_URL, API_PASSWORD} from './constant/Pendaftaran.constant'
+
 export default {
     name:'Pendaftaran',
     components:{
         Navbar,
         Header
+    },
+    data: () => ({
+        registration_data: {
+            company_name : "",
+            pic_name : "",
+            pic_phone : "",
+            company_email : "",
+            company_phone: "",
+            company_province: "",
+            company_address: "",
+            company_city : ""
+        },
+    }),
+    methods:{
+        onSubmit: async (data) => {
+            const {
+                company_name, 
+                pic_name, 
+                pic_phone, 
+                company_email, 
+                company_phone, 
+                company_province, 
+                company_address, 
+                company_city,
+            } = data
+
+            const user_data = {
+                company_name, 
+                pic_name, 
+                pic_phone, 
+                company_email, 
+                company_phone,
+                company_province, 
+                company_address, 
+                company_city
+            }
+
+            const headers = {
+                'Content-Type': 'application/json',
+                'apikey': APIKEY,
+                'apipassword': API_PASSWORD
+            }
+            try {
+                let response = await axios.post(API_REGISTRATION_URL, user_data, {headers})
+                console.log(response);
+            } catch (err) {
+                console.log(err);
+            }
+        }
     }
 }
+
 </script>
 <style lang="scss" scoped>
 @import 'pendaftaran.scss';
