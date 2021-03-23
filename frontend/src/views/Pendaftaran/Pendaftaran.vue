@@ -108,9 +108,8 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
 import{Navbar,Header} from '../../components';
-import {APIKEY, API_REGISTRATION_URL, API_PASSWORD} from './constant/Pendaftaran.constant'
+import {useSubmit} from './services/Pendaftaran.hooks'
 
 export default {
     name:'Pendaftaran',
@@ -131,40 +130,8 @@ export default {
         },
     }),
     methods:{
-        onSubmit: async (data) => {
-            const {
-                company_name, 
-                pic_name, 
-                pic_phone, 
-                company_email, 
-                company_phone, 
-                company_province, 
-                company_address, 
-                company_city,
-            } = data
-
-            const user_data = {
-                company_name, 
-                pic_name, 
-                pic_phone, 
-                company_email, 
-                company_phone,
-                company_province, 
-                company_address, 
-                company_city
-            }
-
-            const headers = {
-                'Content-Type': 'application/json',
-                'apikey': APIKEY,
-                'apipassword': API_PASSWORD
-            }
-            try {
-                let response = await axios.post(API_REGISTRATION_URL, user_data, {headers})
-                console.log(response);
-            } catch (err) {
-                console.log(err);
-            }
+        onSubmit: (data) => {
+            useSubmit(data)
         }
     }
 }
