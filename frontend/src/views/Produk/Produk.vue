@@ -95,7 +95,7 @@ export default {
                 },
                 {
                     id:6,
-                    gambar:"gopay-logo.png",
+                    gambar:"gopay-baru.png",
                     caption:'product.goPay'
 
                 }
@@ -125,7 +125,7 @@ export default {
                     gambar:'ovo-logo.png'
                 },{
                     id:8,
-                    gambar:'gopay-logo.png'
+                    gambar:'gopay-baru.png'
                 },{
                     id:9,
                     gambar:'pubg-logo.png'
@@ -135,6 +135,6 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '@/views/Produk/Produk.scss';
 </style>
