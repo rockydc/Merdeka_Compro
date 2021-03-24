@@ -3,7 +3,7 @@
     "title": "Beranda",
     "homeJoinUsTitle": "Mari bergabung ke Merdeka Pulsa",
     "homeJoinUsContent": "penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, siap mengawal transaksi Anda.",
-    "homeJoinUsTitleCaption":"penyedia pulsa <span class='red-text'>terpercaya</span> dengan harga <span class='red-text'>kompetitif</span>, <br/>siap mengawal transaksi Anda",
+    "homeJoinUsTitleCaption": "penyedia pulsa <span class='red-text'>terpercaya</span> dengan harga <span class='red-text'>kompetitif</span>, <br/>siap mengawal transaksi Anda",
     "homeOurProfileTitle": "Profile Kami",
     "homeOurProfileFirstParagraph": "Didirikan pada September 2020, Perusahaan membawa keahlian, pengalaman, jaringan dan kemampuan keuangan yang kuat di industri ini.",
     "homeOurProfileSecondParagraph": "Perusahaan memiliki aktivitas bisnis utama dalam komersialisasi portal web dan platform digital. Hal ini juga dioptimalkan dengan kemampuan kami untuk menyampaikan solusi yang terintegrasi untuk mengakomodir kebutuhan pelanggan.",
@@ -117,29 +117,31 @@
     },
     "values": {
       "title": "Nilai - Nilai Kami",
-      "integrity": {
-        "title": "Integritas",
-        "value": "Integritas kami menjadi utama dalam menjalankan bisnis"
-      },
-      "positive": {
-        "title": "Sikap Positif",
-        "value": "Kami menebarkan suasana positif pada lingkungan kami"
-      },
-      "creative": {
-        "title": "Kreatif dan Berpikiran Terbuka",
-        "value": "Menemukan cara – cara kreatif dalam menjalankan pekerjaan dan berpikiran terbuka untuk segala kemungkinan"
-      },
-      "commit": {
-        "title": "Komitmen",
-        "value": "Kami berkomitmen untuk menyampaikan hasil yang terbaik"
-      },
-      "care": {
-        "title": "Fokus Pada Pelanggan",
-        "value": "Kami mengharapkan kepuasan pelanggan dan masukan dari pelanggan"
-      },
-      "trustWorthy": {
-        "title": "Terpercaya",
-        "value": "Menjadi individu yang terpercaya bagi lingkungan sekitar"
+      "content": {
+        "integrity": {
+          "title": "Integritas",
+          "value": "Integritas kami menjadi utama dalam menjalankan bisnis"
+        },
+        "positive": {
+          "title": "Sikap Positif",
+          "value": "Kami menebarkan suasana positif pada lingkungan kami"
+        },
+        "creative": {
+          "title": "Kreatif dan Berpikiran Terbuka",
+          "value": "Menemukan cara – cara kreatif dalam menjalankan pekerjaan dan berpikiran terbuka untuk segala kemungkinan"
+        },
+        "commit": {
+          "title": "Komitmen",
+          "value": "Kami berkomitmen untuk menyampaikan hasil yang terbaik"
+        },
+        "care": {
+          "title": "Fokus Pada Pelanggan",
+          "value": "Kami mengharapkan kepuasan pelanggan dan masukan dari pelanggan"
+        },
+        "trustWorthy": {
+          "title": "Terpercaya",
+          "value": "Menjadi individu yang terpercaya bagi lingkungan sekitar"
+        }
       }
     }
   },
