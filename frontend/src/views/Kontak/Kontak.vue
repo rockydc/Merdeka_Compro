@@ -182,13 +182,27 @@
                         >
 
                         </b-form-textarea>
-                        <b-button class="btn-send w-100 mt-4"
+                        <b-button variant="danger" v-b-modal.modal-center class="btn-send w-100 mt-4"
                         v-on:click="onSubmit(question_data)"
                         >{{$t('contactUs.sent')}} </b-button>
                     </b-form>
                     <!-- end form -->
                     </div>
-                  
+                    <!-- Modal -->
+                        <b-modal id="modal-center" class="" hide-footer hide-header centered title="BootstrapVue" >
+                            <template #default="{ hide }">
+                                <b-container class="d-flex align-items-center flex-column py-4">
+                                    <b-img width="237" height="166" fluid src="assets/img/bg-modal.png">
+
+                                    </b-img>
+                                    <p class="text-center mt-4">
+                                        {{$t("contactUs.kontakModalPopUp")}}
+                                    </p>
+                                    <b-btn class="btn-daftar mt-2  " variant="danger" @click="hide()">OK</b-btn>
+                                </b-container>
+                            </template>
+                        </b-modal>
+                    <!-- end modal -->
                 </b-container>
             </section>
     </div>

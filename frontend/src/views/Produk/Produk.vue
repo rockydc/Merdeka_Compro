@@ -35,7 +35,7 @@
          <div class=" operator-container">
            <div class="operator-wrapper">
                 <div v-for="operator in OperatorList" v-bind:key="operator.id" class="operator-content">
-                    <b-img  :src="'assets/img/produk/logo/'+operator.gambar" :alt="operator.gambar"></b-img>
+                    <b-img  :src="'assets/img/produk/logo/hires/'+operator.gambar" :alt="operator.gambar"></b-img>
                 </div>
            
             </div>
@@ -89,13 +89,13 @@ export default {
                 },
                 {
                     id:5,
-                    gambar:'ovo.png',
+                    gambar:'ovo-logo.png',
                     caption:'product.ovo'
 
                 },
                 {
                     id:6,
-                    gambar:"gopay.png",
+                    gambar:"gopay-logo.png",
                     caption:'product.goPay'
 
                 }
@@ -116,19 +116,19 @@ export default {
                     gambar:'3-logo.png'
                 },{
                     id:5,
-                    gambar:'smartfren.png'
+                    gambar:'smartfren-logo.png'
                 },{
                     id:6,
-                    gambar:'axis.png'
+                    gambar:'axis-logo.png'
                 },{
                     id:7,
-                    gambar:'ovo.png'
+                    gambar:'ovo-logo.png'
                 },{
                     id:8,
-                    gambar:'gopay.png'
+                    gambar:'gopay-logo.png'
                 },{
                     id:9,
-                    gambar:'pubg.png'
+                    gambar:'pubg-logo.png'
                 }
             ]
         }
