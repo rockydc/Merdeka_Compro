@@ -5,7 +5,7 @@
         <Navbar/>
         <Header :title="$t('product.title')"/>
 
-        <div class="text-center section-produk-content">
+        <div class=" text-center section-produk-content">
            <div class="d-inline-flex flex-column align-items-center">
 
                
@@ -35,7 +35,7 @@
          <div class=" operator-container">
            <div class="operator-wrapper">
                 <div v-for="operator in OperatorList" v-bind:key="operator.id" class="operator-content">
-                    <b-img  :src="'assets/img/produk/'+operator.gambar" :alt="operator.gambar"></b-img>
+                    <b-img  :src="'assets/img/produk/logo/'+operator.gambar" :alt="operator.gambar"></b-img>
                 </div>
            
             </div>
@@ -103,32 +103,32 @@ export default {
             OperatorList:[
                 {
                     id:1,
-                    gambar:'telkomsel.svg'
+                    gambar:'telkomsel.png'
                 },
                 {
                     id:2,
-                    gambar:'xl.svg'
+                    gambar:'xl-logo.png'
                 },{
                     id:3,
-                    gambar:'indosat-logo.svg'
+                    gambar:'indosat-logo.png'
                 },{
                     id:4,
-                    gambar:'3-logo.svg'
+                    gambar:'3-logo.png'
                 },{
                     id:5,
-                    gambar:'smartfrend.svg'
+                    gambar:'smartfren.png'
                 },{
                     id:6,
-                    gambar:'axis-logo.svg'
+                    gambar:'axis.png'
                 },{
                     id:7,
-                    gambar:'ovo.svg'
+                    gambar:'ovo.png'
                 },{
                     id:8,
-                    gambar:'gopay.svg'
+                    gambar:'gopay.png'
                 },{
                     id:9,
-                    gambar:'pubg.svg'
+                    gambar:'pubg.png'
                 }
             ]
         }

@@ -91,11 +91,10 @@
                             </b-modal>
                       <div class="note-wrapper">
                           <b-img class="img-cs " src="assets/img/ic-customerservice.png"></b-img>
-                            <div class="ml-5  d-flex justify-content-center align-items-center mt-2">
-                                <p >
-                              {{$t("registration.registrationInformation")}}
-                              <strong class="telegram">021-2951 7763</strong>
-                                {{$t('or')}} Telegram {{$t('at')}} <strong class="telegram" >@merdekacs</strong>
+                            <div class="text-wrapper d-flex justify-content-center align-items-center mt-2">
+                                <p class="text-information" v-html="$t('registration.registrationInformation')">
+                              
+                              
                           </p>
                             </div>
                           

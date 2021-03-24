@@ -1,12 +1,13 @@
 {
   "home": {
     "title": "Beranda",
-    "homeJoinUsTitle": "Mari bergabung ke",
+    "homeJoinUsTitle": "Mari bergabung ke Merdeka Pulsa",
     "homeJoinUsContent": "penyedia pulsa <span>terpercaya</span> dengan harga <span>kompetitif</span>, siap mengawal transaksi Anda.",
+    "homeJoinUsTitleCaption":"penyedia pulsa <span class='red-text'>terpercaya</span> dengan harga <span class='red-text'>kompetitif</span>, <br/>siap mengawal transaksi Anda",
     "homeOurProfileTitle": "Profile Kami",
     "homeOurProfileFirstParagraph": "Didirikan pada September 2020, Perusahaan membawa keahlian, pengalaman, jaringan dan kemampuan keuangan yang kuat di industri ini.",
     "homeOurProfileSecondParagraph": "Perusahaan memiliki aktivitas bisnis utama dalam komersialisasi portal web dan platform digital. Hal ini juga dioptimalkan dengan kemampuan kami untuk menyampaikan solusi yang terintegrasi untuk mengakomodir kebutuhan pelanggan.",
-    "homeOurProfileThirdParagraph": "Dengan kombinasi kemampuan teknis – komersial – operasi yang kuat, Perusahaan dapat menyampaikan hasil yang terbaik bagi kepuasan pelanggan.",
+    "homeOurProfileThirdParagraph": "Dengan kombinasi kemampuan teknis – komersial – operasi yang kuat, Perusahaan dapat memberikan hasil yang terbaik bagi kepuasan pelanggan.",
     "homeOurProfileInformation": "Info lebih lanjut..."
   },
   "about": {
@@ -49,7 +50,7 @@
         "content": "Merdeka Pulsa open transaksi selama 24 Jam dengan produk yang lengkap tanpa biaya tambahan, raih keuntungan maksimal untuk bisnis Anda sekarang juga!"
       },
       "optionalBanks": {
-        "title": "3 channel Bank deposit via MANDIRI, BRI, dan BCA",
+        "title": "3 channel Bank deposit via MANDIRI, BNI, dan BCA",
         "content": "Deposit di Merdeka Pulsa didukung oleh 3 Bank terbesar di Indonesia, jangan lupa simpan bukti transfer Anda ya!"
       },
       "completeDocumentation": {
@@ -65,23 +66,23 @@
   "registration": {
     "title": "Pendaftaran",
     "placeholders": {
-      "title": "Yuk isi form dibawah ini untuk Bergabung ke Merdeka Pulsa",
+      "title": "Yuk isi form dibawah ini untuk bergabung ke Merdeka Pulsa",
       "companyName": "Nama Perusahaan",
       "contactName": "Nama PIC",
-      "mobilePhone": "Nomor Handphone PIC(Untuk verifikasi Data)",
+      "mobilePhone": "Nomor HP Penanggung Jawab (Untuk Verifikasi Data)",
       "companyEmail": "Email Perusahaan",
       "companyPhone": "No Telpon Perusahaan",
       "companyFullAddress": "Alamat Lengkap Perusahaan",
       "province": "Provinsi",
       "city": "Kota"
     },
-    "modalAfterRegistration": "Terimakasih telah mendaftar di Merdeka, Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1X24 Jam",
-    "registrationInformation": "Untuk informasi lebih lengkap hubungi"
+    "modalAfterRegistration": "Terimakasih atas pertanyaannya, Tim kami akan segera menjawab pertanyaan Anda dalam maksimal 1X24 Jam",
+    "registrationInformation": "Untuk informasi lebih lengkap hubungi <strong class='telegram'>021-2951 7763</strong> atau Telegram ke <strong class='telegram'>@merdekacs</strong>"
   },
   "product": {
-    "title": "Produk Merdeka Pulsa",
+    "title": "Produk",
     "ourProduct": "Produk Merdeka Pulsa",
-    "prepaidPulsa": "Pulsa prepaid seluruh operator",
+    "prepaidPulsa": "Pulsa seluruh operator",
     "dataPackage": "Paket Data Seluruh Operator",
     "token": "Token PLN",
     "gamesVoucher": "Voucher Game",
@@ -91,7 +92,7 @@
   },
   "deposit": {
     "title": "Deposit",
-    "banks": "Menerima deposit dari 3 channel Bank yaitu MANDIRI, BCA, dan BRI.",
+    "banks": "Menerima deposit dari 3 channel Bank yaitu MANDIRI, BCA, dan BNI.",
     "notes": "Jangan lupa untuk simpan bukti transfer Anda, hubungi Telegram ",
     "forAssistance": "untuk bantuan."
   },
@@ -108,13 +109,13 @@
     "sent": "Kirim Pesan"
   },
   "aboutMDA": {
-    "title": "Tentang MDA",
+    "title": "Tentang PT Merdeka Digital Asia",
     "purpose": {
       "title": "Tujuan Kami",
       "firstParagraph": "Perusahaan bertujuan untuk menjadi rekan yang terpercaya dalam setiap kesepakatan bisnis; dan menempatkan pengalaman pelanggan kami sebagai prioritas yang paling tinggi.",
-      "secondParagraph": "Kami berkolaborasi, bantu membantu, dengan komunitas besar untu menciptakan lingkungan yang berkelanjutan, mempercepat penerapan inisiatif digital."
+      "secondParagraph": "Kami berkolaborasi, bantu membantu, dengan komunitas besar untuk menciptakan lingkungan yang berkelanjutan, mempercepat penerapan inisiatif digital."
     },
-    "content": {
+    "values": {
       "title": "Nilai - Nilai Kami",
       "integrity": {
         "title": "Integritas",

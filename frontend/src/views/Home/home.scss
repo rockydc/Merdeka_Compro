@@ -1,4 +1,6 @@
 @import '@/assets/scss/global-variable.scss';
+
+// >= 1920
 .wrapper-home{
     position: relative;
     height: 1100px;
@@ -20,7 +22,7 @@
         justify-content: flex-end;
         .header-content{
             width:80%;
-         
+           
             display: flex;
            
             flex-direction: column;
@@ -34,10 +36,10 @@
            .p-text{
                font-size:20px;
            }
-           span{
-            color:#C52D2E;
-            font-weight: 500;
-        }
+           ::v-deep .p-text > span{
+               color:#C52D2E;
+               font-weight: 500;
+           }
            .btn-daftar{       
             font-size: 20px;
             width: 273px;
@@ -128,6 +130,11 @@
     
   }
 
+
+  // end >= 1920
+
+
+//  res =  1440 - 1919 
   @include ultradesktop{
     .wrapper-home{
         position: relative;
@@ -230,6 +237,10 @@
   }
 }
 
+//  end res =  1440 - 1919 
+
+
+// res = 1201 - 1439
   @include superdesktop{
     .wrapper-home{
         position: relative;
@@ -350,6 +361,9 @@
       }
 }
 
+// end res = 1201 - 1439
+
+// res = 993 - 1200 
 @include dekstop{
     .wrapper-home{
         position: relative;
@@ -473,6 +487,9 @@
       }
 }
 
+// end res = 993 - 1200 
+
+//  res = 769 - 992
 
   @include tablet-xl{
 
@@ -581,6 +598,10 @@
         
       }
   }
+
+  //  end res = 769 - 992
+
+//   res = 600 - 768
   @include tablet{
 
     .wrapper-home{
@@ -685,6 +706,12 @@
         
       }
   }
+
+
+  //   end res = 600 - 768
+
+
+//   res < 600
   @include mobile{
 
     .wrapper-home{

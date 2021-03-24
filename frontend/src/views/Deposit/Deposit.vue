@@ -20,7 +20,7 @@
             </div>
 
             <div class="bank-account">
-                 <b-img class="img-logo" src="assets/img/BRI.svg"></b-img>
+                 <b-img class="img-logo" src="assets/img/BNI-Logo.png"></b-img>
                     <p>032- 081-0920-0827 - PT Merdeka Digital Asia</p>
             </div>
 

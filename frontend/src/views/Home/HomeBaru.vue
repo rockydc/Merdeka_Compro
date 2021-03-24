@@ -9,11 +9,10 @@
   <section class="hero">
     <div class="header-text ">
         <div class="header-content ">
-          <h1> {{ $t("home.homeJoinUsTitle") }}   Merdeka Pulsa
+          <h1 v-html="$t('home.homeJoinUsTitle')"> 
           </h1>
   
-          <p class="p-text">dengan harga <span>kompetitif</span> & tim yang <span>kompeten </span>kami menjalankan bisnis dengan :
-Integritas - Komitmen - Fokus pada Pelanggan
+          <p class="p-text" v-html="$t('home.homeJoinUsTitleCaption')">
           </p>
               <b-button to="/pendaftaran" class="btn-daftar">
               {{ $t("registerNow") }}
@@ -28,6 +27,10 @@ Integritas - Komitmen - Fokus pada Pelanggan
   </section>
 </div>
 
+<!-- end hero section -->
+
+
+<!-- section-profile-wrapper -->
 <div class="section-profile-wrapper ">
 <b-img class="garis-bantu-kiri" src="@/assets/img/garis-bantu-kiri.png"></b-img>
     <section class="section-profile ">
@@ -55,6 +58,7 @@ Integritas - Komitmen - Fokus pada Pelanggan
 
     </section>
 </div>
+<!-- end section-profile-wrapper -->
 
 </div>
 </template>
