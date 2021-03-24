@@ -142,32 +142,49 @@
                     <div class="form-wrapper">
                     
                     <!-- form -->
-                    <b-form class="mt-5" >
+                    <b-form class="mt-5" method="post" action="#">
                        
                        <b-form-group>
 
                          <b-row class="m-0 p-0 d-flex justify-content-space-between">
                            <b-col class="m-0 p-0 border-red" lg="7" md="12" sm="12">
-                                <b-form-input class="form-control mt-4" :placeholder="$t('contactUs.placeholders.name')"></b-form-input>
+                                <b-form-input 
+                                class="form-control mt-4" 
+                                :placeholder="$t('contactUs.placeholders.name')"
+                                v-model="question_data.name"
+                                >
+                                </b-form-input>
                            </b-col>
-                           <b-col class="m-0 p-0 border-red" lg="5" md="12" sm="12">
-                            <b-form-input class="form-control form-email mt-4 ml-lg-2 ml-sm-0" :placeholder="$t('contactUs.placeholders.email')">
+                           <b-col 
+                           class="m-0 p-0 border-red" 
+                           lg="5" 
+                           md="12" 
+                           sm="12">
+                            <b-form-input 
+                            class="form-control form-email mt-4 ml-lg-2 ml-sm-0" 
+                            :placeholder="$t('contactUs.placeholders.email')"
+                            v-model="question_data.subject">
                                 </b-form-input>
                            </b-col>
                        </b-row>
                        </b-form-group>
-                        <b-form-input class="form-control mt-4"
+                        <b-form-input 
+                        class="form-control mt-4"
                         :placeholder="$t('contactUs.placeholders.subject')"
+                        v-model="question_data.email"
                         >
                         </b-form-input>
                         <b-form-textarea 
                         class="mt-4" 
+                        v-model="question_data.question"
                         :placeholder="$t('contactUs.placeholders.message')"
                          rows="5"
                         >
 
                         </b-form-textarea>
-                        <b-button class="btn-send w-100 mt-4">{{$t('contactUs.sent')}} </b-button>
+                        <b-button class="btn-send w-100 mt-4"
+                        v-on:click="onSubmit(question_data)"
+                        >{{$t('contactUs.sent')}} </b-button>
                     </b-form>
                     <!-- end form -->
                     </div>
@@ -181,12 +198,30 @@
 
 
 import {Navbar,Header} from '../../components'
+import {useSubmit} from './services/Kontak.hooks'
 
 export default {
     name:'Kontak',
     components:{
         Navbar,
         Header
+    },
+    data:()=>({
+        question_data:{
+            name:"",
+            subject:"",
+            email:"",
+            question:""
+
+        },
+    }),
+    methods:{
+  
+        onSubmit:(data)=>{
+            useSubmit(data)
+        
+       
+        }
     }
 }
 </script>
