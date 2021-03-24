@@ -68,7 +68,7 @@
     "placeholders": {
       "title": "Yuk isi form dibawah ini untuk bergabung ke Merdeka Pulsa",
       "companyName": "Nama Perusahaan",
-      "contactName": "Nama PIC",
+      "contactName": "Nama Penanggung Jawab",
       "mobilePhone": "Nomor HP Penanggung Jawab (Untuk Verifikasi Data)",
       "companyEmail": "Email Perusahaan",
       "companyPhone": "No Telpon Perusahaan",
@@ -76,7 +76,7 @@
       "province": "Provinsi",
       "city": "Kota"
     },
-    "modalAfterRegistration": "Terimakasih atas pertanyaannya, Tim kami akan segera menjawab pertanyaan Anda dalam maksimal 1X24 Jam",
+    "modalAfterRegistration": "Terimakasih telah mendaftar di Merdeka, Tim kami akan segera menghubungi Anda untuk verifikasi data dalam maksimal 1x24 Jam",
     "registrationInformation": "Untuk informasi lebih lengkap hubungi <strong class='telegram'>021-2951 7763</strong> atau Telegram ke <strong class='telegram'>@merdekacs</strong>"
   },
   "product": {
@@ -106,7 +106,8 @@
       "subject": "Subjek",
       "message": "Pesan"
     },
-    "sent": "Kirim Pesan"
+    "sent": "Kirim Pesan",
+    "kontakModalPopUp":"Terimakasih atas pertanyaan Anda, Tim kami akan segera menjawab pertanyaan Anda dalam maksimal 1X24 Jam"
   },
   "aboutMDA": {
     "title": "Tentang PT Merdeka Digital Asia",

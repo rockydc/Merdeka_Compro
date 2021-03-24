@@ -83,8 +83,8 @@
   "product": {
     "title": "Product",
     "ourProduct": "Our Products",
-    "prepaidPulsa": "Prepaid <i>Pulsa</i>",
-    "dataPackage": "Data Package",
+    "prepaidPulsa": "Prepaid <i>Pulsa</i> All Operator",
+    "dataPackage": "Data Package All Operator",
     "token": "Electricity / PLN Token",
     "gamesVoucher": "Games Voucher",
     "ovo": "Top-up OVO Balance",
@@ -107,7 +107,8 @@
       "subject": "Subject",
       "message": "Message"
     },
-    "sent": "Send Message"
+    "sent": "Send Message",
+    "kontakModalPopUp":"Thank you for your question. Our team will answer your question in 1X24 Hours"
   },
   "aboutMDA": {
     "title": "About MDA",
