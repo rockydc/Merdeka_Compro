@@ -29,6 +29,17 @@
          
         }  
     }
+    
+    .produk-content{
+        
+        &:nth-child(6){
+         
+            img{
+               width: 140px;
+               height: 130px;
+            }
+        }
+    }
  
 }
 
@@ -112,8 +123,8 @@
             }
             &:nth-child(8){
                 img{
-                    width:115px;
-                    height: 115px;
+                    width:100px;
+                    height: 90px;
                 }
              
             }

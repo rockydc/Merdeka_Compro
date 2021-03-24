@@ -22,25 +22,28 @@ export default {
 @import '@/assets/scss/global-variable.scss';
 .CardProduk{
     width:100%;
-   
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     .img-produk-wrap{
-        
+       
         height:200px;
         display: flex;
         align-items: center;
         justify-content: center;
      
-        
+            img{
+        width:clamp(65px,100%,176px);  
+    }
+    
+
+
+
         
     }
-    img{
-        width:clamp(65px,100%,176px);   
-      
-    }
+
     .caption{
         font-family: poppins,sans-serif;
         font-weight: 500;
