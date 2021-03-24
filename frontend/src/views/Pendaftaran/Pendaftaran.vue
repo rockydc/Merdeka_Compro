@@ -116,20 +116,22 @@ export default {
         Navbar,
         Header
     },
-    data: () => ({
-        registration_data: {
-            company_name : "",
-            pic_name : "",
-            pic_phone : "",
-            company_email : "",
-            company_phone: "",
-            company_province: "",
-            company_address: "",
-            company_city : ""
-        },
-    }),
+    data() {
+        return {
+            registration_data: {
+                company_name : "",
+                pic_name : "",
+                pic_phone : "",
+                company_email : "",
+                company_phone: "",
+                company_province: "",
+                company_address: "",
+                company_city : ""
+            }
+        }
+    },
     methods:{
-        onSubmit: (data) => {
+        onSubmit(data) {
             useSubmit(data)
         }
     }

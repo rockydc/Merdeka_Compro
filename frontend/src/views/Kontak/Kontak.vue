@@ -206,21 +206,26 @@ export default {
         Navbar,
         Header
     },
-    data:()=>({
-        question_data:{
-            name:"",
-            subject:"",
-            email:"",
-            question:""
-
-        },
-    }),
+    data(){
+        return {
+            question_data:{
+                name:"",
+                subject:"",
+                email:"",
+                question:""
+            }
+        }
+    },
     methods:{
-  
-        onSubmit:(data)=>{
+        resetForm(data) {
+            data.name=""
+            data.subject=""
+            data.email=""
+            data.question=""
+        },
+        onSubmit(data) {
             useSubmit(data)
-        
-       
+            this.resetForm(data)
         }
     }
 }
