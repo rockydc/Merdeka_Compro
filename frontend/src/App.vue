@@ -18,12 +18,11 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/global-variable.scss';
 
-
 *{
 
 padding:0px;
 margin:0px;
-font-family: poppins;
+font-family: 'poppins',sans-serif;
 
 }
 

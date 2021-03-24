@@ -1,7 +1,9 @@
 {
+  
   "home": {
     "title": "Home",
-    "homeJoinUsTitle": "Let's join at",
+    "homeJoinUsTitle": "Join Merdeka Pulsa",
+    "homeJoinUsTitleCaption":"<span>trusted </span><i>pulsa</i> provider with <span>competitive </span> prices, <br/>ready to be your service",
     "homeJoinUsContent": "Competitive price &  Competent team.",
     "homeOurProfileTitle": "Our Profile",
     "homeOurProfileFirstParagraph": "Established in September 2020, the Company brings expertise, experiences, networks and strong financial capability in the industry.",
@@ -50,7 +52,7 @@
       },
       "optionalBanks": {
         "title": "Available in 3 bank options",
-        "content": "Deposit in Merdeka Pulsa is supported by 3 reputable banks in  Indonesia, e.g. Bank Central Asia (BCA), Bank Rakyat Indonesia (BRI) and Bank Mandiri. Keep your transfer slip of deposit payment!"
+        "content": "Deposit in Merdeka Pulsa is supported by 3 reputable banks in  Indonesia, e.g. Bank Central Asia (BCA), Bank Negara Indonesia (BNI) and Bank Mandiri. Keep your transfer slip of deposit payment!"
       },
       "completeDocumentation": {
         "title": "Complete Documentation",
@@ -79,9 +81,9 @@
     "registrationInformation": "For more information, please reach us at"
   },
   "product": {
-    "title": "Merdeka Pulsa's Product",
+    "title": "Product",
     "ourProduct": "Our Products",
-    "prepaidPulsa": "Prepaid Pulsa",
+    "prepaidPulsa": "Prepaid <i>Pulsa</i>",
     "dataPackage": "Data Package",
     "token": "Electricity / PLN Token",
     "gamesVoucher": "Games Voucher",
@@ -91,7 +93,7 @@
   },
   "deposit": {
     "title": "Deposit",
-    "banks": "Merdeka Pulsa receives your deposit through 3 bank options : BCA, BRI and Mandiri.",
+    "banks": "Merdeka Pulsa receives your deposit through 3 bank options : Mandiri, BCA, and BNI",
     "notes": "Keep your transfer slip, contact our Telegram",
     "forAssistance": "for assistance. "
   },

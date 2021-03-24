@@ -5,7 +5,7 @@
         </div>
        
         <p class="title">{{$t(title)}}</p>
-        <p class="caption">{{$t(caption)}}</p>
+        <p class="caption" v-html="$t(caption)"></p>
     </div>
 </template>
 <script>

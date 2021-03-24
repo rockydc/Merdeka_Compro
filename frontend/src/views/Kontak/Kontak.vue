@@ -31,7 +31,7 @@
                             <div class="content-wrapper px-4 mt-5">
                                 <b-img class="icon" src="assets/img/kontak/location-ic.svg"></b-img>
                                 <p class="title mt-4">
-                                    PT.Merdeka Digital Asia
+                                    PT Merdeka Digital Asia
                                 </p>
                                 <p class="caption">{{$t('contactUs.address')}}</p>
                             </div>
@@ -160,7 +160,11 @@
                         :placeholder="$t('contactUs.placeholders.subject')"
                         >
                         </b-form-input>
-                        <b-form-textarea class="form-control mt-4" :placeholder="$t('contactUs.placeholders.message')">
+                        <b-form-textarea 
+                        class="mt-4" 
+                        :placeholder="$t('contactUs.placeholders.message')"
+                         rows="5"
+                        >
 
                         </b-form-textarea>
                         <b-button class="btn-send w-100 mt-4">{{$t('contactUs.sent')}} </b-button>

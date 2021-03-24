@@ -7,14 +7,15 @@
           <div class="container-fluid">
             <b-row >
                 <b-col lg="4" xl="3" class="d-flex justify-content-center align-items-center pt-4">
-                    <b-img class="logo-about"  src="assets/img/LOGO-BARU.png"></b-img>
+                    <b-img class="logo-about"  src="assets/img/Logo-2x.png"></b-img>
                 </b-col>
                 <b-col lg="8" xl="9">
                   <div class="container-fluid text-content">
                     <p class="mt-5"><strong style="font-weight:bold;">Merdeka!!</strong></p>
-                    <p>
-                      {{ $t("about.aboutMerdekaFirstParagraph") }}
-                     <br/><br/>
+                    <p v-html="$t('about.aboutMerdekaFirstParagraph')">
+                    
+                     </p>
+                     <p>
                       {{ $t("about.aboutMerdekaSecondParagraph") }}
                       <br/><br/>
                       {{ $t("about.aboutMerdekaThirdParagraph") }}

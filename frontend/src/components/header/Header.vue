@@ -2,12 +2,14 @@
      <header class="header-global" >
          
           <b-img class="navbar-background"
-          src="@/assets/img/bg-header-baru.png"
+          src="@/assets/img/header-bg-1x.png"
           >
-
           </b-img>
-          <h1 class="bottom-left">
-            {{title}}
+          <b-link to="/" ><b-img class="img-logo-header" src="/assets/img/Logo-2x.png"></b-img>
+          </b-link>
+          
+          <h1 v-html="title" class="bottom-left">
+           
           </h1>
             
 

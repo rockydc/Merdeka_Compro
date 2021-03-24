@@ -4,7 +4,7 @@
              <b-img :src="'assets/img/produk/' + gambar"></b-img>
         </div>
         <p class="title">{{$t(title)}}</p>
-        <p class="caption">{{$t(caption)}}</p>
+        <p  v-html="$t(caption)" class="caption"></p>
     </div>
 </template>
 <script>

@@ -1,13 +1,22 @@
 @import '@/assets/scss/global-variable.scss';
 
   .header-global{
-    z-index:-5;
+    z-index:0;
     position: relative;
     margin-top: -4.167vw;
     
         .navbar-background{
         width:100%;
+        
        
+    }
+    .img-logo-header{
+      
+      width: calc(250px +  0.833vw);
+      height: calc(150px + 1.979157vw);
+      position: absolute;
+      bottom: 5.125vw;
+      left: calc(8.9% - 0.1rem);
     }
     .bottom-left {
         font-family: poppins;
@@ -28,6 +37,11 @@
         width:100%;
        
     }
+    .img-logo-header{
+      width: calc(210px +  0.833vw);
+      height: calc(110px + 1.979157vw);
+      
+    }
     .bottom-left{
         font-size: calc(22px + 0.20833vw);
     }
@@ -40,7 +54,13 @@
      z-index:5;
     .navbar-background{
         width:100%;
+      
        
+    }
+    .img-logo-header{
+      width: calc(200px +  0.833vw);
+      height: calc(100px + 1.979157vw);
+      
     }
     .bottom-left{
         font-size: calc(22px + 0.20833vw);
@@ -53,8 +73,12 @@
    z-index:5;
     margin-top:-52px;
     .navbar-background{
-        width:100%;
-       
+        width:100%;   
+    }
+    .img-logo-header{
+      width: calc(200px +  0.833vw);
+      height: calc(100px + 1.979157vw);
+      
     }
     .bottom-left{
         font-size: calc(20px + 0.20833vw);
@@ -65,6 +89,7 @@
 @include mobile{
   header{
     display:none;
+    
   }
 }
 
