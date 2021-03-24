@@ -116,7 +116,7 @@ export default {
                     gambar:'3-logo.png'
                 },{
                     id:5,
-                    gambar:'smartfren-logo.png'
+                    gambar:'smartfren.png'
                 },{
                     id:6,
                     gambar:'axis-logo.png'
