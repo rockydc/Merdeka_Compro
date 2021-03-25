@@ -89,7 +89,7 @@ export default {
                 },
                 {
                     id:5,
-                    gambar:'ovo-logo.png',
+                    gambar:'logo-ovo.png',
                     caption:'product.ovo'
 
                 },
@@ -122,7 +122,7 @@ export default {
                     gambar:'axis-logo.png'
                 },{
                     id:7,
-                    gambar:'ovo-logo.png'
+                    gambar:'logo-ovo.png'
                 },{
                     id:8,
                     gambar:'gopay-baru.png'
