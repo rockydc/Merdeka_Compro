@@ -2,7 +2,7 @@
     <div>
         
 
-        <Navbar/>
+        <Navbar isBrand />
         <Header :title="$t('product.title')"/>
 
         <div class=" text-center section-produk-content">

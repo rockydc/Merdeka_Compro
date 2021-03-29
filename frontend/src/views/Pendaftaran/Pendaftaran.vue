@@ -2,7 +2,7 @@
     <div>
   
 
-        <Navbar/>
+           <Navbar isBrand/>
         <Header :title="$t('registration.title')" />
         <b-container class="section-pendaftaran-wrapper">
             <b-row>

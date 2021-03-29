@@ -1,7 +1,7 @@
 <template>
     <div >
           <b-navbar  toggleable="lg">
-    <b-navbar-brand  v-show="isBrand" to="/"><b-img width="50" height="50"  src="@/assets/img/logo-merdeka-baru.png"></b-img></b-navbar-brand>
+    <b-navbar-brand exact v-show="isBrand"  to="/" ><b-img width="50" height="50"  src="@/assets/img/logo-merdeka-baru.png"></b-img></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse">
       <template #default ="{ expanded }">
@@ -44,7 +44,10 @@
 export default {
     name:'Navbar',
     props:{
-      isBrand:Boolean
+      isBrand:Boolean,
+      disablelink:Boolean,
+
+      
     },
     methods:{
       setLocale(locale) {

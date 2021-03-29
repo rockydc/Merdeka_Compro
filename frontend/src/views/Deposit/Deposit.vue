@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar/>
+            <Navbar isBrand/>
         <Header :title="$t('deposit.title')"/>
 
         <b-container class="section-donation">

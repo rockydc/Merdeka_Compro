@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar/>
+            <Navbar isBrand/>
        
         <Header :title="$t('aboutMDA.title')"/>
 
