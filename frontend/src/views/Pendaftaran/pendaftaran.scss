@@ -92,20 +92,20 @@
 
  
 }
-      .btn-daftar{
+.btn-daftar{
             background-color:#C52D2E ;
             box-shadow: 0px 4px 10px rgba(203, 43, 43, 0.24);
             width: 100%;
             border:none;
             &:focus{
                    outline: 0;
-    box-shadow: none!important;
+            box-shadow: none!important;
             }
         }
 
 
-       .modal-content{
-      
+.modal-content{
+    
             p{
               
                 font-weight:500;
