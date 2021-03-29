@@ -1,6 +1,6 @@
 <template>
     <div >
-        <Navbar/>
+             <Navbar isBrand/>
        
         <Header :style="'background-color: rgba(0, 0, 0, 0.03);'" :title="$t('about.title')"/>
         <section class="section-merdeka">

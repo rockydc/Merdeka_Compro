@@ -1,7 +1,7 @@
 <template>
     
     <div>
-        <Navbar/>
+        <Navbar isBrand/>
         <Header :title="$t('contactUs.title')"/>
     <!-- Start Section Kontak -->
         <div class="section-kontak">
