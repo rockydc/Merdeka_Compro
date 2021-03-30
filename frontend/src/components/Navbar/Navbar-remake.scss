@@ -19,13 +19,13 @@
 
 .navbar{
     z-index:6;
-    padding-top: 1.5625vw;
+    padding-top: 0;
     .navbar-brand{
         
         img{
 
-            width: calc(52px + 5.0520833vw);
-            height:  calc(50px + 5.763073639274279vh);
+            width: calc((52px + 5.0520833vw)*2);
+            height:  calc((50px + 5.763073639274279vh)*2);
             margin-left:calc(3rem + 4.0875vw);
         }
     
@@ -245,8 +245,8 @@
         .navbar-brand{
             img{
     
-                width: calc(40px + 5.0520833vw);
-                height: calc(30px + 5.76307363929vh);
+                width: calc((40px + 5.0520833vw)*2);
+                height: calc((30px + 5.76307363929vh)*2);
                 margin-left:calc(1rem + 3.3875vw);
             }
         }
