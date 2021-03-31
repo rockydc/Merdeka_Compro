@@ -1,11 +1,5 @@
 # MERDEKA DIGITAL ASIA COMPROF
 
-# Third Party
-
-    Google OAUTH
-
-# Server Documentation    
-
 ### Dependencies
 
 | Package Name | Version |
