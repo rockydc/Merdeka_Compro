@@ -1,6 +1,6 @@
 <template>
     <div>
-            <Navbar isBrand/>
+        <Navbar isBrand/>
         <Header :title="$t('deposit.title')"/>
 
         <b-container class="section-donation">
@@ -11,7 +11,7 @@
 
             <div class="bank-account">
                   <b-img :style="'margin-bottom:21px;margin-top:-10px;'" class="img-logo" src="assets/img/mandiri.svg"></b-img>
-                    <p>15700000000 - PT Merdeka Digital Asia</p>
+                    <p>101-0001092020 - PT Merdeka Digital Asia</p>
             </div>
 
             <div class="bank-account">
@@ -21,7 +21,7 @@
 
             <div class="bank-account">
                  <b-img class="img-logo" src="assets/img/BNI-Logo.png"></b-img>
-                    <p>032- 081-0920-0827 - PT Merdeka Digital Asia</p>
+                    <p>8649001555 - PT Merdeka Digital Asia</p>
             </div>
 
             </div>
